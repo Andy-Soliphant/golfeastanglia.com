@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal West Norfolk Golf Club: A Visitor's Complete Guide | Golf East Anglia</title>
+  <meta name="description" content="Everything you need to know about playing Royal West Norfolk Golf Club at Brancaster — visitor access, how to book, what to expect, and how to build it into a Norfolk golf break.">
+  <link rel="canonical" href="https://www.golfeastanglia.com/blog-royal-west-norfolk">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d1f0f; --bg-card: #0f2211; --gold: #b79d64; --gold-light: #cdb97a;
+      --text: #e8e0d0; --text-muted: #9a9080; --border: rgba(183,157,100,0.2);
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Outfit', sans-serif; font-size: 15px; line-height: 1.7; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px; height: 72px;
+      background: rgba(13,31,15,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; letter-spacing: 0.04em; color: var(--gold); text-decoration: none; }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 9px 24px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
+    .nav-cta:hover { background: var(--gold); color: var(--bg); }
+
+    .post-hero {
+      position: relative; height: 500px;
+      display: flex; align-items: flex-end; padding: 80px;
+      background: linear-gradient(160deg, #1a3a1c 0%, #0d2410 40%, #061408 100%);
+      overflow: hidden;
+    }
+    .post-hero::after { content:''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,31,15,0.8) 0%, transparent 60%); }
+    .post-hero-content { position: relative; z-index: 1; max-width: 720px; }
+    .post-category { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .post-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 4.5vw, 56px); font-weight: 300; line-height: 1.1; margin-bottom: 20px; }
+    .post-hero h1 em { font-style: italic; color: var(--gold); }
+    .post-hero-meta { color: var(--text-muted); font-size: 13px; }
+
+    .post-layout { display: grid; grid-template-columns: 1fr 320px; gap: 80px; max-width: 1200px; margin: 80px auto; padding: 0 48px; }
+
+    /* ARTICLE */
+    article h2 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; color: var(--text); margin: 48px 0 16px; }
+    article h3 { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 400; color: var(--gold); margin: 32px 0 12px; }
+    article p { color: var(--text-muted); margin-bottom: 20px; font-size: 15px; line-height: 1.8; }
+    article p:first-child { color: var(--text); font-size: 17px; line-height: 1.75; }
+    article a { color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(183,157,100,0.3); transition: border-color 0.2s; }
+    article a:hover { border-color: var(--gold); }
+    .pull-quote {
+      border-left: 2px solid var(--gold);
+      padding: 4px 0 4px 28px;
+      margin: 40px 0;
+    }
+    .pull-quote p { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-style: italic; font-weight: 300; color: var(--text); line-height: 1.5; }
+    .info-box {
+      background: var(--bg-card); border: 1px solid var(--border);
+      padding: 32px; margin: 40px 0;
+    }
+    .info-box h4 { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--gold); margin-bottom: 16px; }
+    .info-box ul { list-style: none; }
+    .info-box li { color: var(--text-muted); font-size: 14px; padding: 6px 0; border-bottom: 1px solid rgba(183,157,100,0.1); }
+    .info-box li:last-child { border-bottom: none; }
+    .info-box li strong { color: var(--text); }
+
+    /* SIDEBAR */
+    aside { }
+    .sidebar-widget { background: var(--bg-card); border: 1px solid var(--border); padding: 28px; margin-bottom: 28px; }
+    .sidebar-widget h4 { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--gold); margin-bottom: 16px; }
+    .sidebar-widget p { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px; }
+    .sidebar-widget ul { list-style: none; }
+    .sidebar-widget li { font-size: 13px; color: var(--text-muted); padding: 6px 0; border-bottom: 1px solid rgba(183,157,100,0.1); }
+    .sidebar-widget li a { color: var(--text-muted); text-decoration: none; border: none; transition: color 0.2s; }
+    .sidebar-widget li a:hover { color: var(--gold); }
+    .sidebar-widget li:last-child { border-bottom: none; }
+    .btn-gold { display: block; text-align: center; background: var(--gold); color: var(--bg); padding: 14px 24px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; font-weight: 500; margin-top: 16px; transition: background 0.2s; border: none; }
+    .btn-gold:hover { background: var(--gold-light); }
+
+    /* BACK LINK */
+    .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--text-muted); font-size: 13px; letter-spacing: 0.06em; text-decoration: none; text-transform: uppercase; margin-bottom: 48px; transition: color 0.2s; }
+    .back-link:hover { color: var(--gold); }
+
+    footer { border-top: 1px solid var(--border); padding: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--gold); }
+    .footer-links { display: flex; gap: 32px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { color: var(--text-muted); font-size: 12px; width: 100%; text-align: center; }
+
+    @media (max-width: 960px) {
+      .post-layout { grid-template-columns: 1fr; gap: 48px; }
+      .post-hero { padding: 40px 24px; height: auto; min-height: 360px; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 0 24px; } .nav-links { display: none; }
+      .post-layout { padding: 0 24px; margin: 48px auto; }
+      footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+    }
+  /* NAV */
+.nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);position:sticky;top:0;background:var(--bg);z-index:100;}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+.nl{display:flex;gap:22px;flex-wrap:wrap;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;text-decoration:none;}
+.enq:hover{background:var(--gold-l);}
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <div class="nl">
+    <a href="/">Home</a>
+    <a href="/norfolk">Courses</a>
+    <a href="/itineraries">Itineraries</a>
+    <a href="/experiences">Experiences</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/transfers">Transfers</a>
+    <a href="/blog" class="act">Journal</a>
+    <a href="/about">About</a>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="/enquire" class="enq">Enquire</a>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/"  onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/blog" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+
+<header class="post-hero">
+  <div class="post-hero-content">
+    <p class="post-category">Journal · Links Golf · Norfolk Courses</p>
+    <h1>Royal West Norfolk:<br><em>A Visitor's Complete Guide</em></h1>
+    <p class="post-hero-meta">May 2026 &nbsp;·&nbsp; 8 min read &nbsp;·&nbsp; By Golf East Anglia</p>
+  </div>
+</header>
+
+<div class="post-layout">
+  <article>
+    <a href="/blog" class="back-link">← Back to Journal</a>
+
+    <p>There are golf courses that are pleasant, golf courses that are memorable — and then there is Royal West Norfolk. Sitting at the end of a tidal causeway at Brancaster on the North Norfolk coast, this is one of the finest and most distinctive links in England, and for serious golfers visiting East Anglia, it is an essential pilgrimage.</p>
+
+    <p>It is not the longest course, nor the most famous on the national stage. What it is, is utterly itself — a links that has changed little in over a century, where the tide dictates your access, the marsh defines your horizon, and the North Sea wind writes the scorecard before you've even teed off. Visiting here feels like stepping into golf's history.</p>
+
+    <div class="pull-quote">
+      <p>"The tide dictates your access, the marsh defines your horizon, and the North Sea wind writes the scorecard before you've even teed off."</p>
+    </div>
+
+    <h2>The Course & Setting</h2>
+    <p>Royal West Norfolk occupies a narrow strip of land between Brancaster Marsh and the sea, with the fairways running back and forth along this sliver of coast. The terrain is pure links — firm, fast, undulating turf with sleeper-faced bunkers and the kind of natural contours that modern course architecture tries and fails to replicate.</p>
+    <p>The signature feature is the sequence of holes that play across the marsh with nothing but wooden boards for a path. At high tide, portions of the course are inaccessible — which is not an inconvenience but part of the character. It means that no two visits are the same, and that the course demands you play the conditions rather than a fixed template.</p>
+
+    <h2>Visitor Access</h2>
+    <p>Royal West Norfolk is a private members' club and visitor access is carefully managed and limited. This is not a course you can simply book online — and rightly so. Visitor rounds are available on weekdays, typically outside peak member times, and must be arranged in advance. Demand consistently exceeds availability, particularly in the summer months.</p>
+    <p>This is where we add real value. As a specialist operator with an established relationship with the club, Golf East Anglia can arrange visitor access as part of a curated <a href="/itineraries">Norfolk golf break itinerary</a> — taking the uncertainty out of securing a tee time and ensuring your visit fits properly into a wider programme of courses and accommodation.</p>
+
+    <div class="info-box">
+      <h4>Visitor Essentials</h4>
+      <ul>
+        <li><strong>Visitor Days:</strong> Weekdays only — limited availability</li>
+        <li><strong>Handicap Required:</strong> Yes — CDH number or equivalent</li>
+        <li><strong>Dress Code:</strong> Smart traditional — collared shirts, tailored trousers or shorts</li>
+        <li><strong>Buggy Hire:</strong> Not available — links golf is walking golf</li>
+        <li><strong>Caddy:</strong> Arrange in advance — highly recommended for first visit</li>
+        <li><strong>Best Access:</strong> Via Golf East Anglia as part of a curated itinerary</li>
+        <li><strong>Nearest Accommodation:</strong> Brancaster, Burnham Market, Hunstanton</li>
+      </ul>
+    </div>
+
+    <h2>When to Play</h2>
+    <p>Royal West Norfolk plays well year-round, but the sweet spots are late spring (May–June) and early autumn (September–October). The links turf is at its firmest and fastest from July through October, and the longer days of summer give you the best of the evening light on the marshes.</p>
+    <p>Winter golf here is for the committed — it can be raw on the North Norfolk coast — but there is a particular magic to a mid-winter round at Brancaster when the marsh is frosted and you have the course largely to yourself. For most visitors, May to October is the window to aim for.</p>
+
+    <h2>Pairing Royal West Norfolk</h2>
+    <p>No single round does justice to a visit to this part of Norfolk. The North Norfolk coast deserves at least two or three days, and Royal West Norfolk pairs naturally with <a href="/norfolk">Royal Cromer</a> to the east — another historic links with dramatic clifftop views — and Hunstanton to the south, a classic west-coast links that sits within easy distance of Brancaster.</p>
+    <p>For a longer tour combining the best of both counties, our <a href="/itineraries">Grand Tour itinerary</a> brings together five courses across five days — a complete East Anglia golf experience that we design and manage in full.</p>
+
+    <h2>How We Can Help</h2>
+    <p>Getting onto Royal West Norfolk as a visitor is the single most common request we receive — and the one where our local knowledge and relationships make the biggest difference. If playing this course is on your list, speak to us early. Availability is limited and the best dates go quickly.</p>
+    <p>We can build a complete itinerary around your visit — accommodation in the area, additional courses, dinner reservations, and any other experiences you want to add. Everything is handled, nothing is guesswork.</p>
+    <p><a href="/enquire">Get in touch to start planning your Royal West Norfolk visit →</a></p>
+
+  </article>
+
+  <aside>
+    <div class="sidebar-widget">
+      <h4>Plan This Trip</h4>
+      <p>Let us arrange your Royal West Norfolk visit as part of a curated Norfolk golf break.</p>
+      <a href="/enquire" class="btn-gold">Enquire Now</a>
+    </div>
+
+    <div class="sidebar-widget">
+      <h4>Norfolk Courses</h4>
+      <ul>
+        <li><a href="norfolk.html#premium">Royal West Norfolk</a></li>
+        <li><a href="norfolk.html#premium">Royal Cromer</a></li>
+        <li><a href="norfolk.html#premium">Hunstanton</a></li>
+        <li><a href="/worlington">Royal Worlington</a></li>
+        <li><a href="norfolk.html#discovery">Discovery Courses</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h4>Related Reads</h4>
+      <ul>
+        <li><a href="/blog-three-day-norfolk">The Perfect Three-Day Norfolk Break</a></li>
+        <li><a href="/blog-east-coast-links">England's East Coast Links Circuit</a></li>
+        <li><a href="/blog-best-time-norfolk">Best Time to Play Golf in Norfolk</a></li>
+        <li><a href="/itineraries">View All Itineraries</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h4>Stay Nearby</h4>
+      <p style="font-size:13px;color:var(--text-muted);">The best base for Royal West Norfolk is Burnham Market or Brancaster itself. We'll arrange accommodation to match your style and budget as part of your itinerary.</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <span class="footer-logo">Golf East Anglia</span>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/norfolk">Norfolk</a>
+    <a href="/suffolk">Suffolk</a>
+    <a href="/itineraries">Itineraries</a>
+    <a href="/blog">Journal</a>
+    <a href="/enquire">Enquire</a>
+    <a href="/trade">Travel Trade</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Golf East Anglia. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

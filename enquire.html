@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquire | Plan Your Norfolk &amp; Suffolk Golf Break | Golf East Anglia</title>
+<meta name="description" content="Plan your Norfolk and Suffolk golf holiday. Enquire with Golf East Anglia — bespoke proposal within 24 hours, no obligation. Group golf breaks from 4 guests.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--gold:#b79d64;--gold-l:rgba(183,157,100,0.15);--gold-b:rgba(183,157,100,0.3);--bg:#0d1f0f;--bg2:#111f12;--text:#e8e2d6;--tmid:rgba(232,226,214,0.5);--tlow:rgba(232,226,214,0.28);--bdr:rgba(255,255,255,0.07);--serif:'Cormorant Garamond',serif;--sans:'Outfit',sans-serif;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1;}
+a{text-decoration:none;}
+.nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);position:sticky;top:0;background:var(--bg);z-index:100;}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+.nl{display:flex;gap:28px;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.enq-nav{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+.eline{width:36px;height:1px;background:var(--gold);flex-shrink:0;}
+.etxt{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+.hero{padding:56px 48px 48px;border-bottom:1px solid var(--bdr);display:grid;grid-template-columns:1fr 300px;gap:60px;align-items:end;}
+.hero h1{font-family:var(--serif);font-size:48px;font-weight:300;line-height:1.1;color:var(--text);}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-sub{font-size:16px;color:var(--tmid);line-height:1.85;margin-top:18px;font-weight:300;}
+.trust-block{border:1px solid var(--bdr);padding:24px;}
+.trust-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.trust-item{padding:11px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.trust-item:last-child{border-bottom:none;padding-bottom:0;}
+.trust-item:first-of-type{padding-top:0;}
+.ti-v{font-family:var(--serif);font-size:17px;color:var(--text);line-height:1;}
+.ti-l{font-size:11px;color:var(--tlow);margin-top:3px;}
+.form-wrap{padding:48px;display:grid;grid-template-columns:1fr 280px;gap:40px;align-items:start;}
+.form{background:var(--bg2);border:1px solid var(--bdr);padding:36px;}
+.form-lbl{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
+.seg-title{font-family:var(--serif);font-size:22px;font-weight:300;color:var(--text);margin-bottom:6px;}
+.seg-sub{font-size:14px;color:rgba(232,226,214,0.38);font-weight:300;margin-bottom:22px;line-height:1.6;}
+.seg-btns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:28px;}
+.seg-btn{padding:14px 10px;border:1px solid var(--bdr);text-align:center;cursor:pointer;}
+.seg-btn:first-child{border-color:rgba(183,157,100,0.45);background:rgba(183,157,100,0.06);}
+.seg-btn-title{font-size:14px;color:var(--text);font-weight:500;margin-bottom:3px;}
+.seg-btn:first-child .seg-btn-title{color:var(--gold);}
+.seg-btn-sub{font-size:11px;color:rgba(232,226,214,0.3);}
+.sec-div{height:1px;background:var(--bdr);margin:22px 0;}
+.sec-lbl-f{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(183,157,100,0.45);margin-bottom:14px;}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.field:last-of-type{margin-bottom:0;}
+.field label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.32);}
+.field input,.field select,.field textarea{background:var(--bg);border:1px solid rgba(255,255,255,0.08);color:var(--text);font-family:var(--sans);font-size:15px;padding:11px 14px;font-weight:300;outline:none;width:100%;transition:border-color .2s;}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold-b);}
+.field input::placeholder,.field textarea::placeholder{color:rgba(232,226,214,0.18);}
+.field select{appearance:none;cursor:pointer;}
+.field textarea{resize:vertical;min-height:88px;line-height:1.6;}
+.field-note{font-size:11px;color:rgba(232,226,214,0.22);margin-top:4px;line-height:1.5;}
+.submit-btn{width:100%;background:var(--gold);color:var(--bg);padding:15px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;cursor:pointer;border:none;font-family:var(--sans);margin-top:8px;}
+.submit-btn:hover{opacity:.9;}
+.submit-note{font-size:11px;color:rgba(232,226,214,0.22);text-align:center;margin-top:10px;line-height:1.6;}
+.sidebar{}
+.why-us{border:1px solid var(--bdr);padding:22px;margin-bottom:18px;}
+.why-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.why-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:13px;}
+.why-item:last-child{margin-bottom:0;}
+.why-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;margin-top:6px;flex-shrink:0;}
+.why-item p{font-size:14px;color:rgba(232,226,214,0.42);line-height:1.7;font-weight:300;}
+.why-item p strong{color:rgba(232,226,214,0.65);font-weight:400;}
+.courses-ref{background:var(--bg2);border:1px solid var(--bdr);padding:20px;}
+.cr-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.course-pill{display:inline-block;border:1px solid rgba(183,157,100,0.18);color:rgba(183,157,100,0.65);font-size:11px;padding:4px 9px;margin:0 4px 6px 0;letter-spacing:.5px;}
+.cr-note{font-size:11px;color:rgba(232,226,214,0.22);margin-top:10px;line-height:1.6;}
+.footer{padding:24px 48px;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;}
+.fl{font-family:var(--serif);font-size:15px;}
+.flg{font-style:italic;color:var(--gold);}
+.flr{color:rgba(232,226,214,0.4);font-weight:300;letter-spacing:1px;}
+.fp{font-size:11px;color:rgba(232,226,214,0.18);}
+@media(max-width:768px){
+  .nav{padding:16px 20px;}.nl{display:none;}.lsub,.ldiv{display:none;}
+  .hero{grid-template-columns:1fr;padding:32px 20px;gap:24px;}.trust-block{display:none;}
+  .hero h1{font-size:34px;}
+  .form-wrap{grid-template-columns:1fr;padding:24px 20px;}
+  .field-row{grid-template-columns:1fr;}
+  .seg-btns{grid-template-columns:1fr;}
+  .footer{padding:20px;flex-direction:column;gap:8px;text-align:center;}
+}
+
+/* ── Royal Cromer photography ── */
+.rc-img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.rc-img-wrap{overflow:hidden;line-height:0;}
+.rc-hero-img{width:100%;height:480px;object-fit:cover;object-position:center;display:block;}
+.rc-panel-img{width:100%;height:320px;object-fit:cover;object-position:center;display:block;}
+.rc-wide-img{width:100%;height:400px;object-fit:cover;object-position:center;display:block;}
+.rc-strip-img{width:100%;height:240px;object-fit:cover;object-position:center;display:block;}
+@media(max-width:768px){
+  .rc-hero-img{height:260px;}
+  .rc-panel-img{height:200px;}
+  .rc-wide-img{height:220px;}
+  .rc-strip-img{height:160px;}
+}
+
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <div class="nl">
+    <a href="/">Home</a>
+    <a href="/norfolk">Courses</a>
+    <a href="/itineraries">Itineraries</a>
+    <a href="/experiences">Experiences</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/transfers">Transfers</a>
+    <a href="/blog">Journal</a>
+    <a href="/about">About</a>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <span class="enq-nav">Enquire</span>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/"  onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+
+<div class="hero">
+<img src="images/rc-enquire-flagstick.jpg" alt="Royal Cromer — flagstick and North Sea" class="rc-hero-img">
+
+  <div>
+    <div class="eyebrow"><div class="eline"></div><div class="etxt">Enquire</div></div>
+    <h1>Every trip starts<br>with a <em>conversation.</em></h1>
+    <p class="hero-sub">Fill in the form and we will come back to you within 24 hours — with availability, a suggested <a href="/itineraries" style="color:var(--gold);">itinerary</a>, and a clear price. There is no obligation. Your enquiry goes directly to a specialist who knows these courses and this region. Not a call centre. Not an automated response.</p>
+  </div>
+  <div>
+    <div class="trust-block">
+      <div class="trust-lbl">Our commitments</div>
+      <div class="trust-item"><div class="ti-v">24 hours</div><div class="ti-l">Response time guaranteed</div></div>
+      <div class="trust-item"><div class="ti-v">GBP · USD · EUR · AUD</div><div class="ti-l">We quote in your currency</div></div>
+      <div class="trust-item"><div class="ti-v">4 guests minimum</div><div class="ti-l">All sizes welcome above this</div></div>
+      <div class="trust-item"><div class="ti-v">No obligation</div><div class="ti-l">A proposal, not a commitment</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="form-wrap">
+  <form class="form" name="enquiry" method="POST" data-netlify="true" action="/thank-you.html">
+    <input type="hidden" name="form-name" value="enquiry">
+    <div class="form-lbl">Your enquiry</div>
+    <div class="seg-title">Who is this enquiry for?</div>
+    <div class="seg-sub">This helps us tailor our response appropriately.</div>
+    <div class="seg-btns">
+      <div class="seg-btn"><div class="seg-btn-title">Myself / my group</div><div class="seg-btn-sub">Personal trip or society</div></div>
+      <div class="seg-btn"><div class="seg-btn-title">My clients</div><div class="seg-btn-sub">Travel agent or operator</div></div>
+      <div class="seg-btn"><div class="seg-btn-title">Not sure yet</div><div class="seg-btn-sub">Just exploring</div></div>
+    </div>
+    <div class="sec-lbl-f">Your details</div>
+    <div class="field-row">
+      <div class="field"><label>First name</label><input type="text" name="first-name" placeholder="Your first name"></div>
+      <div class="field"><label>Last name</label><input type="text" name="last-name" placeholder="Your last name"></div>
+    </div>
+    <div class="field"><label>Email address</label><input type="email" name="email" placeholder="your@email.com"></div>
+    <div class="field-row">
+      <div class="field"><label>Phone (optional)</label><input type="tel" name="phone" placeholder="+1 or +44..."></div>
+      <div class="field"><label>Country of residence</label><select name="country"><option value="">Select country</option><option>United Kingdom</option><option>United States</option><option>Australia</option><option>Canada</option><option>Germany</option><option>Netherlands</option><option>France</option><option>Ireland</option><option>Other</option></select></div>
+    </div>
+    <div class="sec-div"></div>
+    <div class="sec-lbl-f">Trip details</div>
+    <div class="field-row">
+      <div class="field"><label>Number of golfers</label><select name="golfers"><option value="">Select</option><option>2</option><option>3</option><option>4</option><option>5–6</option><option>7–12</option><option>13–20</option><option>20+</option></select></div>
+      <div class="field"><label>Preferred duration</label><select name="duration"><option value="">Select</option><option>3 nights — Long Weekend</option><option>5 nights — County Tour</option><option>7 nights — Two Counties</option><option>10 nights — Grand Tour</option><option>Not sure — advise me</option></select></div>
+    </div>
+    <div class="field-row">
+      <div class="field"><label>Preferred dates or timeframe</label><input type="text" name="dates" placeholder="e.g. June 2026 or 12–19 May"></div>
+      <div class="field"><label>Preferred quote currency</label><select name="currency"><option>GBP — British Pounds</option><option>USD — US Dollars</option><option>EUR — Euros</option><option>AUD — Australian Dollars</option></select></div>
+    </div>
+    <div class="field"><label>County preference</label><select name="county"><option value="">Select</option><option>Norfolk only</option><option>Suffolk only</option><option>Both counties</option><option>Not sure — advise me</option></select></div>
+    <div class="field"><label>Courses of interest (optional)</label><input type="text" name="courses" placeholder="e.g. Brancaster, Aldeburgh, Hunstanton"><div class="field-note">Leave blank if you'd like us to recommend based on your group and dates.</div></div>
+    <div class="sec-div"></div>
+    <div class="sec-lbl-f">Anything else we should know</div>
+    <div class="field"><label>Group handicaps (optional)</label><input type="text" name="handicaps" placeholder="e.g. 8–18 average, or mixed abilities"><div class="field-note">Some courses require a valid WHS handicap. We confirm this for all guests as standard.</div></div>
+    <div class="field"><label>Occasion or context (optional)</label><input type="text" name="occasion" placeholder="e.g. society trip, birthday, bucket list, annual tour"></div>
+    <div class="field"><label>Add a PGA professional session?</label><select name="pga-session"><option>Not sure yet — tell me more</option><option>Yes — please include this</option><option>No — golf only</option></select></div>
+    <div class="field"><label>Anything else</label><textarea name="notes" placeholder="Accessibility requirements, non-golfers in the group, dietary needs, accommodation preferences, budget guidance — anything that helps us build the right proposal."></textarea></div>
+    <button type="submit" class="submit-btn">Send enquiry</button>
+    <div class="submit-note">We will never share your details with third parties.<br>Your enquiry goes directly to our team — response within 24 hours.</div>
+  </form>
+  <div class="sidebar">
+    <div class="why-us">
+      <div class="why-lbl">Why book with us</div>
+      <div class="why-item"><div class="why-dot"></div><p><strong>Brancaster logistics handled:</strong> Weekday access, tide scheduling, foursomes format. We manage all of this as standard.</p></div>
+      <div class="why-item"><div class="why-dot"></div><p><strong>All tee times secured in advance:</strong> Every course confirmed before you travel. No walk-up risk.</p></div>
+      <div class="why-item"><div class="why-dot"></div><p><strong>Regional knowledge that matters:</strong> We know which courses are in best condition by month, which restaurants are worth the drive, and what suits a golf group.</p></div>
+      <div class="why-item"><div class="why-dot"></div><p><strong>On-call throughout:</strong> Available for the full duration of your stay. If anything changes, we are reachable.</p></div>
+      <div class="why-item"><div class="why-dot"></div><p><strong>International travellers welcome:</strong> We work with guests from the US, Europe, Australia and beyond. We quote in your currency.</p></div>
+    </div>
+    <div class="courses-ref">
+      <div class="cr-lbl">Courses we work with</div>
+      <span class="course-pill">Royal West Norfolk</span>
+      <span class="course-pill">Hunstanton</span>
+      <span class="course-pill">Royal Cromer</span>
+      <span class="course-pill">Sheringham</span>
+      <span class="course-pill">Aldeburgh</span>
+      <span class="course-pill">Thorpeness</span>
+      <span class="course-pill">Woodbridge</span>
+      <span class="course-pill">Felixstowe Ferry</span>
+      <span class="course-pill">Royal Worlington</span>
+      <div class="cr-note">Plus inland and additional courses on request. If there is a course in Norfolk or Suffolk you want to play, ask us.</div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="/" class="fl"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
+  <p class="fp">enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists &nbsp;·&nbsp; <a href="/trade" style="color:rgba(232,226,214,0.18);text-decoration:none;">Travel trade</a></p>
+</footer>
+</body>
+</html>

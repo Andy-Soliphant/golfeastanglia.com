@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Côte d'Opale Collection — Register Your Interest | Golf East Anglia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --g1:#0d1f14; --g2:#1e4028; --g3:#2a5c38; --g4:#3a7a4a;
+  --gold:#c9a84c; --gold-l:#e8c96d; --gold-p:#f5e8c0;
+  --cream:#f8f4ec; --white:#ffffff;
+  --muted:rgba(255,255,255,0.55); --faint:rgba(255,255,255,0.22);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:var(--g1);color:var(--white);overflow-x:hidden}
+body::before{content:'';display:block;height:2px;background:linear-gradient(to right,transparent,var(--gold),transparent);position:fixed;top:0;left:0;right:0;z-index:200}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(to bottom,rgba(13,31,20,.97),transparent)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;letter-spacing:.14em;color:var(--gold);text-decoration:none;text-transform:uppercase}
+.nav-right{display:flex;gap:2rem;align-items:center}
+.nav-link{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-link:hover{color:var(--gold)}
+
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:8rem 2rem 5rem;position:relative;background:radial-gradient(ellipse 100% 70% at 50% 30%,rgba(42,92,56,.3) 0%,transparent 65%)}
+.hero-ey{font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:1.6rem;opacity:0;animation:fu .9s .2s forwards}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.4rem,9vw,7rem);font-weight:300;line-height:1;letter-spacing:.02em;margin-bottom:1.2rem;opacity:0;animation:fu .9s .4s forwards}
+.hero h1 em{font-style:italic;color:var(--gold-l)}
+.rule{width:50px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);margin:0 auto 1.6rem;opacity:0;animation:fu .9s .55s forwards}
+.hero-sub{font-size:.84rem;font-weight:300;letter-spacing:.06em;line-height:1.9;color:var(--muted);max-width:520px;margin-bottom:3rem;opacity:0;animation:fu .9s .65s forwards}
+.pills{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem;opacity:0;animation:fu .9s .8s forwards}
+.pill{border:1px solid rgba(201,168,76,.4);padding:.45rem 1.4rem;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.hero-btn{display:inline-block;background:var(--gold);color:var(--g1);padding:.9rem 3rem;font-size:.68rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:none;transition:background .2s,transform .15s;opacity:0;animation:fu .9s .95s forwards}
+.hero-btn:hover{background:var(--gold-l);transform:translateY(-2px)}
+
+.section{padding:7rem 2rem}
+.inner{max-width:1080px;margin:0 auto}
+.sec-label{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.sec-rule{width:48px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);margin:1rem 0 2rem}
+.sec-rule.c{margin:1rem auto 2rem}
+.sec h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:300;line-height:1.15}
+.sec h2 em{font-style:italic;color:var(--gold-l)}
+.sec p{font-size:.84rem;font-weight:300;line-height:2;color:rgba(255,255,255,.7)}
+
+.dark{background:var(--g2)}
+.mid{background:var(--g1)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.stat-box{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(201,168,76,.18);background:rgba(13,31,20,.5)}
+.stat{padding:2rem;border-right:1px solid rgba(201,168,76,.12);border-bottom:1px solid rgba(201,168,76,.12)}
+.stat:nth-child(2){border-right:none}
+.stat:nth-child(3){border-bottom:none}
+.stat:nth-child(4){border-right:none;border-bottom:none}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--gold-l);line-height:1;margin-bottom:.3rem}
+.stat-l{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+
+.pillars-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5px;background:rgba(201,168,76,.1);margin-top:4rem}
+.pillar{background:var(--g1);padding:2.6rem 2rem;transition:background .2s,transform .2s}
+.pillar:hover{background:var(--g2);transform:translateY(-4px)}
+.pillar-n{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:rgba(201,168,76,.15);line-height:1;margin-bottom:.9rem}
+.pillar h3{font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.pillar p{font-size:.76rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,.6)}
+
+.prog{background:var(--g2);padding:7rem 2rem}
+.prog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));border:1px solid rgba(201,168,76,.14);margin-top:3.5rem}
+.prog-item{padding:1.8rem 1.4rem;border-right:1px solid rgba(201,168,76,.14)}
+.prog-item:last-child{border-right:none}
+.prog-time{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.prog-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;margin-bottom:.4rem}
+.prog-desc{font-size:.7rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.7}
+
+.register{padding:8rem 2rem;background:var(--g2)}
+.reg-inner{max-width:580px;margin:0 auto;text-align:center}
+.form-group{margin-bottom:1rem;text-align:left}
+.form-group label{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:.8rem 1rem;background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.22);color:var(--white);font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:300;outline:none;transition:border-color .2s;-webkit-appearance:none}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,.22)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group select option{background:var(--g2)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.submit-btn{width:100%;padding:1rem;background:transparent;border:1px solid var(--gold);color:var(--gold);font-family:'Montserrat',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;cursor:pointer;transition:all .2s;margin-top:.3rem}
+.submit-btn:hover{background:var(--gold);color:var(--g1)}
+.form-note{font-size:.64rem;color:rgba(255,255,255,.3);margin-top:1rem;line-height:1.7}
+#success{display:none;margin-top:2rem;padding:2.5rem;border:1px solid rgba(201,168,76,.35)}
+
+footer{border-top:1px solid rgba(201,168,76,.15);padding:3rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;max-width:1080px;margin:0 auto}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+.footer-copy{font-size:.62rem;letter-spacing:.08em;color:rgba(255,255,255,.25)}
+
+@keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:600px){
+  .course-strip-grid{grid-template-columns:1fr!important;}
+}
+@media(max-width:768px){nav{padding:1rem 1.5rem}.nav-right .nav-link{display:none}.two{grid-template-columns:1fr;gap:3rem}.form-row{grid-template-columns:1fr}.prog-item{border-right:none;border-bottom:1px solid rgba(201,168,76,.14)}.prog-item:last-child{border-bottom:none}}
+
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,20,0.99);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav-overlay.open{display:flex;}
+.mob-nav-overlay a{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:#e8e0d0;text-decoration:none;padding:14px 0;letter-spacing:.04em;border-bottom:1px solid rgba(255,255,255,.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav-overlay a:first-of-type{border-top:1px solid rgba(255,255,255,.06);}
+.mob-nav-overlay a:hover{color:var(--gold);}
+.mob-nav-close{position:absolute;top:22px;right:26px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:30px;line-height:1;}
+.mob-reg-btn{margin-top:20px!important;border:1px solid rgba(201,168,76,.4)!important;color:var(--gold)!important;border-bottom:1px solid rgba(201,168,76,.4)!important;border-top:none!important;padding:11px 48px!important;width:auto!important;font-size:.65rem!important;letter-spacing:.2em!important;text-transform:uppercase!important;font-family:'Montserrat',sans-serif!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .nav-right .nav-link{display:none;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="https://golfeastanglia.com" class="nav-logo">Golf East Anglia</a>
+  <div class="nav-right">
+    <a href="#programme" class="nav-link">Programme</a>
+    <a href="#register" class="nav-cta" style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(201,168,76,.45);padding:.4rem 1.2rem;transition:all .2s">Register</a>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('cdoMobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+<div class="mob-nav-overlay" id="cdoMobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/"  onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/cote-dopale-collection" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+
+<section class="hero" style="position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;z-index:0;">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80&auto=format&fit=crop" alt="Côte d'Opale coastline" style="width:100%;height:100%;object-fit:cover;opacity:0.32;">
+    <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(13,31,20,0.72) 0%,rgba(13,31,20,0.88) 100%);"></div>
+  </div>
+  <div style="position:relative;z-index:1;width:100%;display:flex;flex-direction:column;align-items:center;">
+  <p class="hero-ey">Golf East Anglia &nbsp;·&nbsp; Northern France &nbsp;·&nbsp; Saturday 12 – Wednesday 16 September 2026</p>
+  <h1>The Côte<br>d’Opale<br><em>Collection</em></h1>
+  <div class="rule"></div>
+  <p class="hero-sub">Saturday 12 – Wednesday 16 September 2026. A very small group coaching and golf trip to the Opal Coast of Northern France. Morning sessions with a world-class PGA professional. Three championship courses. One private wine evening with a dedicated local wine expert.</p>
+  <div class="pills">
+    <span class="pill">12–16 Sep 2026</span>
+    <span class="pill">£2,495 all-inclusive</span>
+    <span class="pill">Max 10 guests</span>
+    <span class="pill">8 hrs coaching</span>
+    <span class="pill">3 championship courses</span>
+  </div>
+  <a href="#register" class="hero-btn">Register your interest</a>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="inner">
+    <div class="two">
+      <div>
+        <p class="sec-label">The experience</p>
+        <h2 class="sec h2">Learn it in the morning.<br><em>Play it in the afternoon.</em></h2>
+        <div class="sec-rule"></div>
+        <p class="sec p">Pascal's coaching has been shaped by direct mentorship from a current world top-ten PGA player. Two hours of focused technical work each morning. That afternoon, 18 holes on a championship course — applying exactly what you learned. The feedback loop between lesson and real course is what makes the improvement tangible within the week.</p>
+        <br>
+        <p class="sec p">Your coach is half-French and a native speaker — which means that when he is not on the practice ground, the group moves through France as insiders rather than visitors. His language and cultural knowledge are at your disposal throughout; the logistics, bookings and organisation are handled by the Golf East Anglia team so that his focus remains entirely on your game.</p>
+      </div>
+      <div style="position:relative;overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=900&q=80&auto=format&fit=crop" 
+             alt="PGA professional coaching session" 
+             style="width:100%;height:100%;min-height:320px;object-fit:cover;display:block;opacity:0.85;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,31,20,0.97) 0%,rgba(13,31,20,0.4) 60%,transparent 100%);"></div>
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:0;">
+        <div class="stat-box" style="border:none;background:transparent;margin:0;">
+        <div class="stat"><div class="stat-n">5</div><div class="stat-l">Nights inclusive</div></div>
+        <div class="stat"><div class="stat-n">10</div><div class="stat-l">Maximum guests</div></div>
+        <div class="stat"><div class="stat-n">8hrs</div><div class="stat-l">PGA coaching</div></div>
+        <div class="stat"><div class="stat-n">3</div><div class="stat-l">Championship courses</div></div>
+      </div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section mid" style="padding-bottom:0">
+  <div class="inner" style="text-align:center">
+    <p class="sec-label">What makes this different</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:300">Not a tour package.<br><em>A curated collection of experiences.</em></h2>
+    <div class="sec-rule c"></div>
+  </div>
+  <div class="inner">
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-top:3.5rem;margin-bottom:3px;">
+
+  <div style="position:relative;overflow:hidden;cursor:pointer;" onmouseover="this.querySelector('img').style.transform='scale(1.05)'" onmouseout="this.querySelector('img').style.transform='scale(1)'">
+    <img src="course-la-mer.jpg" alt="La Mer golf course, Le Touquet — six-time French Open host" 
+         style="width:100%;height:260px;object-fit:cover;object-position:center;display:block;transition:transform 0.5s ease;">
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,31,20,0.92) 0%,transparent 55%);"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:1rem 1.2rem;">
+      <p style="font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.25rem;">Le Touquet</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;margin-bottom:.2rem;">La Mer</p>
+      <p style="font-size:.58rem;color:rgba(255,255,255,.4);letter-spacing:.04em;">Six-time French Open host · Harry Colt, 1931</p>
+    </div>
+  </div>
+
+  <div style="position:relative;overflow:hidden;cursor:pointer;" onmouseover="this.querySelector('img').style.transform='scale(1.05)'" onmouseout="this.querySelector('img').style.transform='scale(1)'">
+    <img src="course-les-pins.jpg" alt="Les Pins golf course, Hardelot — Tom Simpson classic" 
+         style="width:100%;height:260px;object-fit:cover;object-position:center top;display:block;transition:transform 0.5s ease;">
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,31,20,0.92) 0%,transparent 55%);"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:1rem 1.2rem;">
+      <p style="font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.25rem;">Hardelot</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;margin-bottom:.2rem;">Les Pins</p>
+      <p style="font-size:.58rem;color:rgba(255,255,255,.4);letter-spacing:.04em;">Tom Simpson classic · Top 30 Continental Europe</p>
+    </div>
+  </div>
+
+  <div style="position:relative;overflow:hidden;cursor:pointer;" onmouseover="this.querySelector('img').style.transform='scale(1.05)'" onmouseout="this.querySelector('img').style.transform='scale(1)'">
+    <img src="course-belle-dune.jpg" alt="Belle Dune golf course — aerial view at dusk, dunes and sea" 
+         style="width:100%;height:260px;object-fit:cover;object-position:center 40%;display:block;transition:transform 0.5s ease;">
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,31,20,0.92) 0%,transparent 55%);"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:1rem 1.2rem;">
+      <p style="font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.25rem;">Fort-Mahon</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;margin-bottom:.2rem;">Belle Dune</p>
+      <p style="font-size:.58rem;color:rgba(255,255,255,.4);letter-spacing:.04em;">Europe's finest dune land · Jean-Manuel Rossi, 1992</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="pillars-grid">
+    <div class="pillar"><div class="pillar-n">01</div><h3>World-class coaching</h3><p>Pascal's methodology comes directly from a current top-ten PGA player. Every morning session has one focused theme, with professional data capture and video analysis. A written development plan goes home with every guest.</p></div>
+    <div class="pillar"><div class="pillar-n">02</div><h3>Exceptional courses</h3><p>La Mer, Les Pins and Belle Dune — three courses of genuine championship pedigree that most British golfers have never played. La Mer has hosted six French Opens. Les Pins is a Tom Simpson classic. Belle Dune is one of France's most photographed courses.</p></div>
+    <div class="pillar" style="padding:0;overflow:hidden;">
+    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80&auto=format&fit=crop" 
+         alt="Private wine tasting evening" 
+         style="width:100%;height:130px;object-fit:cover;object-position:center;display:block;opacity:0.7;">
+    <div style="padding:2rem 2rem 2.6rem;">
+    <div class="pillar-n">03</div><h3>The wine evening</h3><p>A dedicated French sommelier joins the group on the third evening for a private seated tasting of five wines — one from each great French region. Then, on the way home, a guided stop at Calais Vins to take the experience home.</p></div>
+    </div></div>
+    <div class="pillar"><div class="pillar-n">04</div><h3>Genuinely small</h3><p>Ten guests maximum. Not a compromise — a deliberate choice. Real individual attention from your coach, dinners that feel like a private gathering, and a group small enough that everyone knows each other by the second day. The intimacy is the product.</p></div>
+  </div>
+  </div>
+</section>
+
+<section class="prog" id="programme">
+  <div class="inner" style="text-align:center">
+    <p class="sec-label">A typical day</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3rem);font-weight:300">The daily<br><em>rhythm</em></h2>
+    <div class="sec-rule c"></div>
+    <div class="prog-grid">
+      <div class="prog-item"><div class="prog-time">09:00</div><div class="prog-title">Morning coaching</div><div class="prog-desc">Two hours with Pascal. One focused theme. Data capture and video analysis.</div></div>
+      <div class="prog-item"><div class="prog-time">11:30</div><div class="prog-title">To the course</div><div class="prog-desc">Private minibus to the day's championship venue.</div></div>
+      <div class="prog-item"><div class="prog-time">12:00</div><div class="prog-title">18 holes</div><div class="prog-desc">Applying the morning's coaching — with Pascal on hand throughout.</div></div>
+      <div class="prog-item"><div class="prog-time">19:30</div><div class="prog-title">Dinner</div><div class="prog-desc">One evening is given entirely to the sommelier's wine tasting.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="register" id="register">
+  <div class="reg-inner">
+    <p class="sec-label" style="text-align:center">Reserve your place</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3rem);font-weight:300;text-align:center">Register your<br><em>interest</em></h2>
+    <div class="sec-rule c"></div>
+    <p style="font-size:.8rem;font-weight:300;color:var(--muted);line-height:1.9;margin-bottom:3rem;text-align:center">Places are limited to ten. Complete the form below and we will be in touch with full pricing, dates and availability. Places are limited to ten at £2,495 per person, all-inclusive. A £500 deposit secures your place once confirmed.</p>
+
+    <form id="reg-form" name="cote-dopale-interest" data-netlify="true" onsubmit="sub(event)">
+      <input type="hidden" name="form-name" value="cote-dopale-interest">
+      <div class="form-row">
+        <div class="form-group"><label>Your name</label><input type="text" placeholder="Full name" required></div>
+        <div class="form-group"><label>Email address</label><input type="email" placeholder="your@email.com" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Mobile number</label><input type="tel" placeholder="+44 7700 000000"></div>
+        <div class="form-group"><label>Preferred year</label>
+          <select>
+            <option value="">Select</option>
+            <option>Saturday 12 – Wednesday 16 September 2026</option>
+            <option>2027 — dates TBC</option>
+            <option>Either</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Handicap index</label><input type="text" placeholder="e.g. 12.4"></div>
+        <div class="form-group"><label>How did you hear about us?</label>
+          <select>
+            <option value="">Select</option>
+            <option>Golf club / pro recommendation</option>
+            <option>Personal recommendation</option>
+            <option>Golf East Anglia website</option>
+            <option>Social media</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label>Anything you'd like us to know?</label><textarea rows="3" placeholder="Questions, dietary requirements, or anything else..."></textarea></div>
+      <button type="submit" class="submit-btn">Submit registration of interest</button>
+      <p class="form-note">Registering does not constitute a booking. We will contact you directly to discuss dates, pricing and availability. Your details will not be shared with any third party.</p>
+    </form>
+    <div id="success">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--gold-l);margin-bottom:.6rem">Thank you — we'll be in touch.</p>
+      <p style="font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.8">We have received your interest and will contact you shortly with full programme details.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-logo">Golf East Anglia</span>
+  <div style="display:flex;gap:1.5rem">
+    <a href="https://golfeastanglia.com" style="font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.3);text-decoration:none">Main site</a>
+    <a href="#register" style="font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.3);text-decoration:none">Register</a>
+  </div>
+  <p style="width:100%;font-size:.55rem;color:rgba(255,255,255,.2);line-height:1.8;border-top:1px solid rgba(201,168,76,.08);padding-top:1rem;margin-top:.5rem;">
+  Photography: La Mer © Le Touquet Golf Resort · Les Pins © Golf d'Hardelot · Belle Dune © Golf de Belle Dune · Coastal imagery © Unsplash (free licence)
+</p>
+<span class="footer-copy">&copy; 2026 Golf East Anglia &mdash; golfeastanglia.com  &middot;  12–16 September 2026</span>
+</footer>
+<script>
+function sub(e){
+  e.preventDefault();
+  document.getElementById('reg-form').style.display='none';
+  var s=document.getElementById('success');
+  s.style.display='block';
+  s.scrollIntoView({behavior:'smooth',block:'center'});
+}
+</script>
+</body>
+</html>

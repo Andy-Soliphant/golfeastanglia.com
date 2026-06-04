@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Worlington Golf Club | The Sacred Nine West Suffolk | Golf East Anglia</title>
+<meta name="description" content="Royal Worlington and Newmarket Golf Club — the Sacred Nine. Widely regarded as the finest nine-hole course in the world. A pilgrimage in west Suffolk.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--gold:#b79d64;--gold-l:rgba(183,157,100,0.15);--gold-b:rgba(183,157,100,0.3);--bg:#0d1f0f;--bg2:#111f12;--text:#e8e2d6;--tmid:rgba(232,226,214,0.5);--tlow:rgba(232,226,214,0.28);--bdr:rgba(255,255,255,0.07);--serif:'Cormorant Garamond',serif;--sans:'Outfit',sans-serif;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1;}
+a{text-decoration:none;}
+.nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);position:sticky;top:0;background:var(--bg);z-index:100;}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+.nl{display:flex;gap:28px;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;}
+.enq:hover{background:var(--gold-l);}
+.exp-bar{background:rgba(183,157,100,0.05);border-bottom:1px solid rgba(183,157,100,0.12);padding:10px 48px;display:flex;gap:28px;align-items:center;}
+.exp-bar-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(183,157,100,0.45);}
+.exp-bar-link{font-size:11px;color:rgba(232,226,214,0.38);}
+.exp-bar-link.on{color:var(--gold);}
+.exp-bar-sep{color:rgba(255,255,255,0.12);font-size:11px;}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+.eline{width:36px;height:1px;background:var(--gold);flex-shrink:0;}
+.etxt{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+.hero{padding:64px 48px 0;border-bottom:1px solid var(--bdr);}
+.hero-top{display:grid;grid-template-columns:1fr 300px;gap:72px;align-items:end;padding-bottom:48px;}
+.hero h1{font-family:var(--serif);font-size:50px;font-weight:300;line-height:1.08;color:var(--text);}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-sub{font-size:16px;color:var(--tmid);line-height:1.9;margin-top:18px;font-weight:300;}
+.aside-block{border:1px solid var(--bdr);padding:24px;}
+.aside-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.aside-item{padding:11px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.aside-item:last-child{border-bottom:none;padding-bottom:0;}
+.aside-item:first-of-type{padding-top:0;}
+.ai-v{font-family:var(--serif);font-size:18px;color:var(--text);line-height:1;}
+.ai-l{font-size:11px;color:var(--tlow);margin-top:3px;}
+.darwin-strip{background:var(--bg2);border-top:1px solid rgba(183,157,100,0.15);border-bottom:1px solid rgba(183,157,100,0.15);padding:32px 48px;display:grid;grid-template-columns:3fr 2fr;gap:48px;align-items:center;}
+.darwin-quote{font-family:var(--serif);font-size:22px;font-style:italic;color:rgba(232,226,214,0.7);line-height:1.55;font-weight:300;}
+.darwin-attr{font-size:11px;color:rgba(232,226,214,0.3);margin-top:14px;letter-spacing:.5px;}
+.darwin-right-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.darwin-right p{font-size:15px;color:rgba(232,226,214,0.45);line-height:1.8;font-weight:300;}
+.body{padding:56px 48px;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-bottom:52px;}
+.col-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.col h2{font-family:var(--serif);font-size:32px;font-weight:300;color:var(--text);line-height:1.2;margin-bottom:18px;}
+.col p{font-size:15px;color:var(--tmid);line-height:1.9;font-weight:300;margin-bottom:14px;}
+.col p:last-child{margin-bottom:0;}
+.col p strong{color:rgba(232,226,214,0.75);font-weight:400;}
+.voices{padding:0 48px 52px;}
+.voices-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
+.voices-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bdr);}
+.voice{background:var(--bg);padding:28px;}
+.voice-quote{font-family:var(--serif);font-size:15px;font-style:italic;color:rgba(232,226,214,0.6);line-height:1.65;margin-bottom:14px;}
+.voice-attr{font-size:11px;color:rgba(232,226,214,0.25);letter-spacing:.5px;}
+.know{padding:0 48px 52px;}
+.know-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
+.know-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);}
+.know-item{background:var(--bg2);padding:24px 28px;display:flex;gap:16px;}
+.know-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;margin-top:7px;flex-shrink:0;}
+.know-text h4{font-size:15px;color:var(--text);font-weight:500;margin-bottom:5px;}
+.know-text p{font-size:14px;color:rgba(232,226,214,0.4);line-height:1.75;font-weight:300;}
+.know-text p strong{color:rgba(232,226,214,0.65);font-weight:400;}
+.itin-ref{margin:0 48px 52px;border:1px solid rgba(183,157,100,0.18);background:rgba(183,157,100,0.03);padding:32px 36px;}
+.ir-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.ir-title{font-family:var(--serif);font-size:26px;font-weight:300;color:var(--text);margin-bottom:16px;}
+.ir-body{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+.ir-body p{font-size:15px;color:rgba(232,226,214,0.45);line-height:1.85;font-weight:300;margin-bottom:14px;}
+.ir-body p strong{color:rgba(232,226,214,0.7);font-weight:400;}
+.ir-tags{display:flex;flex-direction:column;gap:10px;}
+.ir-tag{border:1px solid var(--bdr);padding:14px 16px;display:flex;justify-content:space-between;align-items:center;}
+.ir-tag-name{font-size:14px;color:var(--text);font-weight:400;}
+.ir-tag-detail{font-size:11px;color:rgba(232,226,214,0.3);}
+.cta-wrap{padding:0 48px 48px;}
+.cta{border:1px solid var(--bdr);padding:36px;display:flex;justify-content:space-between;align-items:center;gap:24px;}
+.cta h3{font-family:var(--serif);font-size:28px;font-weight:300;color:var(--text);margin-bottom:6px;}
+.cta p{font-size:15px;color:var(--tmid);font-weight:300;line-height:1.7;}
+.cta-btn{background:var(--gold);color:var(--bg);padding:13px 28px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;white-space:nowrap;flex-shrink:0;font-family:var(--sans);}
+.footer{padding:24px 48px;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;}
+.fl{font-family:var(--serif);font-size:15px;}
+.flg{font-style:italic;color:var(--gold);}
+.flr{color:rgba(232,226,214,0.4);font-weight:300;letter-spacing:1px;}
+.fp{font-size:11px;color:rgba(232,226,214,0.18);}
+@media(max-width:768px){
+  .nav{padding:16px 20px;}.nl{display:none;}.lsub,.ldiv{display:none;}
+  .exp-bar{padding:10px 20px;}
+  .hero{padding:32px 20px 0;}.hero-top{grid-template-columns:1fr;gap:24px;padding-bottom:32px;}.aside-block{display:none;}
+  .hero h1{font-size:36px;}
+  .darwin-strip{grid-template-columns:1fr;padding:24px 20px;}
+  .body{padding:32px 20px;}
+  .two-col{grid-template-columns:1fr;}
+  .voices{padding:0 20px 36px;}.voices-grid{grid-template-columns:1fr;}
+  .know{padding:0 20px 36px;}.know-grid{grid-template-columns:1fr;}
+  .itin-ref{margin:0 20px 36px;padding:24px;}.ir-body{grid-template-columns:1fr;}
+  .cta-wrap{padding:0 20px 40px;}.cta{flex-direction:column;align-items:flex-start;}
+  .footer{padding:20px;flex-direction:column;gap:8px;text-align:center;}
+}
+
+/* ── Royal Cromer photography ── */
+.rc-img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.rc-img-wrap{overflow:hidden;line-height:0;}
+.rc-hero-img{width:100%;height:480px;object-fit:cover;object-position:center;display:block;}
+.rc-panel-img{width:100%;height:320px;object-fit:cover;object-position:center;display:block;}
+.rc-wide-img{width:100%;height:400px;object-fit:cover;object-position:center;display:block;}
+.rc-strip-img{width:100%;height:240px;object-fit:cover;object-position:center;display:block;}
+@media(max-width:768px){
+  .rc-hero-img{height:260px;}
+  .rc-panel-img{height:200px;}
+  .rc-wide-img{height:220px;}
+  .rc-strip-img{height:160px;}
+}
+
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <div class="nl">
+    <a href="/">Home</a>
+    <a href="/norfolk">Courses</a>
+    <a href="/itineraries">Itineraries</a>
+    <a href="/experiences" class="act">Experiences</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/transfers">Transfers</a>
+    <a href="/blog">Journal</a>
+    <a href="/about">About</a>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="/enquire" class="enq">Enquire</a>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/"  onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+
+<div class="exp-bar">
+  <span class="exp-bar-lbl">Experiences</span>
+  <span class="exp-bar-sep">·</span>
+  <a href="/pga-pro" class="exp-bar-link">PGA Professional session</a>
+  <span class="exp-bar-sep">·</span>
+  <a href="/worlington" class="exp-bar-link on">Royal Worlington — the Sacred Nine</a>
+</div>
+
+<div class="hero">
+<img src="images/rc-parkland-bunkers-spring.jpg" alt="Royal Cromer — parkland holes with bunkers in spring" class="rc-hero-img" style="object-position:center bottom">
+
+  <div class="hero-top">
+    <div>
+      <div class="eyebrow"><div class="eline"></div><div class="etxt">Experience · The Sacred Nine</div></div>
+      <h1>The finest nine holes<br>in the world.<br><em>In west Suffolk.</em></h1>
+      <p class="hero-sub">Royal Worlington &amp; Newmarket Golf Club has been called the Sacred Nine since 1928, when Bernard Darwin — the greatest golf writer in the English language — named it after the nine muses of Greek mythology. Consistently ranked among the top 100 courses in Britain and Ireland. Home to Cambridge University Golf Club for over a century. Forty acres of west Suffolk heathland that contain more history per hole than almost anywhere else in the game. For the golfer who knows, this is a pilgrimage. For the golfer who doesn't yet — it will become one.</p>
+    </div>
+    <div>
+      <div class="aside-block">
+        <div class="aside-lbl">The facts</div>
+        <div class="aside-item"><div class="ai-v">9 holes</div><div class="ai-l">Played twice for a full round of 18</div></div>
+        <div class="aside-item"><div class="ai-v">Par 35</div><div class="ai-l">Two par 5s · three par 3s · four par 4s</div></div>
+        <div class="aside-item"><div class="ai-v">Est. 1893</div><div class="ai-l">Royal patronage from Queen Victoria 1895</div></div>
+        <div class="aside-item"><div class="ai-v">Top 100 GB&amp;I</div><div class="ai-l">Consistently ranked · Golf Monthly</div></div>
+        <div class="aside-item"><div class="ai-v">Foursomes preferred</div><div class="ai-l">Twoballs only · no three or fourballs</div></div>
+        <div class="aside-item"><div class="ai-v">Year-round</div><div class="ai-l">Sandy soil · drains exceptionally well</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="darwin-strip">
+  <div>
+    <div class="darwin-quote">"Which is the best inland course? I am going to write down Worlington without the least hesitation."</div>
+    <div class="darwin-attr">Bernard Darwin · Country Life · 1928 · The article that gave the course its name</div>
+  </div>
+  <div>
+    <div class="darwin-right-lbl">How the name was born</div>
+    <p>Following a match between the club and the Oxford and Cambridge Golfing Society in 1928, Darwin titled his weekly Country Life column "The Sacred Nine of Worlington" — an allusion to the nine muses of Greek mythology. The name stuck immediately and has never left. Nearly a century later, golfers who have played here still use it without explanation.</p>
+  </div>
+</div>
+
+
+<div class="rc-img-wrap"><img src="images/rc-golfers-sunset-green-sea.jpg" alt="Golfers on the green at sunset" class="rc-strip-img"></div>
+<div class="body">
+  <div class="two-col">
+    <div>
+      <div class="col-lbl">The course</div>
+      <h2>Forty acres. No weaknesses. No poor holes.</h2>
+      <p>Royal Worlington sits on what was once a rabbit warren — sandy, chalky soil of the kind that produces firm, fast turf regardless of the season. Tom Dunn originally laid out the course in 1893; Harry Colt later made modest refinements. What remains is essentially Dunn's original vision, almost entirely unchanged for over a hundred years.</p>
+      <p>The course plays hard and fast, with centreline bunkers on four of the nine holes, and four holes requiring you to tee off over the previous green. The routing is ingenious for the space — shared fairways between certain holes create a layout of remarkable variety within just forty acres.</p>
+      <p><strong>The 5th hole is perhaps the most discussed short hole in English golf.</strong> Tom Doak gave it nine out of ten. The green is multi-tiered, narrows at the rear, and falls away sharply on both sides. A perfectly struck shot is required. The ninety percent good shot that suffices almost everywhere else is simply not good enough here.</p>
+    </div>
+    <div>
+      <div class="col-lbl">The history</div>
+      <h2>More history per hole than almost anywhere in England.</h2>
+      <p>Royal Worlington has been the home course of Cambridge University Golf Club since 1893. The first captain listed on the Cambridge Captains' Board — which still hangs in the clubhouse — is Harry Colt himself, who went on to become one of the three greatest course architects in the history of the game.</p>
+      <p>Queen Victoria granted the club its Royal prefix in 1895 — just two years after founding. Three of the greatest golf writers in the English language — Bernard Darwin, Henry Longhurst, and Herbert Warren Wind — were all closely associated with the club.</p>
+      <p><strong>Darwin first visited in 1895 and retained a close affinity with Worlington throughout his life.</strong> It is difficult to think of another nine-hole course anywhere in the world that can claim a comparable literary and historical heritage.</p>
+    </div>
+  </div>
+</div>
+
+<div class="voices">
+  <div class="voices-lbl">What the greatest observers of the game have said</div>
+  <div class="voices-grid">
+    <div class="voice"><div class="voice-quote">"If in the remainder of my golfing lifetime I was restricted to play just one inland course, my ideal inland retreat would, without a doubt, be Royal Worlington and Newmarket."</div><div class="voice-attr">Donald Steel · Golf architect &amp; writer</div></div>
+    <div class="voice"><div class="voice-quote">"An outstanding course — certainly one of the best in the world — with no weaknesses in regard to condition, length or poor holes. You should see this course sometime in your life."</div><div class="voice-attr">Tom Doak · Golf architect · rated 9 out of 10</div></div>
+    <div class="voice"><div class="voice-quote">"There seems more history per hole than at any other club in England."</div><div class="voice-attr">Evalu18 · widely cited course review</div></div>
+  </div>
+</div>
+
+<div class="know">
+  <div class="know-lbl">What to know before you go</div>
+  <div class="know-grid">
+    <div class="know-item"><div class="know-dot"></div><div class="know-text"><h4>Nine holes, played twice</h4><p>Visitors play the nine holes twice for a full round of 18. There is no nine-hole rate for visitors. The course plays comfortably in around 90 minutes per nine in foursomes format.</p></div></div>
+    <div class="know-item"><div class="know-dot"></div><div class="know-text"><h4>Foursomes and twoballs only</h4><p>Royal Worlington does not permit three or fourballs. Groups must play in pairs — foursomes is the preferred format. We arrange group logistics accordingly.</p></div></div>
+    <div class="know-item"><div class="know-dot"></div><div class="know-text"><h4>Handicap certificate required</h4><p>A valid WHS handicap index is required to play the course. We confirm this for all guests when booking.</p></div></div>
+    <div class="know-item"><div class="know-dot"></div><div class="know-text"><h4>The clubhouse</h4><p><strong>Understated and entirely genuine.</strong> The welcome is famously warm. Dogs are welcome. Shorts are permitted with long socks. The club's famous pink jug cocktail — created in 1934 — is highly recommended.</p></div></div>
+    <div class="know-item"><div class="know-dot"></div><div class="know-text"><h4>Location — west Suffolk</h4><p>Near Bury St Edmunds in west Suffolk — further inland than our coastal courses. Works beautifully as a standalone day or as part of the Grand Tour, where it appears on Day 9.</p></div></div>
+    <div class="know-item"><div class="know-dot"></div><div class="know-text"><h4>Year-round conditions</h4><p>The sandy chalk soil drains exceptionally well. The same quality that makes the turf play firm and fast in summer also makes it reliable throughout the winter months.</p></div></div>
+  </div>
+</div>
+
+<div class="itin-ref">
+  <div class="ir-lbl">How to visit</div>
+  <div class="ir-title">Standalone day or part of the Grand Tour.</div>
+  <div class="ir-body">
+    <p>Royal Worlington works in two ways within a Golf East Anglia itinerary. On our <strong><a href="/itineraries" style="color:var(--gold);">10-night Grand Tour</a></strong>, it features as Day 9 — its own dedicated stage, given the space and emphasis it deserves. It can also be booked as a <strong>standalone experience</strong> for golfers already visiting Suffolk or passing through west Suffolk. Either way, we handle the booking, confirm the format requirements for your group, and ensure everything is in order before you arrive.</p>
+    <div class="ir-tags">
+      <div class="ir-tag"><span class="ir-tag-name">Grand Tour — 10 nights</span><span class="ir-tag-detail">Day 9 · West Suffolk stage</span></div>
+      <div class="ir-tag"><span class="ir-tag-name">Standalone day visit</span><span class="ir-tag-detail">For golfers already in Suffolk</span></div>
+      <div class="ir-tag"><span class="ir-tag-name">Add to any itinerary</span><span class="ir-tag-detail"><a href="/enquire" style="color:var(--gold);">Ask us when you enquire</a></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-wrap">
+  <div class="cta">
+    <div>
+      <h3>Plan your visit to the Sacred Nine.</h3>
+      <p>Whether as part of a longer Golf East Anglia journey or as a standalone day, we handle everything. Tell us your dates and group size and we will do the rest.</p>
+    </div>
+    <a href="/enquire" class="cta-btn">Enquire now</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="/" class="fl"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
+  <p class="fp">enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists &nbsp;·&nbsp; <a href="/trade" style="color:rgba(232,226,214,0.18);text-decoration:none;">Travel trade</a></p>
+</footer>
+</body>
+</html>

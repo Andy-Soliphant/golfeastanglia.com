@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Trade | Agent Partnership | Golf East Anglia</title>
+<meta name="description" content="Golf East Anglia travel trade page — agent partnership, competitive commission, and a full client protection commitment for travel agents building UK golf programmes.">
+<meta name="robots" content="noindex, follow">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--gold:#b79d64;--gold-l:rgba(183,157,100,0.15);--gold-b:rgba(183,157,100,0.3);--bg:#0d1f0f;--bg2:#111f12;--text:#e8e2d6;--tmid:rgba(232,226,214,0.5);--tlow:rgba(232,226,214,0.28);--bdr:rgba(255,255,255,0.07);--serif:'Cormorant Garamond',serif;--sans:'Outfit',sans-serif;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1;}
+a{text-decoration:none;}
+/* NAV — same as all pages */
+.nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);background:var(--bg);}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+/* Note: trade page intentionally has no main nav links — not indexed in main navigation */
+.trade-notice{font-size:11px;letter-spacing:1px;color:rgba(232,226,214,0.25);text-transform:uppercase;}
+/* HERO */
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+.eline{width:36px;height:1px;background:var(--gold);flex-shrink:0;}
+.etxt{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+.hero{padding:64px 48px 56px;border-bottom:1px solid var(--bdr);display:grid;grid-template-columns:1fr 320px;gap:80px;align-items:end;}
+.hero h1{font-family:var(--serif);font-size:52px;font-weight:300;line-height:1.08;color:var(--text);}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-sub{font-size:16px;color:var(--tmid);line-height:1.9;margin-top:20px;font-weight:300;}
+.trust-block{border:1px solid rgba(183,157,100,0.2);padding:24px;background:rgba(183,157,100,0.03);}
+.trust-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.trust-item{padding:11px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.trust-item:last-child{border-bottom:none;padding-bottom:0;}
+.trust-item:first-of-type{padding-top:0;}
+.ti-v{font-family:var(--serif);font-size:17px;color:var(--text);line-height:1;}
+.ti-l{font-size:11px;color:var(--tlow);margin-top:3px;}
+/* PROTECTION BANNER */
+.protection{background:rgba(183,157,100,0.06);border-top:1px solid rgba(183,157,100,0.18);border-bottom:1px solid rgba(183,157,100,0.18);padding:20px 48px;display:flex;align-items:center;gap:16px;}
+.prot-dot{width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0;}
+.prot-text{font-size:14px;color:var(--gold);letter-spacing:.3px;line-height:1.6;}
+.prot-text strong{font-weight:500;}
+/* PROPOSITION SECTION */
+.prop{padding:56px 48px;border-bottom:1px solid var(--bdr);display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+.prop-col-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.prop-col h2{font-family:var(--serif);font-size:32px;font-weight:300;color:var(--text);line-height:1.2;margin-bottom:18px;}
+.prop-col p{font-size:15px;color:var(--tmid);line-height:1.9;font-weight:300;margin-bottom:15px;}
+.prop-col p:last-child{margin-bottom:0;}
+.prop-col p strong{color:rgba(232,226,214,0.8);font-weight:400;}
+/* WHAT WE OFFER */
+.offer{padding:0 48px 56px;border-bottom:1px solid var(--bdr);}
+.offer-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
+.offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bdr);}
+.offer-item{background:var(--bg2);padding:28px;}
+.offer-num{font-family:var(--serif);font-size:40px;color:rgba(183,157,100,0.18);line-height:1;margin-bottom:14px;}
+.offer-item h3{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--text);margin-bottom:10px;}
+.offer-item p{font-size:14px;color:rgba(232,226,214,0.42);line-height:1.8;font-weight:300;}
+/* PRODUCT FACTS */
+.product{padding:56px 48px;border-bottom:1px solid var(--bdr);display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+.product-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.product h2{font-family:var(--serif);font-size:32px;font-weight:300;color:var(--text);margin-bottom:20px;}
+.product p{font-size:15px;color:var(--tmid);line-height:1.9;font-weight:300;margin-bottom:15px;}
+.product p strong{color:rgba(232,226,214,0.8);font-weight:400;}
+.product-facts{border:1px solid var(--bdr);}
+.pf-row{display:flex;border-bottom:1px solid rgba(255,255,255,0.05);}
+.pf-row:last-child{border-bottom:none;}
+.pf-lbl{padding:13px 16px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--tlow);width:140px;flex-shrink:0;border-right:1px solid rgba(255,255,255,0.05);}
+.pf-val{padding:13px 16px;font-size:14px;color:rgba(232,226,214,0.6);font-weight:300;flex:1;line-height:1.5;}
+/* PROTECTION PLEDGE */
+.pledge{margin:0 48px 56px;border:1px solid rgba(183,157,100,0.2);padding:36px;background:rgba(183,157,100,0.03);}
+.pledge-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.pledge h3{font-family:var(--serif);font-size:28px;font-weight:300;color:var(--text);margin-bottom:20px;}
+.pledge-body{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.pledge p{font-size:15px;color:rgba(232,226,214,0.55);line-height:1.9;font-weight:300;margin-bottom:14px;}
+.pledge p:last-child{margin-bottom:0;}
+.pledge p strong{color:var(--gold);font-weight:400;}
+.pledge-items{display:flex;flex-direction:column;gap:0;}
+.pi-item{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.pi-item:last-child{border-bottom:none;}
+.pi-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;margin-top:7px;flex-shrink:0;}
+.pi-text{font-size:14px;color:rgba(232,226,214,0.5);line-height:1.75;font-weight:300;}
+.pi-text strong{color:rgba(232,226,214,0.75);font-weight:400;}
+/* FORM */
+.form-section{padding:0 48px 56px;}
+.form-section-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
+.form-wrap{display:grid;grid-template-columns:1fr 280px;gap:32px;align-items:start;}
+.form{background:var(--bg2);border:1px solid var(--bdr);padding:36px;}
+.form-inner-lbl{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.field:last-of-type{margin-bottom:0;}
+.field label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.32);}
+.field input,.field select,.field textarea{background:var(--bg);border:1px solid rgba(255,255,255,0.08);color:var(--text);font-family:var(--sans);font-size:14px;padding:11px 14px;font-weight:300;outline:none;width:100%;transition:border-color .2s;}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold-b);}
+.field input::placeholder,.field textarea::placeholder{color:rgba(232,226,214,0.18);}
+.field select{appearance:none;cursor:pointer;}
+.field textarea{resize:vertical;min-height:100px;line-height:1.6;}
+.sec-div{height:1px;background:var(--bdr);margin:20px 0;}
+.submit-btn{width:100%;background:var(--gold);color:var(--bg);padding:15px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;cursor:pointer;border:none;font-family:var(--sans);margin-top:8px;}
+.submit-btn:hover{opacity:.9;}
+.submit-note{font-size:11px;color:rgba(232,226,214,0.22);text-align:center;margin-top:10px;line-height:1.6;}
+.sidebar-trade{}
+.contact-box{border:1px solid var(--bdr);padding:24px;margin-bottom:16px;}
+.cb-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.cb-item{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.cb-item:last-child{border-bottom:none;}
+.cb-v{font-size:14px;color:var(--text);font-weight:300;}
+.cb-l{font-size:11px;color:rgba(232,226,214,0.28);margin-top:3px;}
+.why-trade{background:var(--bg2);border:1px solid var(--bdr);padding:24px;}
+.wt-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.wt-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;}
+.wt-item:last-child{margin-bottom:0;}
+.wt-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;margin-top:7px;flex-shrink:0;}
+.wt-item p{font-size:14px;color:rgba(232,226,214,0.42);line-height:1.7;font-weight:300;}
+.wt-item p strong{color:rgba(232,226,214,0.65);font-weight:400;}
+/* FOOTER */
+.footer{padding:24px 48px;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;}
+.fl{font-family:var(--serif);font-size:15px;}
+.flg{font-style:italic;color:var(--gold);}
+.flr{color:rgba(232,226,214,0.4);font-weight:300;letter-spacing:1px;}
+.fp{font-size:11px;color:rgba(232,226,214,0.18);}
+@media(max-width:768px){
+  .nav{padding:16px 20px;}.lsub,.ldiv{display:none;}
+  .hero{grid-template-columns:1fr;padding:32px 20px;gap:24px;}.trust-block{display:none;}
+  .hero h1{font-size:36px;}
+  .protection{padding:16px 20px;}
+  .prop{grid-template-columns:1fr;padding:32px 20px;}
+  .offer{padding:0 20px 36px;}.offer-grid{grid-template-columns:1fr;}
+  .product{grid-template-columns:1fr;padding:32px 20px;}
+  .pledge{margin:0 20px 36px;padding:24px;}.pledge-body{grid-template-columns:1fr;}
+  .form-section{padding:0 20px 40px;}.form-wrap{grid-template-columns:1fr;}
+  .field-row{grid-template-columns:1fr;}
+  .footer{padding:20px;flex-direction:column;gap:8px;text-align:center;}
+}
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <span class="trade-notice">Travel Trade</span>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/"  onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+
+<div class="hero">
+  <div>
+    <div class="eyebrow"><div class="eline"></div><div class="etxt">Travel trade</div></div>
+    <h1>A product worth<br>putting in front of<br><em>your clients.</em></h1>
+    <p class="hero-sub">Golf East Anglia exists to package England's most undermarketed golf destination properly — and we have built the product to work through the travel trade. If you represent clients who travel for golf, we want to be part of your UK programme.</p>
+  </div>
+  <div>
+    <div class="trust-block">
+      <div class="trust-lbl">At a glance</div>
+      <div class="trust-item"><div class="ti-v">Competitive</div><div class="ti-l">Commission — details on application</div></div>
+      <div class="trust-item"><div class="ti-v">48 hours</div><div class="ti-l">Trade enquiry response time</div></div>
+      <div class="trust-item"><div class="ti-v">Full protection</div><div class="ti-l">We never approach agent clients directly</div></div>
+      <div class="trust-item"><div class="ti-v">GBP · USD · EUR · AUD</div><div class="ti-l">Quote in your clients' currency</div></div>
+      <div class="trust-item"><div class="ti-v">4 guests minimum</div><div class="ti-l">No maximum group size</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="protection">
+  <div class="prot-dot"></div>
+  <div class="prot-text"><strong>Client protection commitment:</strong> We will never approach, market to, or solicit business directly from clients introduced by a travel agent or operator partner. Your client relationships are yours. That is not a policy we review — it is a founding commitment.</div>
+</div>
+
+<div class="prop">
+  <div>
+    <div class="prop-col-lbl">The proposition</div>
+    <h2>A genuine specialist product in an underserviced region.</h2>
+    <p>Norfolk and Suffolk represent one of England's most significant and least exploited golf travel opportunities. Two World and GB&amp;I Top 100 courses. Two Royal clubs. Four Suffolk courses in the NCG England Top 100. Links turf on the east coast that competes with anything in the country. And until very recently, no specialist operator packaging it properly for the international visitor.</p>
+    <p><strong>Golf East Anglia fills that gap.</strong> We have built the product — the itineraries, the course relationships, the logistical knowledge, and the booking infrastructure — to deliver a premium East Anglia golf programme that you can confidently put in front of your clients. We handle everything from tee time to tide table. You handle the client relationship.</p>
+  </div>
+  <div>
+    <div class="prop-col-lbl">The opportunity</div>
+    <h2>Two counties. Almost entirely unknown to the international visitor.</h2>
+    <p>Royal West Norfolk at Brancaster is ranked in the world's top 100. Hunstanton is a championship links compared by serious golfers to the great west coast Scottish courses. Royal Cromer has welcomed visitors since 1888. Aldeburgh and Thorpeness are heathland classics praised by Bernard Darwin.</p>
+    <p>These courses are within <strong>2.5 hours of London by road</strong> and 90 minutes by train from Liverpool Street. Stansted Airport is 60 miles from the Suffolk Heritage Coast. The infrastructure is straightforward. <strong>The gap in the market is real.</strong></p>
+  </div>
+</div>
+
+<div class="offer">
+  <div class="offer-lbl">What we offer the trade</div>
+  <div class="offer-grid">
+    <div class="offer-item">
+      <div class="offer-num">01</div>
+      <h3>Flexible itinerary framework</h3>
+      <p>Four itinerary templates — 3, 5, 7 and 10 nights — designed to be adapted. Every itinerary is adjusted to your clients' preferences, group size, and budget. We can work from your brief or propose from ours.</p>
+    </div>
+    <div class="offer-item">
+      <div class="offer-num">02</div>
+      <h3>All logistics managed</h3>
+      <p>Course access, tee times, tide scheduling at Brancaster, accommodation, and on-call support throughout the stay. Complex courses like Royal West Norfolk — foursomes only, no August, no weekends, tidal road — are managed as standard. We handle what catches independent bookers out.</p>
+    </div>
+    <div class="offer-item">
+      <div class="offer-num">03</div>
+      <h3>Competitive commission</h3>
+      <p>Commission terms are confirmed on application and structured to work properly for the trade. We discuss terms directly, on enquiry. We do not publish rates because we apply them thoughtfully by partner, not by formula.</p>
+    </div>
+    <div class="offer-item">
+      <div class="offer-num">04</div>
+      <h3>Multi-currency quoting</h3>
+      <p>We quote in GBP, USD, EUR or AUD — whichever is right for your client base. International visitors from the US, Australia, Europe and Asia are our core market alongside UK golfers. Our pricing and communication is built for this.</p>
+    </div>
+    <div class="offer-item">
+      <div class="offer-num">05</div>
+      <h3>Supporting materials</h3>
+      <p>On request, we provide course fact sheets, regional overviews, and itinerary summaries suitable for client presentation. We can work to your house style on materials — ask us what you need.</p>
+    </div>
+    <div class="offer-item">
+      <div class="offer-num">06</div>
+      <h3>Dedicated trade response</h3>
+      <p>Trade enquiries receive a dedicated response within 48 hours — not a generic form reply, but a considered proposal from a specialist. If you need a turnaround faster than that for a specific enquiry, call us directly.</p>
+    </div>
+  </div>
+</div>
+
+<div class="product">
+  <div>
+    <div class="product-lbl">The product</div>
+    <h2>Four itinerary structures. Built to be customised.</h2>
+    <p>Our four core itinerary frameworks cover the full range of what a visiting golfer might want from East Anglia. Each is a starting point, not a fixed product. Group size, specific course preferences, budget point, accommodation level, and pace are all variables we adjust around each enquiry.</p>
+    <p><strong>Discovery courses</strong> — a newly added tier of excellent-value Norfolk and Suffolk courses — can be incorporated into any itinerary to extend stays, reduce cost, or add variety for mixed-ability groups.</p>
+    <p>We also offer two signature experiences as add-ons to any itinerary: a PGA professional session built around the specific courses being played, and a visit to Royal Worlington &amp; Newmarket — widely regarded as the finest nine-hole course in the world.</p>
+  </div>
+  <div class="product-facts">
+    <div class="pf-row"><div class="pf-lbl">3 nights</div><div class="pf-val">The Long Weekend — Norfolk or Suffolk edition · 3 rounds · from £895pp</div></div>
+    <div class="pf-row"><div class="pf-lbl">5 nights</div><div class="pf-val">The County Tour — one county in full · 4–5 rounds · from £1,450pp</div></div>
+    <div class="pf-row"><div class="pf-lbl">7 nights</div><div class="pf-val">The Two Counties — signature journey · 6 rounds · from £2,195pp</div></div>
+    <div class="pf-row"><div class="pf-lbl">10 nights</div><div class="pf-val">The Grand Tour — both counties complete · 8+ rounds · from £3,495pp</div></div>
+    <div class="pf-row"><div class="pf-lbl">Min. group</div><div class="pf-val">4 guests</div></div>
+    <div class="pf-row"><div class="pf-lbl">Currencies</div><div class="pf-val">GBP · USD · EUR · AUD</div></div>
+    <div class="pf-row"><div class="pf-lbl">Includes</div><div class="pf-val">All tee times, accommodation, green fees, on-call support</div></div>
+    <div class="pf-row"><div class="pf-lbl">Bespoke</div><div class="pf-val">Always — every itinerary built to group</div></div>
+  </div>
+</div>
+
+<div class="pledge">
+  <div class="pledge-lbl">Client protection</div>
+  <h3>Your clients remain your clients. Always.</h3>
+  <div class="pledge-body">
+    <div>
+      <p>We understand that the willingness to introduce a client to a specialist supplier rests entirely on trust that the supplier will not use that introduction to build a direct relationship. This is one of the oldest problems in the travel trade, and it is one we take seriously.</p>
+      <p><strong>Our commitment is explicit and unconditional:</strong> we will never approach, market to, retain contact with, or solicit future business from any client introduced through a travel agent or operator partner — whether by email, phone, or any other channel.</p>
+      <p>Our commercial interest is in being a reliable and valued part of your supply chain for the long term. A repeat booking that comes through you is worth more to us than a direct booking that poisons the relationship that made it possible.</p>
+    </div>
+    <div class="pledge-items">
+      <div class="pi-item"><div class="pi-dot"></div><div class="pi-text"><strong>No direct marketing to introduced clients</strong> — ever, under any circumstances.</div></div>
+      <div class="pi-item"><div class="pi-dot"></div><div class="pi-text"><strong>No retention of client contact details</strong> for any purpose beyond fulfilling the booking made through you.</div></div>
+      <div class="pi-item"><div class="pi-dot"></div><div class="pi-text"><strong>No follow-up solicitation</strong> — post-trip emails, newsletters, offers, or any other outbound communication to your clients.</div></div>
+      <div class="pi-item"><div class="pi-dot"></div><div class="pi-text"><strong>Repeat bookings flow through you</strong> — if a client contacts us directly for a repeat trip, we refer them back to the originating agent.</div></div>
+      <div class="pi-item"><div class="pi-dot"></div><div class="pi-text"><strong>Transparent pricing</strong> — your clients will never be quoted a lower rate by going direct to us than the rate you present to them.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="form-section">
+  <div class="form-section-lbl">Trade enquiry</div>
+  <div class="form-wrap">
+    <form class="form" name="trade-enquiry" method="POST" data-netlify="true" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="trade-enquiry">
+      <div class="form-inner-lbl">Trade enquiry form</div>
+      <div class="field-row">
+        <div class="field"><label>First name</label><input type="text" name="first-name" placeholder="Your first name"></div>
+        <div class="field"><label>Last name</label><input type="text" name="last-name" placeholder="Your last name"></div>
+      </div>
+      <div class="field"><label>Company / agency name</label><input type="text" name="company" placeholder="Your company or agency"></div>
+      <div class="field"><label>Email address</label><input type="email" name="email" placeholder="your@company.com"></div>
+      <div class="field-row">
+        <div class="field"><label>Phone (optional)</label><input type="tel" name="phone" placeholder="+1 or +44..."></div>
+        <div class="field"><label>Country</label><select name="country"><option value="">Select country</option><option>United Kingdom</option><option>United States</option><option>Australia</option><option>Canada</option><option>Germany</option><option>Netherlands</option><option>France</option><option>Ireland</option><option>Other</option></select></div>
+      </div>
+      <div class="sec-div"></div>
+      <div class="field"><label>Nature of enquiry</label><select name="enquiry-type"><option value="">Select</option><option>I have a specific client group to discuss</option><option>I am building a UK golf programme and want to include East Anglia</option><option>I want to understand your commission structure</option><option>I want to receive your trade information pack</option><option>Other</option></select></div>
+      <div class="field-row">
+        <div class="field"><label>Approx. group size (if applicable)</label><select name="group-size"><option value="">Select</option><option>2–3</option><option>4–6</option><option>7–12</option><option>13–20</option><option>20+</option><option>Not yet known</option></select></div>
+        <div class="field"><label>Preferred itinerary length</label><select name="duration"><option value="">Select</option><option>3 nights — Long Weekend</option><option>5 nights — County Tour</option><option>7 nights — Two Counties</option><option>10 nights — Grand Tour</option><option>Flexible / TBC</option></select></div>
+      </div>
+      <div class="field"><label>Anything else we should know</label><textarea name="notes" placeholder="Client background, travel dates, budget guidance, specific course requests, or anything else that helps us respond usefully."></textarea></div>
+      <button type="submit" class="submit-btn">Send trade enquiry</button>
+      <div class="submit-note">Trade enquiries receive a personal response within 48 hours.<br>You can also reach us directly at <a href="mailto:trade@golfeastanglia.com" style="color:rgba(183,157,100,0.5);">trade@golfeastanglia.com</a></div>
+    </form>
+    <div class="sidebar-trade">
+      <div class="contact-box">
+        <div class="cb-lbl">Direct trade contact</div>
+        <div class="cb-item"><div class="cb-v"><a href="mailto:trade@golfeastanglia.com" style="color:var(--text);">trade@golfeastanglia.com</a></div><div class="cb-l">Trade enquiries — dedicated address</div></div>
+        <div class="cb-item"><div class="cb-v">48 hours</div><div class="cb-l">Guaranteed response time</div></div>
+        <div class="cb-item"><div class="cb-v">Mon–Fri</div><div class="cb-l">Core hours · urgent enquiries accommodated</div></div>
+      </div>
+      <div class="why-trade">
+        <div class="wt-lbl">Why partner with us</div>
+        <div class="wt-item"><div class="wt-dot"></div><p><strong>Genuine specialist knowledge:</strong> We know these courses in detail — the logistics, the restrictions, the seasonal nuances. Your clients get the benefit of that on the ground.</p></div>
+        <div class="wt-item"><div class="wt-dot"></div><p><strong>Clean supply:</strong> No affiliate marketing, no price comparison exposure. You control how the product is presented and at what price.</p></div>
+        <div class="wt-item"><div class="wt-dot"></div><p><strong>Reliable delivery:</strong> Every tee time confirmed in advance. On-call support for the full duration of each stay. We do not disappear after the booking is made.</p></div>
+        <div class="wt-item"><div class="wt-dot"></div><p><strong>Excellent underlying product:</strong> World Top 100 golf. Royal clubs. Ancient heathland. A region that rewards the discerning traveller — and makes you look good for knowing about it.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="/" class="fl"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
+  <p class="fp">trade@golfeastanglia.com &nbsp;·&nbsp; enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norfolk Golf Courses | Golf Breaks Norfolk | Golf East Anglia</title>
+  <meta name="description" content="Discover the finest Norfolk golf courses for your golf break — from links masterpieces on the North Norfolk coast to heathland gems and stay & play options near Norwich. Expert curation by Golf East Anglia.">
+  <link rel="canonical" href="https://www.golfeastanglia.com/norfolk">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1f0f;
+      --bg-mid: #111f13;
+      --bg-card: #0f2211;
+      --gold: #b79d64;
+      --gold-light: #cdb97a;
+      --gold-dim: rgba(183,157,100,0.15);
+      --text: #e8e0d0;
+      --text-muted: #9a9080;
+      --border: rgba(183,157,100,0.2);
+      --premium: #b79d64;
+      --discovery: #7a9e6e;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px;
+      height: 72px;
+      background: rgba(13,31,15,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .nav-cta {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 9px 24px;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .nav-cta:hover { background: var(--gold); color: var(--bg); }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 480px;
+      display: flex; align-items: flex-end;
+      padding: 64px 80px;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, #1a3a1c 0%, #0d2410 40%, #061408 100%);
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 30% 60%, rgba(183,157,100,0.08) 0%, transparent 60%);
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(40px, 5vw, 64px);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero p {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    /* MAIN */
+    main { max-width: 1200px; margin: 0 auto; padding: 80px 48px; }
+
+    /* TIER HEADERS */
+    .tier-header {
+      display: flex; align-items: center; gap: 20px;
+      margin-bottom: 48px;
+    }
+    .tier-badge {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border: 1px solid currentColor;
+      font-family: 'Outfit', sans-serif;
+    }
+    .tier-badge.premium { color: var(--premium); border-color: var(--premium); }
+    .tier-badge.discovery { color: var(--discovery); border-color: var(--discovery); }
+    .tier-line { flex: 1; height: 1px; background: var(--border); }
+    .tier-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 300;
+    }
+    .tier-title.premium { color: var(--premium); }
+    .tier-title.discovery { color: var(--discovery); }
+    .tier-desc {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 48px;
+      margin-top: -32px;
+      max-width: 700px;
+    }
+
+    /* COURSE CARDS — PREMIUM */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 32px;
+      margin-bottom: 80px;
+    }
+    .course-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .course-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .course-img {
+      width: 100%; height: 220px;
+      object-fit: cover;
+      display: block;
+      background: #1a2f1c;
+    }
+    .course-img-placeholder {
+      width: 100%; height: 220px;
+      background: linear-gradient(135deg, #1a2f1c 0%, #0d2010 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .course-img-placeholder svg { opacity: 0.2; }
+    .course-body { padding: 28px; }
+    .course-type {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .course-card.discovery-card .course-type { color: var(--discovery); }
+    .course-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .course-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+    .course-tags {
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+    .tag {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    /* DISCOVERY SECTION */
+    .discovery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 80px;
+    }
+    .discovery-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(122,158,110,0.2);
+      padding: 28px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .discovery-card:hover {
+      border-color: var(--discovery);
+      transform: translateY(-3px);
+    }
+    .discovery-card .course-type { color: var(--discovery); }
+    .discovery-card .course-name { font-size: 21px; }
+
+    /* SECTION DIVIDER */
+    .section-divider { margin: 80px 0; border: none; border-top: 1px solid var(--border); }
+
+    /* CTA STRIP */
+    .cta-strip {
+      border: 1px solid var(--border);
+      padding: 56px 64px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(183,157,100,0.05) 0%, transparent 60%);
+      margin-top: 80px;
+    }
+    .cta-strip h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+    .cta-strip p { color: var(--text-muted); margin-bottom: 32px; font-size: 15px; }
+    .btn-gold {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--bg);
+      padding: 14px 40px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .btn-gold:hover { background: var(--gold-light); }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      color: var(--gold);
+    }
+    .footer-links { display: flex; gap: 32px; flex-wrap: wrap; }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { color: var(--text-muted); font-size: 12px; width: 100%; text-align: center; }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { padding: 40px 24px; height: auto; min-height: 360px; }
+      main { padding: 48px 24px; }
+      .courses-grid { grid-template-columns: 1fr; }
+      .discovery-grid { grid-template-columns: 1fr; }
+      .cta-strip { padding: 40px 24px; }
+      footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+    }
+  
+/* NAV - nl class */
+.nl{display:flex;gap:22px;flex-wrap:wrap;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.enq{border:1px solid rgba(183,157,100,0.3);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;text-decoration:none;}
+.enq:hover{background:rgba(183,157,100,0.15);}
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Golf East Anglia</a>
+  <div class="nl">
+    <a href="/">Home</a>
+    <a href="/norfolk" class="act">Courses</a>
+    <a href="/itineraries">Itineraries</a>
+    <a href="/experiences">Experiences</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/transfers">Transfers</a>
+    <a href="/blog">Journal</a>
+    <a href="/about">About</a>
+  </div>
+  <a href="/enquire" class="nav-cta">Enquire</a>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/"  onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="/norfolk" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Norfolk Golf Courses</p>
+    <h1>Where Links Golf<br><em>Meets Open Sky</em></h1>
+    <p>From the windswept magnificence of Royal West Norfolk to heathland gems and stay &amp; play retreats — Norfolk's golf courses reward those who seek them out. We know every one personally.</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- PREMIUM TIER -->
+  <div class="tier-header">
+    <span class="tier-badge premium">Premium</span>
+    <div class="tier-line"></div>
+    <span class="tier-title premium">Signature Courses</span>
+  </div>
+  <p class="tier-desc">Our flagship selections — exceptional courses that define a Norfolk golf break. Each is a destination in its own right, best experienced as part of a curated <a href="/itineraries" style="color:var(--gold);text-decoration:none;">Golf East Anglia itinerary</a>.</p>
+
+  <div class="courses-grid">
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Links · Brancaster</p>
+        <h2 class="course-name">Royal West Norfolk</h2>
+        <p class="course-desc">One of England's great links — a timeless, members-only gem perched between tidal marshes and the North Sea. Playing here feels like stepping into golf's history. Access is carefully managed and visitor numbers are strictly limited.</p>
+        <div class="course-tags">
+          <span class="tag">Links</span>
+          <span class="tag">Historic</span>
+          <span class="tag">Visitor Access</span>
+          <span class="tag">Championship</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Links · Cromer</p>
+        <h2 class="course-name">Royal Cromer</h2>
+        <p class="course-desc">The clifftop links at Cromer offers dramatic North Sea views at every turn. One of England's most scenic courses, it combines genuine links challenge with an atmosphere that is quintessentially Norfolk — proud, unhurried and memorable.</p>
+        <div class="course-tags">
+          <span class="tag">Clifftop Links</span>
+          <span class="tag">Sea Views</span>
+          <span class="tag">Historic</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Heathland · Thetford</p>
+        <h2 class="course-name">Royal Worlington &amp; Newmarket</h2>
+        <p class="course-desc">Described by Bernard Darwin as "the sacred nine" — the finest nine-hole course in the world. This heathland classic in the Breckland forest is a pilgrimage for any serious golfer. Explore our <a href="/worlington" style="color:var(--gold);text-decoration:none;">dedicated Worlington page</a>.</p>
+        <div class="course-tags">
+          <span class="tag">Nine Holes</span>
+          <span class="tag">Heathland</span>
+          <span class="tag">Historic</span>
+          <span class="tag">Unique</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Parkland · Hunstanton</p>
+        <h2 class="course-name">Hunstanton Golf Club</h2>
+        <p class="course-desc">A superb links on the west Norfolk coast, Hunstanton sits just south of the Wash and is regularly used for regional qualifying. Combines well with Royal West Norfolk on a coastal two-course itinerary — see our <a href="/itineraries" style="color:var(--gold);text-decoration:none;">Norfolk Coast itineraries</a>.</p>
+        <div class="course-tags">
+          <span class="tag">Links</span>
+          <span class="tag">West Coast</span>
+          <span class="tag">Championship</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /courses-grid -->
+
+  <hr class="section-divider">
+
+  <!-- DISCOVERY TIER -->
+  <div class="tier-header">
+    <span class="tier-badge discovery">Discovery</span>
+    <div class="tier-line"></div>
+    <span class="tier-title discovery">Discovery Courses</span>
+  </div>
+  <p class="tier-desc">Well-regarded courses that offer excellent value and variety — perfect for rounding out a longer itinerary or for groups seeking accessible, enjoyable golf without compromise on quality.</p>
+
+  <div class="discovery-grid">
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Royal Norwich</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A redesigned, modern parkland course on the edge of the city — a strong addition to any Norwich-based stay.</p>
+      <div class="course-tags" style="margin-top:16px;">
+        <span class="tag">Parkland</span>
+        <span class="tag">Redesigned</span>
+      </div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Sprowston Manor</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Part of a hotel and spa complex — ideal for groups wanting golf and accommodation together on the edge of Norwich.</p>
+      <div class="course-tags" style="margin-top:16px;">
+        <span class="tag">Hotel</span>
+        <span class="tag">Stay & Play</span>
+      </div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · West Norfolk</p>
+      <h2 class="course-name">King's Lynn</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A mature parkland course near King's Lynn, offering a solid day's golf in an area rich in history and coastal scenery.</p>
+      <div class="course-tags" style="margin-top:16px;">
+        <span class="tag">Parkland</span>
+        <span class="tag">West Norfolk</span>
+      </div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Mid-Norfolk</p>
+      <h2 class="course-name">Fakenham</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Compact, friendly and enjoyable — Fakenham sits in the heart of Norfolk and suits groups wanting a relaxed, social round.</p>
+      <div class="course-tags" style="margin-top:16px;">
+        <span class="tag">Parkland</span>
+        <span class="tag">Relaxed</span>
+      </div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Bawburgh Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">An enjoyable parkland course just west of Norwich, with good practice facilities and comfortable lodges for stay &amp; play. A great base for city-focused breaks with golf on the doorstep.</p>
+      <div class="course-tags" style="margin-top:16px;">
+        <span class="tag">Parkland</span>
+        <span class="tag">Stay & Play</span>
+        <span class="tag">Practice Facilities</span>
+        <span class="tag">Lodges</span>
+      </div>
+    </div>
+
+  </div><!-- /discovery-grid -->
+
+  <div class="cta-strip">
+    <h2>Build Your Norfolk Golf Break</h2>
+    <p>Tell us which courses appeal, your preferred dates and group size — we'll design the perfect itinerary around them. Every trip is bespoke, every detail handled.</p>
+    <a href="/enquire" class="btn-gold">Start Planning</a>
+  </div>
+
+</main>
+
+<footer>
+  <span class="footer-logo">Golf East Anglia</span>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/norfolk">Norfolk</a>
+    <a href="/suffolk">Suffolk</a>
+    <a href="/itineraries">Itineraries</a>
+    <a href="/experiences">Experiences</a>
+    <a href="/about">About</a>
+    <a href="/blog">Journal</a>
+    <a href="/enquire">Enquire</a>
+    <a href="/trade">Travel Trade</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Golf East Anglia. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

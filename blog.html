@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf East Anglia Journal | Golf Breaks Norfolk & Suffolk Tips & Guides</title>
+  <meta name="description" content="Expert guides, course tips and insider knowledge for planning your Norfolk and Suffolk golf break. From links golf on the North Norfolk coast to heathland classics — read the Golf East Anglia Journal.">
+  <link rel="canonical" href="https://www.golfeastanglia.com/blog">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d1f0f;
+      --bg-card: #0f2211;
+      --gold: #b79d64;
+      --gold-light: #cdb97a;
+      --text: #e8e0d0;
+      --text-muted: #9a9080;
+      --border: rgba(183,157,100,0.2);
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Outfit', sans-serif; font-size: 15px; line-height: 1.7; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px; height: 72px;
+      background: rgba(13,31,15,0.96); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; letter-spacing: 0.04em; color: var(--gold); text-decoration: none; }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .nav-cta { background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 9px 24px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; font-family: 'Outfit', sans-serif; transition: all 0.2s; }
+    .nav-cta:hover { background: var(--gold); color: var(--bg); }
+
+    .hero {
+      position: relative; height: 380px;
+      display: flex; align-items: flex-end; padding: 64px 80px; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, #1a3a1c 0%, #0d2410 40%, #061408 100%);
+    }
+    .hero-bg::after { content:''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 40%, rgba(183,157,100,0.07) 0%, transparent 60%); }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-eyebrow { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 4.5vw, 58px); font-weight: 300; line-height: 1.1; margin-bottom: 16px; }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero p { font-size: 16px; color: var(--text-muted); max-width: 520px; }
+
+    main { max-width: 1200px; margin: 0 auto; padding: 80px 48px; }
+
+    /* FEATURED POST */
+    .featured {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      border: 1px solid var(--border);
+      margin-bottom: 80px;
+      transition: border-color 0.3s;
+    }
+    .featured:hover { border-color: var(--gold); }
+    .featured-img {
+      height: 420px;
+      background: linear-gradient(135deg, #1a3a1c 0%, #0a1e0c 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .featured-img-placeholder { opacity: 0.15; }
+    .featured-body { padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; }
+    .post-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .post-title { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 16px; }
+    .post-excerpt { font-size: 15px; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; }
+    .post-meta { font-size: 12px; color: var(--text-muted); letter-spacing: 0.05em; margin-bottom: 28px; }
+    .read-more { display: inline-block; color: var(--gold); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; padding-bottom: 2px; }
+    .read-more:hover { border-color: var(--gold); }
+
+    /* GRID */
+    .posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 80px; }
+    .post-card { background: var(--bg-card); border: 1px solid var(--border); overflow: hidden; transition: border-color 0.3s, transform 0.3s; }
+    .post-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .post-card-img {
+      height: 200px;
+      background: linear-gradient(135deg, #1a2f1c 0%, #0d2010 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .post-card-body { padding: 28px; }
+    .post-card .post-title { font-size: 20px; margin-bottom: 12px; }
+    .post-card .post-excerpt { font-size: 13px; margin-bottom: 20px; }
+    .post-card .post-meta { margin-bottom: 16px; }
+
+    /* CATEGORIES */
+    .categories { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 56px; }
+    .cat-btn { background: transparent; border: 1px solid var(--border); color: var(--text-muted); padding: 8px 20px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; font-family: 'Outfit', sans-serif; transition: all 0.2s; text-decoration: none; }
+    .cat-btn:hover, .cat-btn.active { border-color: var(--gold); color: var(--gold); }
+
+    .section-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 32px; }
+
+    .cta-strip { border: 1px solid var(--border); padding: 56px 64px; text-align: center; background: linear-gradient(135deg, rgba(183,157,100,0.05) 0%, transparent 60%); margin-top: 40px; }
+    .cta-strip h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 300; margin-bottom: 16px; }
+    .cta-strip p { color: var(--text-muted); margin-bottom: 32px; }
+    .btn-gold { display: inline-block; background: var(--gold); color: var(--bg); padding: 14px 40px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; font-weight: 500; transition: background 0.2s; }
+    .btn-gold:hover { background: var(--gold-light); }
+
+    footer { border-top: 1px solid var(--border); padding: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--gold); }
+    .footer-links { display: flex; gap: 32px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { color: var(--text-muted); font-size: 12px; width: 100%; text-align: center; }
+
+    @media (max-width: 960px) {
+      .featured { grid-template-columns: 1fr; }
+      .featured-img { height: 280px; }
+      .posts-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { padding: 40px 24px; height: auto; min-height: 300px; }
+      main { padding: 48px 24px; }
+      .featured-body { padding: 32px 24px; }
+      .posts-grid { grid-template-columns: 1fr; }
+      .cta-strip { padding: 40px 24px; }
+      footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+    }
+  /* NAV */
+.nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);position:sticky;top:0;background:var(--bg);z-index:100;}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+.nl{display:flex;gap:22px;flex-wrap:wrap;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;text-decoration:none;}
+.enq:hover{background:var(--gold-l);}
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <div class="nl">
+    <a href="/">Home</a>
+    <a href="/norfolk">Courses</a>
+    <a href="/itineraries">Itineraries</a>
+    <a href="/experiences">Experiences</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/transfers">Transfers</a>
+    <a href="/blog" class="act">Journal</a>
+    <a href="/about">About</a>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="/enquire" class="enq">Enquire</a>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/"  onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/blog" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">The Journal</p>
+    <h1>Golf East Anglia<br><em>Insider Knowledge</em></h1>
+    <p>Course guides, itinerary ideas and insider tips for planning the perfect Norfolk and Suffolk golf break — from people who play and know these courses.</p>
+  </div>
+</header>
+
+<main>
+
+  <div class="categories">
+    <a href="#" class="cat-btn active">All</a>
+    <a href="#" class="cat-btn">Norfolk Courses</a>
+    <a href="#" class="cat-btn">Suffolk Courses</a>
+    <a href="#" class="cat-btn">Itinerary Ideas</a>
+    <a href="#" class="cat-btn">Links Golf</a>
+    <a href="#" class="cat-btn">Stay & Play</a>
+    <a href="#" class="cat-btn">Tips & Advice</a>
+  </div>
+
+  <!-- FEATURED -->
+  <article class="featured">
+    <div class="featured-img">
+      <svg class="featured-img-placeholder" width="72" height="72" viewBox="0 0 72 72" fill="none"><circle cx="36" cy="36" r="30" stroke="#b79d64" stroke-width="1.5"/><path d="M36 12v48M12 36h48" stroke="#b79d64" stroke-width="1"/></svg>
+    </div>
+    <div class="featured-body">
+      <p class="post-label">Featured · Links Golf</p>
+      <h2 class="post-title">Royal West Norfolk: A Visitor's Complete Guide</h2>
+      <p class="post-excerpt">One of England's most extraordinary links sits at the end of a causeway in Brancaster — accessible only at low tide, and all the more special for it. Here's everything you need to know to plan a visit to Royal West Norfolk Golf Club.</p>
+      <p class="post-meta">May 2026 · 8 min read</p>
+      <a href="/blog-royal-west-norfolk" class="read-more">Read the Guide →</a>
+    </div>
+  </article>
+
+  <!-- POSTS GRID -->
+  <p class="section-label">Recent Posts</p>
+  <div class="posts-grid">
+
+    <article class="post-card">
+      <div class="post-card-img">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="opacity:0.15"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="post-card-body">
+        <p class="post-label">Itinerary Ideas</p>
+        <h2 class="post-title">The Perfect Three-Day Golf Break in Norfolk</h2>
+        <p class="post-excerpt">Two links classics, one heathland gem, and the finest pubs on the North Norfolk coast. Our three-day blueprint for a memorable golf trip.</p>
+        <p class="post-meta">April 2026 · 6 min read</p>
+        <a href="/blog-three-day-norfolk" class="read-more">Read More →</a>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card-img">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="opacity:0.15"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="post-card-body">
+        <p class="post-label">Suffolk Courses</p>
+        <h2 class="post-title">Royal Worlington: The World's Greatest Nine Holes</h2>
+        <p class="post-excerpt">Bernard Darwin called it "the sacred nine." Discover why this Breckland heathland course is a pilgrimage for every serious golfer visiting East Anglia.</p>
+        <p class="post-meta">March 2026 · 5 min read</p>
+        <a href="/worlington" class="read-more">Read More →</a>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card-img">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="opacity:0.15"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="post-card-body">
+        <p class="post-label">Tips & Advice</p>
+        <h2 class="post-title">Best Time of Year to Play Golf in Norfolk</h2>
+        <p class="post-excerpt">Links courses play differently across the seasons — and Norfolk's weather has its own character. Here's when to come, what to expect, and how to plan around it.</p>
+        <p class="post-meta">February 2026 · 4 min read</p>
+        <a href="/blog-best-time-norfolk" class="read-more">Read More →</a>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card-img">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="opacity:0.15"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="post-card-body">
+        <p class="post-label">Stay & Play</p>
+        <h2 class="post-title">Stay & Play Golf Near Norwich: Our Picks</h2>
+        <p class="post-excerpt">From Bawburgh's lodges to Sprowston Manor's hotel and spa — the best stay and play options within easy reach of Norwich city for a golf break with options.</p>
+        <p class="post-meta">January 2026 · 5 min read</p>
+        <a href="/blog-stay-play-norwich" class="read-more">Read More →</a>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card-img">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="opacity:0.15"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="post-card-body">
+        <p class="post-label">Links Golf</p>
+        <h2 class="post-title">England's East Coast Links: An Underrated Circuit</h2>
+        <p class="post-excerpt">While Scotland takes the headlines, England's east coast has a links circuit that rivals anything in the British Isles for character, variety and sheer pleasure.</p>
+        <p class="post-meta">December 2025 · 7 min read</p>
+        <a href="/blog-east-coast-links" class="read-more">Read More →</a>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-card-img">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="opacity:0.15"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="post-card-body">
+        <p class="post-label">Itinerary Ideas</p>
+        <h2 class="post-title">The Grand Tour: Five Courses, Five Days</h2>
+        <p class="post-excerpt">Our flagship itinerary — Royal West Norfolk, Royal Cromer, Hunstanton, Royal Worlington and a Suffolk closer. Golf East Anglia at its most complete.</p>
+        <p class="post-meta">November 2025 · 6 min read</p>
+        <a href="/itineraries" class="read-more">Read More →</a>
+      </div>
+    </article>
+
+  </div><!-- /posts-grid -->
+
+  <div class="cta-strip">
+    <h2>Ready to Plan Your Break?</h2>
+    <p>Our team knows every course personally. Tell us what you're looking for and we'll design the perfect itinerary.</p>
+    <a href="/enquire" class="btn-gold">Start Planning</a>
+  </div>
+
+</main>
+
+<footer>
+  <span class="footer-logo">Golf East Anglia</span>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/norfolk">Norfolk</a>
+    <a href="/suffolk">Suffolk</a>
+    <a href="/itineraries">Itineraries</a>
+    <a href="/experiences">Experiences</a>
+    <a href="/about">About</a>
+    <a href="/blog">Journal</a>
+    <a href="/enquire">Enquire</a>
+    <a href="/trade">Travel Trade</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Golf East Anglia. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
