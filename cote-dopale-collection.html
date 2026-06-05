@@ -426,21 +426,29 @@ footer { background:#111a24; padding:28px 80px; display:flex; align-items:center
     <div class="reg-form">
       <h3>Register Your Interest</h3>
       <p>Places are strictly limited to 14 guests. Complete this form and we will be in touch to confirm availability and next steps. A deposit of £500pp secures your place.</p>
-      <div class="fg-row">
-        <div class="fg"><label>First Name</label><input type="text" placeholder="First name"></div>
-        <div class="fg"><label>Last Name</label><input type="text" placeholder="Last name"></div>
+      <div id="form-success" style="display:none; background:rgba(201,168,76,0.12); border:1px solid var(--gold); padding:24px; text-align:center; margin-bottom:20px;">
+        <div style="font-family:'Cormorant Garamond',serif; font-size:22px; color:var(--navy); margin-bottom:8px;">Thank you — we'll be in touch shortly.</div>
+        <div style="font-size:12px; color:var(--grey); line-height:1.65;">Your registration has been received. We'll contact you within 48 hours to confirm availability and next steps.</div>
       </div>
-      <div class="fg"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
-      <div class="fg"><label>Mobile Number</label><input type="tel" placeholder="07..."></div>
-      <div class="fg-row">
-        <div class="fg"><label>Handicap Index</label><input type="text" placeholder="e.g. 14.2"></div>
-        <div class="fg"><label>How did you hear about us?</label>
-          <select><option>Select...</option><option>Pascal Ogden</option><option>Golf club / pro recommendation</option><option>Personal recommendation</option><option>Golf East Anglia website</option><option>Social media</option><option>Other</option></select>
+      <form id="cote-dopale-form" name="cote-dopale-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="cote-dopale-interest">
+        <input type="hidden" name="bot-field" style="display:none">
+        <div class="fg-row">
+          <div class="fg"><label>First Name</label><input type="text" name="first-name" placeholder="First name" required></div>
+          <div class="fg"><label>Last Name</label><input type="text" name="last-name" placeholder="Last name" required></div>
         </div>
-      </div>
-      <div class="fg"><label>Anything you'd like us to know?</label><textarea rows="3" placeholder="Number of guests, dietary requirements, questions..."></textarea></div>
-      <button class="btn-submit">Submit Registration of Interest</button>
-      <div class="form-disc">Registering does not constitute a booking. We will contact you directly to confirm availability, pricing and next steps. Your details will not be shared with any third party.</div>
+        <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com" required></div>
+        <div class="fg"><label>Mobile Number</label><input type="tel" name="mobile" placeholder="07..."></div>
+        <div class="fg-row">
+          <div class="fg"><label>Handicap Index</label><input type="text" name="handicap" placeholder="e.g. 14.2"></div>
+          <div class="fg"><label>How did you hear about us?</label>
+            <select name="referral"><option value="">Select...</option><option>Pascal Ogden</option><option>Golf club / pro recommendation</option><option>Personal recommendation</option><option>Golf East Anglia website</option><option>Social media</option><option>Other</option></select>
+          </div>
+        </div>
+        <div class="fg"><label>Anything you'd like us to know?</label><textarea name="message" rows="3" placeholder="Number of guests, dietary requirements, questions..."></textarea></div>
+        <button type="submit" class="btn-submit">Submit Registration of Interest</button>
+        <div class="form-disc">Registering does not constitute a booking. We will contact you directly to confirm availability, pricing and next steps. Your details will not be shared with any third party.</div>
+      </form>
     </div>
   </div>
 </section>
@@ -455,5 +463,22 @@ footer { background:#111a24; padding:28px 80px; display:flex; align-items:center
   <div class="ft-copy">© 2026 Golf East Anglia · golfeastanglia.com</div>
 </footer>
 
+<script>
+  var form = document.getElementById('cote-dopale-form');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch('/', { method: 'POST', body: data })
+        .then(function() {
+          form.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        })
+        .catch(function() {
+          form.submit();
+        });
+    });
+  }
+</script>
 </body>
 </html>
