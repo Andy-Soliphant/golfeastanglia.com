@@ -469,7 +469,7 @@ footer { background:#111a24; padding:28px 80px; display:flex; align-items:center
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       var data = new FormData(form);
-      fetch('/', { method: 'POST', body: data })
+      fetch(window.location.pathname, { method: 'POST', body: data })
         .then(function() {
           form.style.display = 'none';
           document.getElementById('form-success').style.display = 'block';
