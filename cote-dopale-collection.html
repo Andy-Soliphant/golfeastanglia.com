@@ -111,16 +111,18 @@ section { padding:90px 80px; }
 
 /* ITINERARY */
 .itinerary-section { background:var(--white); }
-.itin-grid { display:grid; grid-template-columns:1fr 1fr; gap:3px; margin-top:50px; }
-.itin-day { background:var(--cream); padding:32px 36px; border-left:3px solid transparent; transition:border-color 0.2s, background 0.2s; }
-.itin-day:hover { border-left-color:var(--gold); background:var(--white); }
-.itin-full { grid-column:span 2; }
-.i-num { font-family:'Cormorant Garamond',serif; font-size:52px; font-weight:300; color:var(--light-grey); line-height:1; margin-bottom:4px; }
-.i-date { font-size:9px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:14px; }
-.i-title { font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:400; color:var(--navy); margin-bottom:10px; }
-.i-desc { font-size:13px; font-weight:300; color:var(--grey); line-height:1.75; }
-.i-tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
-.i-tag { font-size:9px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); background:var(--navy); padding:4px 10px; }
+.itin-stack { display:flex; flex-direction:column; gap:3px; margin-top:50px; }
+.itin-day { position:relative; overflow:hidden; min-height:340px; display:flex; align-items:flex-end; }
+.itin-bg { position:absolute; inset:0; background-size:cover; background-position:center; transition:transform 0.5s ease; }
+.itin-day:hover .itin-bg { transform:scale(1.03); }
+.itin-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(17,26,36,0.92) 0%, rgba(17,26,36,0.45) 55%, rgba(17,26,36,0.15) 100%); }
+.itin-content { position:relative; z-index:2; padding:36px 48px; width:100%; }
+.i-num { font-family:'Cormorant Garamond',serif; font-size:64px; font-weight:300; color:rgba(201,168,76,0.35); line-height:1; margin-bottom:2px; }
+.i-date { font-size:9px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
+.i-title { font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:400; color:var(--white); margin-bottom:8px; }
+.i-desc { font-size:13px; font-weight:300; color:rgba(255,255,255,0.78); line-height:1.75; max-width:760px; margin-bottom:14px; }
+.i-tags { display:flex; flex-wrap:wrap; gap:6px; }
+.i-tag { font-size:9px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); background:rgba(17,26,36,0.7); border:1px solid rgba(201,168,76,0.3); padding:4px 10px; }
 
 /* REGISTER */
 .register-section { background:var(--navy); }
@@ -180,7 +182,7 @@ footer { background:#111a24; padding:28px 80px; display:flex; align-items:center
         <div><span class="stat-num">4</span><span class="stat-label">Championship Rounds</span></div>
         <div><span class="stat-num">4</span><span class="stat-label">Nights Inclusive</span></div>
         <div><span class="stat-num">14</span><span class="stat-label">Guests Maximum</span></div>
-        <div><span class="stat-num">£2,395</span><span class="stat-label">Per Person All-Inclusive</span></div>
+        <div><span class="stat-num">£1,995</span><span class="stat-label">Per Person All-Inclusive</span></div>
       </div>
       <a href="#register" class="hero-cta">Reserve Your Place</a>
     </div>
@@ -332,42 +334,68 @@ footer { background:#111a24; padding:28px 80px; display:flex; align-items:center
 <section class="itinerary-section" id="itinerary">
   <span class="section-eyebrow">Day by Day</span>
   <h2 class="section-title">Your <em>itinerary</em></h2>
-  <div class="itin-grid">
-    <div class="itin-day itin-full">
-      <div class="i-num">01</div>
-      <div class="i-date">Saturday 12 September — Arrival</div>
-      <div class="i-title">Welcome to the Côte d'Opale</div>
-      <div class="i-desc">Eurotunnel from Folkestone. Check in to Le Manoir and settle in. Welcome dinner with Pascal to meet the group and preview the week ahead.</div>
-      <div class="i-tags"><span class="i-tag">Eurotunnel Crossing</span><span class="i-tag">Check in · Le Manoir</span><span class="i-tag">Welcome Dinner with Pascal</span></div>
-    </div>
+  <div class="itin-stack">
+
     <div class="itin-day">
-      <div class="i-num">02</div>
-      <div class="i-date">Sunday 13 September</div>
-      <div class="i-title">La Forêt — Le Touquet</div>
-      <div class="i-desc">Morning coaching session with Pascal, then La Forêt — Le Touquet's heathland classic. A superb opener to settle in and find your rhythm on a course that rewards good ball striking.</div>
-      <div class="i-tags"><span class="i-tag">Coaching with Pascal</span><span class="i-tag">La Forêt · Heathland</span></div>
+      <div class="itin-bg" style="background-image:url('https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1600&q=80');"></div>
+      <div class="itin-overlay"></div>
+      <div class="itin-content">
+        <div class="i-num">01</div>
+        <div class="i-date">Saturday 12 September — Arrival</div>
+        <div class="i-title">Welcome to the Côte d'Opale</div>
+        <div class="i-desc">Eurotunnel from Folkestone. Check in to Le Manoir and settle in. Welcome dinner with Pascal to meet the group and preview the week ahead.</div>
+        <div class="i-tags"><span class="i-tag">Eurotunnel Crossing</span><span class="i-tag">Check in · Le Manoir</span><span class="i-tag">Welcome Dinner with Pascal</span></div>
+      </div>
     </div>
+
     <div class="itin-day">
-      <div class="i-num">03</div>
-      <div class="i-date">Monday 14 September</div>
-      <div class="i-title">Golf de Belle Dune</div>
-      <div class="i-desc">Morning coaching then Belle Dune — spectacular dune links with wild ocean air and dramatic natural terrain. The course that surprises every golfer. Private sommelier wine evening to close a memorable day.</div>
-      <div class="i-tags"><span class="i-tag">Coaching with Pascal</span><span class="i-tag">Belle Dune · Dune Links</span><span class="i-tag">Sommelier Wine Evening</span></div>
+      <div class="itin-bg" style="background-image:url('https://www.golfeastanglia.com/course-la-mer.jpg');"></div>
+      <div class="itin-overlay"></div>
+      <div class="itin-content">
+        <div class="i-num">02</div>
+        <div class="i-date">Sunday 13 September</div>
+        <div class="i-title">La Forêt — Le Touquet</div>
+        <div class="i-desc">Morning coaching session with Pascal, then La Forêt — Le Touquet's heathland classic. A superb opener to settle in and find your rhythm on a course that rewards good ball striking.</div>
+        <div class="i-tags"><span class="i-tag">Coaching with Pascal</span><span class="i-tag">La Forêt · Heathland</span></div>
+      </div>
     </div>
+
     <div class="itin-day">
-      <div class="i-num">04</div>
-      <div class="i-date">Tuesday 15 September</div>
-      <div class="i-title">Golf d'Hardelot — Les Pins</div>
-      <div class="i-desc">Morning coaching then Les Pins — the jewel of the Côte d'Opale. Tom Simpson's pine-framed masterpiece. Evening dinner in Montreuil-sur-Mer, one of northern France's finest restaurant towns.</div>
-      <div class="i-tags"><span class="i-tag">Coaching with Pascal</span><span class="i-tag">Les Pins · Championship</span><span class="i-tag">Dinner · Montreuil-sur-Mer</span></div>
+      <div class="itin-bg" style="background-image:url('https://www.golfeastanglia.com/course-belle-dune.jpg');"></div>
+      <div class="itin-overlay"></div>
+      <div class="itin-content">
+        <div class="i-num">03</div>
+        <div class="i-date">Monday 14 September</div>
+        <div class="i-title">Golf de Belle Dune</div>
+        <div class="i-desc">Morning coaching then Belle Dune — spectacular dune links with wild ocean air and dramatic natural terrain. The course that surprises every golfer. Buggies available at €45 per buggy, subject to availability — book ahead. Private sommelier wine evening to close a memorable day.</div>
+        <div class="i-tags"><span class="i-tag">Coaching with Pascal</span><span class="i-tag">Belle Dune · Dune Links</span><span class="i-tag">Buggies €45 · Subject to Availability</span><span class="i-tag">Sommelier Wine Evening</span></div>
+      </div>
     </div>
-    <div class="itin-day itin-full">
-      <div class="i-num">05</div>
-      <div class="i-date">Wednesday 16 September — Farewell</div>
-      <div class="i-title">La Mer — Le Touquet · The Perfect Finale</div>
-      <div class="i-desc">Optional morning coaching, then La Mer — a Harry Colt masterpiece and six-time French Open host. The perfect farewell round. Celebrate at La Mer's exceptional clubhouse before a leisurely drive to Calais, a stop at Calais Vins, and the Eurotunnel home.</div>
-      <div class="i-tags"><span class="i-tag">Optional Coaching</span><span class="i-tag">La Mer · Harry Colt Links</span><span class="i-tag">Clubhouse Celebration</span><span class="i-tag">Calais Vins</span><span class="i-tag">Eurotunnel Home</span></div>
+
+    <div class="itin-day">
+      <div class="itin-bg" style="background-image:url('https://www.golfeastanglia.com/course-les-pins.jpg');"></div>
+      <div class="itin-overlay"></div>
+      <div class="itin-content">
+        <div class="i-num">04</div>
+        <div class="i-date">Tuesday 15 September</div>
+        <div class="i-title">Golf d'Hardelot — Les Pins</div>
+        <div class="i-desc">Morning coaching then Les Pins — the jewel of the Côte d'Opale. Tom Simpson's pine-framed masterpiece. Evening dinner in Montreuil-sur-Mer, one of northern France's finest restaurant towns.</div>
+        <div class="i-tags"><span class="i-tag">Coaching with Pascal</span><span class="i-tag">Les Pins · Championship</span><span class="i-tag">Dinner · Montreuil-sur-Mer</span></div>
+      </div>
     </div>
+
+    <div class="itin-day">
+      <div class="itin-bg" style="background-image:url('https://www.golfeastanglia.com/course-la-mer.jpg');"></div>
+      <div class="itin-overlay"></div>
+      <div class="itin-content">
+        <div class="i-num">05</div>
+        <div class="i-date">Wednesday 16 September — Farewell</div>
+        <div class="i-title">La Mer — Le Touquet · The Perfect Finale</div>
+        <div class="i-desc">Optional morning coaching, then La Mer — a Harry Colt masterpiece and six-time French Open host. The perfect farewell round. Celebrate at La Mer's exceptional clubhouse before a leisurely drive to Calais, a stop at Calais Vins, and the Eurotunnel home.</div>
+        <div class="i-tags"><span class="i-tag">Optional Coaching</span><span class="i-tag">La Mer · Harry Colt Links</span><span class="i-tag">Clubhouse Celebration</span><span class="i-tag">Calais Vins</span><span class="i-tag">Eurotunnel Home</span></div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -376,7 +404,7 @@ footer { background:#111a24; padding:28px 80px; display:flex; align-items:center
     <div class="reg-left">
       <span class="section-eyebrow">Investment</span>
       <h2 class="section-title">Reserve your <em>place</em></h2>
-      <div class="price-big">£2,395 <span>per person</span></div>
+      <div class="price-big">£1,995 <span>per person</span></div>
       <div class="price-note">Twin share basis · Single supplement available on request · Deposit: £500pp</div>
       <div class="inc-list">
         <div class="inc-line">Return Eurotunnel crossings from Folkestone</div>
