@@ -100,16 +100,24 @@ a{text-decoration:none;}
     <div class="ldiv"></div>
     <span class="lsub">Norfolk &amp; Suffolk</span>
   </a>
-  <div class="nl">
-    <a href="/">Home</a>
-    <a href="/norfolk">Courses</a>
-    <a href="/itineraries">Itineraries</a>
-    <a href="/experiences" class="act">Experiences</a>
-    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <div class="nl">
+    <div class="nl-drop">
+      <span class="nl-drop-trigger act">Explore</span>
+      <div class="nl-drop-menu">
+        <a href="/norfolk">Courses</a>
+        <a href="/itineraries">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+      </div>
+    </div>
     <a href="/accommodation">Accommodation</a>
-    <a href="/transfers">Transfers</a>
-    <a href="/blog">Journal</a>
-    <a href="/about">About</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">About</span>
+      <div class="nl-drop-menu">
+        <a href="/blog">Journal</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
   </div>
   <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
     <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -118,13 +126,12 @@ a{text-decoration:none;}
 </nav>
 <div class="mob-nav" id="mobNav">
   <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
-  <a href="/"  onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  
   <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
   <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
   <a href="/experiences" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
-  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
   <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
-  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
   <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
   <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
   <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
@@ -193,5 +200,19 @@ a{text-decoration:none;}
   <a href="/" class="fl"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
   <p class="fp">enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists &nbsp;·&nbsp; <a href="/trade" style="color:rgba(232,226,214,0.18);text-decoration:none;">Travel trade</a></p>
 </footer>
+<script>
+  document.querySelectorAll('.nl-drop-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var menu = trigger.nextElementSibling;
+      var isOpen = menu.classList.contains('open');
+      document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+      if (!isOpen) menu.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+  });
+</script>
 </body>
 </html>
