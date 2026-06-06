@@ -126,7 +126,7 @@ a{text-decoration:none;}
     <div class="ldiv"></div>
     <span class="lsub">Norfolk &amp; Suffolk</span>
   </a>
-    <div class="nl">
+  <div class="nl">
     <div class="nl-drop">
       <span class="nl-drop-trigger">Explore</span>
       <div class="nl-drop-menu">
@@ -148,11 +148,10 @@ a{text-decoration:none;}
   <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
     <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
   </button>
-  <span class="enq-nav">Enquire</span>
+  <a href="/enquire" class="enq">Enquire</a>
 </nav>
 <div class="mob-nav" id="mobNav">
   <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
-  
   <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
   <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
   <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
@@ -162,7 +161,6 @@ a{text-decoration:none;}
   <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
   <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
 </div>
-
 <div class="hero">
 <img src="images/rc-enquire-flagstick.jpg" alt="Royal Cromer — flagstick and North Sea" class="rc-hero-img">
 
