@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pascal Ogden PGA Professional | Golf East Anglia Coach</title>
+<meta name="description" content="Pascal Ogden is a former EuroPro Tour player, PGA professional and one of England's most respected golf coaches. Meet the man behind the Golf East Anglia coaching experience.">
+<link rel="canonical" href="https://www.golfeastanglia.com/pascal">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--gold:#b79d64;--gold-l:rgba(183,157,100,0.15);--gold-b:rgba(183,157,100,0.3);--bg:#0d1f0f;--bg2:#111f12;--text:#e8e2d6;--tmid:rgba(232,226,214,0.6);--tlow:rgba(232,226,214,0.28);--bdr:rgba(255,255,255,0.07);--serif:'Cormorant Garamond',serif;--sans:'Outfit',sans-serif;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1;}
+a{text-decoration:none;}
+/* NAV */
+.nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);position:sticky;top:0;background:var(--bg);z-index:100;}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+.nl{display:flex;gap:28px;align-items:center;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.nl-drop{position:relative;display:flex;align-items:center;}
+.nl-drop-trigger{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;cursor:pointer;display:flex;align-items:center;gap:5px;user-select:none;}
+.nl-drop-trigger::after{content:'';display:inline-block;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid currentColor;transition:transform .2s;margin-top:1px;}
+.nl-drop-trigger:hover,.nl-drop-trigger.act{color:var(--gold);}
+.nl-drop-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;background:var(--bg);border:1px solid var(--bdr);min-width:160px;padding:8px 0;z-index:200;}
+.nl-drop-menu.open{display:block;}
+.nl-drop-menu a{display:block;padding:9px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nl-drop-menu a:hover{color:var(--gold);}
+.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;text-decoration:none;}
+.enq:hover{background:var(--gold-l);}
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){.mob-toggle{display:block;}.enq{display:none;}.nl{display:none;}.lsub,.ldiv{display:none;}}
+
+/* HERO */
+.pascal-hero{display:grid;grid-template-columns:1fr 1fr;min-height:580px;}
+.pascal-hero-img{overflow:hidden;}
+.pascal-hero-img img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
+.pascal-hero-content{padding:72px 64px;display:flex;flex-direction:column;justify-content:center;border-bottom:1px solid var(--bdr);}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:28px;}
+.eline{width:36px;height:1px;background:var(--gold);flex-shrink:0;}
+.etxt{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+.pascal-hero-content h1{font-family:var(--serif);font-size:56px;font-weight:300;line-height:1.05;color:var(--text);margin-bottom:8px;}
+.pascal-hero-content h1 em{font-style:italic;color:var(--gold);}
+.pascal-title{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--tmid);margin-bottom:32px;}
+.pascal-hero-content p{font-size:17px;color:var(--tmid);line-height:1.9;font-weight:300;margin-bottom:20px;max-width:480px;}
+.pascal-stats{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1px;background:var(--bdr);border:1px solid var(--bdr);margin-top:40px;}
+.pascal-stat{background:var(--bg);padding:20px 24px;}
+.pascal-stat-num{font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);line-height:1;margin-bottom:6px;}
+.pascal-stat-lbl{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--tlow);}
+
+/* CONTENT */
+.pascal-body{max-width:900px;margin:0 auto;padding:80px 48px;}
+.pascal-body h2{font-family:var(--serif);font-size:38px;font-weight:300;color:var(--text);line-height:1.1;margin:60px 0 22px;}
+.pascal-body h2 em{font-style:italic;color:var(--gold);}
+.pascal-body h3{font-family:var(--serif);font-size:24px;font-weight:300;color:var(--gold);margin:36px 0 14px;}
+.pascal-body p{font-size:17px;color:var(--tmid);line-height:1.9;font-weight:300;margin-bottom:26px;}
+.pascal-body strong{color:var(--text);font-weight:500;}
+
+.pull-quote{border-left:2px solid var(--gold);padding:24px 36px;margin:48px 0;background:var(--bg2);}
+.pull-quote p{font-family:var(--serif);font-size:26px;font-style:italic;color:var(--text);line-height:1.5;margin:0 0 12px;}
+.pull-quote cite{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--tlow);}
+
+.credentials{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:40px 0;}
+.credential{border:1px solid var(--bdr);padding:24px;background:var(--bg2);}
+.credential-icon{font-size:24px;margin-bottom:12px;}
+.credential h4{font-family:var(--serif);font-size:18px;color:var(--text);margin-bottom:8px;font-weight:400;}
+.credential p{font-size:14px;color:var(--tmid);line-height:1.7;margin:0;}
+
+.testimonial-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:40px 0;}
+.testimonial{border:1px solid var(--bdr);padding:28px;background:var(--bg2);}
+.testimonial p{font-family:var(--serif);font-size:18px;font-style:italic;color:var(--text);line-height:1.6;margin-bottom:16px;}
+.testimonial cite{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--tlow);}
+
+.pascal-img-strip{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin:48px 0;}
+.pascal-img-strip img{width:100%;height:300px;object-fit:cover;object-position:center;display:block;}
+
+.cta-box{border:1px solid var(--gold-b);padding:48px;margin:60px 0 0;text-align:center;background:var(--bg2);}
+.cta-box h3{font-family:var(--serif);font-size:32px;font-weight:300;color:var(--text);margin-bottom:14px;}
+.cta-box p{font-size:16px;color:var(--tmid);line-height:1.7;margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto;}
+.cta-btn{display:inline-block;background:var(--gold);color:var(--bg);padding:14px 36px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;font-family:var(--sans);}
+
+.footer{padding:24px 48px;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;}
+.fl{font-family:var(--serif);font-size:15px;}
+.flg{font-style:italic;color:var(--gold);}
+.flr{color:rgba(232,226,214,0.4);font-weight:300;letter-spacing:1px;}
+.fp{font-size:11px;color:rgba(232,226,214,0.18);}
+
+@media(max-width:900px){
+  .pascal-hero{grid-template-columns:1fr;}
+  .pascal-hero-img{height:400px;}
+  .pascal-hero-content{padding:40px 24px;}
+  .pascal-hero-content h1{font-size:40px;}
+  .pascal-stats{grid-template-columns:1fr 1fr 1fr;}
+  .pascal-body{padding:48px 20px;}
+  .pascal-body h2{font-size:30px;}
+  .credentials{grid-template-columns:1fr;}
+  .testimonial-grid{grid-template-columns:1fr;}
+  .pascal-img-strip{grid-template-columns:1fr;}
+  .footer{padding:20px;flex-direction:column;gap:8px;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <div class="nl">
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">Explore</span>
+      <div class="nl-drop-menu">
+        <a href="/norfolk">Courses</a>
+        <a href="/itineraries">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/transfers">Transfers</a>
+      </div>
+    </div>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">About</span>
+      <div class="nl-drop-menu">
+        <a href="/blog">Journal</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="/enquire" class="enq">Enquire</a>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+
+<!-- HERO -->
+<section class="pascal-hero">
+  <div class="pascal-hero-img">
+    <img src="images/rc-pga-pro-action.jpg" alt="Pascal Ogden PGA Professional — coaching on the fairway">
+  </div>
+  <div class="pascal-hero-content">
+    <div class="eyebrow"><div class="eline"></div><div class="etxt">Your Coach</div></div>
+    <h1>Pascal<br><em>Ogden</em></h1>
+    <p class="pascal-title">PGA Professional &nbsp;·&nbsp; EuroPro Tour Player &nbsp;·&nbsp; Junior Coach</p>
+    <p>Twelve years on and around the professional tours. Three wins. A law degree applied to the forensic study of the golf swing. And a gift for teaching that has taken junior golfers from first grip to genuine promise — and adult golfers to the best rounds of their lives.</p>
+    <p>Pascal is the coaching intelligence behind Golf East Anglia, and the reason our trips are remembered long after the scores are forgotten.</p>
+    <div class="pascal-stats">
+      <div class="pascal-stat">
+        <div class="pascal-stat-num">3</div>
+        <div class="pascal-stat-lbl">Tour wins</div>
+      </div>
+      <div class="pascal-stat">
+        <div class="pascal-stat-num">12</div>
+        <div class="pascal-stat-lbl">Years pro</div>
+      </div>
+      <div class="pascal-stat">
+        <div class="pascal-stat-num">~100</div>
+        <div class="pascal-stat-lbl">Juniors coached</div>
+      </div>
+      <div class="pascal-stat">
+        <div class="pascal-stat-num">28→8</div>
+        <div class="pascal-stat-lbl">Handicap · 12 months</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BODY -->
+<div class="pascal-body">
+
+  <h2>A career built on<br><em>making the most of talent</em></h2>
+
+  <p>Pascal Ogden turned professional and began competing on the EuroPro Tour in 2009. Over the years that followed, he did something that most professional golfers never manage: he kept getting better. Not through raw ability alone, but through an obsessive commitment to understanding exactly what the golf swing is, and how to improve it.</p>
+
+  <p>He played on and off the EuroPro Tour until 2017, competing on mini-tours across the world and recording <strong>three professional wins</strong> on the Players and 1836 Tours. Along the way he beat players of the calibre of <strong>Paul Broadhurst</strong> — the Senior Open Champion — which gives you a measure of the standard he reached.</p>
+
+  <p>But Pascal's story is not simply about what he achieved as a player. It is about what he learned. For twelve years he worked under <strong>Graham Walker</strong> — short game coach to Tommy Fleetwood and personal coach to Paul Waring — and spent five years alongside Alan Thompson. He absorbed, questioned, refined. He came away with a model of the golf swing that is unusually clear: a series of sequential movements that can be precisely defined and, crucially, precisely taught.</p>
+
+  <div class="pull-quote">
+    <p>"Pascal manages to make complex ideas simple. Each lesson is a strategic, well-presented insight into how to move your game forward."</p>
+    <cite>Julian Hartley, CEO — Leeds Teaching Hospitals</cite>
+  </div>
+
+  <h2>The forensic mind<br><em>behind the teaching</em></h2>
+
+  <p>What makes Pascal unusual among PGA professionals is that he came to the game with a law degree. That trained him to break complex systems into their component parts, to present arguments clearly, and to find the precise word for the precise thing. He applied all of it to golf.</p>
+
+  <p>The result is a coaching style that is notably free of jargon and notably effective. He uses TrackMan and video analysis where they help — and he's clear-eyed about where they don't. The goal is never to impress with technology. The goal is always the same: to leave you with something you can take to the first tee and use.</p>
+
+  <p>His students — from first-time beginners to accomplished single-figure players — consistently report the same thing: that Pascal sees exactly what is happening in their swing, explains it in terms they immediately understand, and gives them a fix that actually works.</p>
+
+  <div class="credentials">
+    <div class="credential">
+      <div class="credential-icon">🎓</div>
+      <h4>PGA Qualified Professional</h4>
+      <p>Fully qualified PGA professional with over a decade of teaching experience across all levels of the game.</p>
+    </div>
+    <div class="credential">
+      <div class="credential-icon">🏆</div>
+      <h4>EuroPro Tour Player</h4>
+      <p>Competed professionally from 2009 to 2017, with three tour wins and victories over Senior Open Champion Paul Broadhurst.</p>
+    </div>
+    <div class="credential">
+      <div class="credential-icon">⚖️</div>
+      <h4>Law Graduate</h4>
+      <p>A law degree trained him to think analytically — to break complexity into clarity. He has applied that forensic mind to the golf swing ever since.</p>
+    </div>
+    <div class="credential">
+      <div class="credential-icon">📡</div>
+      <h4>TrackMan Certified</h4>
+      <p>Uses data and technology precisely where it helps — and knows when to put it aside. The student's understanding always takes priority over the screen.</p>
+    </div>
+  </div>
+
+  <h2>The junior programme:<br><em>where it really shows</em></h2>
+
+  <p>If you want to understand a coach's true quality, watch them with juniors. Children don't respond to credentials or jargon. They respond to clarity, energy, belief — and to someone who makes them feel that the game is genuinely within their reach.</p>
+
+  <p>Pascal built his junior programme at Bramall Park Golf Club in Cheshire from a handful of children into a thriving section of <strong>nearly 100 young golfers</strong>, many of whom are now showing real competitive promise. That kind of growth doesn't happen by accident. It happens because the children love coming, because parents see genuine progress, and because the coach has created an environment where learning golf feels like one of the best ways to spend a Saturday morning.</p>
+
+  <p>The programme runs year-round — term-time group sessions, intensive holiday camps, and indoor winter coaching using TrackMan. The approach is game-based and challenge-led: rather than drilling technique in isolation, Pascal builds skills through situations that mirror real golf. The children learn to think as well as swing.</p>
+
+  <p>One parent describes watching Pascal work: <em>"He has this quality of making every child feel like the most important person on the range. They all leave standing a little taller than when they arrived."</em></p>
+
+  <div class="pascal-img-strip">
+    <img src="images/rc-pga-pro-action.jpg" alt="Pascal Ogden coaching on the fairway">
+    <img src="images/rc-golfers-silhouette-sunset.jpg" alt="Golfers on the course at sunset">
+  </div>
+
+  <h2>The Côte d'Opale<br><em>connection</em></h2>
+
+  <p>Pascal is half-French, which gives the Golf East Anglia Côte d'Opale Collection a dimension that no amount of travel research could replicate. He knows northern France the way you know a place you grew up loving — the courses, the food, the wine, the particular quality of light over the dunes at Belle Dune in the late afternoon.</p>
+
+  <p>He leads the Côte d'Opale trip personally, combining daily PGA-standard coaching with an evening of expert wine guidance that draws on a genuine passion for French viticulture. He brings his own selections. He explains what he's poured. He makes it feel like the most natural thing in the world to be standing on a championship links in northern France with a glass of something exceptional in your hand.</p>
+
+  <p>It is, simply, a trip that only Pascal could lead.</p>
+
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <p>"Pascal took my handicap from 28 to 8 in twelve months. I built Golf East Anglia around him because I know what he can do for a golfer."</p>
+      <cite>Andy Carroll — Founder, Golf East Anglia</cite>
+    </div>
+    <div class="testimonial">
+      <p>"Pascal saw things in my swing that no other coach had spotted in twenty years. Within two lessons I was hitting the ball like a different golfer."</p>
+      <cite>Roger Milburn — handicap reduced from 14 to 10 in six months</cite>
+    </div>
+    <div class="testimonial">
+      <p>"Genuinely outstanding. Each golf lesson builds on the last — I've never had coaching that felt so purposeful."</p>
+      <cite>Ben Cruse, PwC</cite>
+    </div>
+    <div class="testimonial">
+      <p>"Pascal manages to make complex ideas simple. Each lesson is a strategic, well-presented insight into how to move your game forward."</p>
+      <cite>Julian Hartley, CEO — Leeds Teaching Hospitals</cite>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h3>Play better golf on the courses that matter.</h3>
+    <p>A session with Pascal — before or during your trip — is the single best investment you can make in your golf holiday. Mention it when you enquire and we'll build it into your itinerary.</p>
+    <a href="/enquire" class="cta-btn">Enquire now</a>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <a href="/" class="fl"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
+  <p class="fp">enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists &nbsp;·&nbsp; <a href="/trade" style="color:rgba(232,226,214,0.18);">Travel trade</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.nl-drop-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var menu = trigger.nextElementSibling;
+      var isOpen = menu.classList.contains('open');
+      document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+      if (!isOpen) menu.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+  });
+</script>
+</body>
+</html>
