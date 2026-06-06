@@ -29,7 +29,8 @@ a{text-decoration:none;}
 .nl-drop-trigger::after{content:'';display:inline-block;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid currentColor;transition:transform .2s;margin-top:1px;}
 .nl-drop:hover .nl-drop-trigger,
 .nl-drop-trigger:hover{color:var(--gold);}
-.nl-drop-menu{display:none;position:absolute;top:calc(100% + 16px);left:0;background:var(--bg);border:1px solid var(--bdr);min-width:160px;padding:8px 0;z-index:200;}
+.nl-drop-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;background:var(--bg);border:1px solid var(--bdr);min-width:160px;padding:8px 0;z-index:200;}
+.nl-drop-menu::before{content:'';position:absolute;top:-8px;left:0;right:0;height:8px;}
 .nl-drop:hover .nl-drop-menu{display:block;}
 .nl-drop-menu a{display:block;padding:9px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);text-decoration:none;transition:color .2s;white-space:nowrap;}
 .nl-drop-menu a:hover{color:var(--gold);}
