@@ -27,11 +27,9 @@ a{text-decoration:none;}
 .nl-drop{position:relative;display:flex;align-items:center;}
 .nl-drop-trigger{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;cursor:pointer;display:flex;align-items:center;gap:5px;user-select:none;}
 .nl-drop-trigger::after{content:'';display:inline-block;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid currentColor;transition:transform .2s;margin-top:1px;}
-.nl-drop:hover .nl-drop-trigger,
 .nl-drop-trigger:hover{color:var(--gold);}
 .nl-drop-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;background:var(--bg);border:1px solid var(--bdr);min-width:160px;padding:8px 0;z-index:200;}
-.nl-drop-menu::before{content:'';position:absolute;top:-8px;left:0;right:0;height:8px;}
-.nl-drop:hover .nl-drop-menu{display:block;}
+.nl-drop-menu.open{display:block;}
 .nl-drop-menu a{display:block;padding:9px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);text-decoration:none;transition:color .2s;white-space:nowrap;}
 .nl-drop-menu a:hover{color:var(--gold);}
 .enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;text-decoration:none;}
@@ -154,9 +152,11 @@ a{text-decoration:none;}
     <div class="nl-drop">
       <span class="nl-drop-trigger">Explore</span>
       <div class="nl-drop-menu">
-        <a href="/norfolk">Courses</a>
+        <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/norfolk">Courses</a>
         <a href="/itineraries">Itineraries</a>
         <a href="/experiences">Experiences</a>
+        <a href="/transfers">Transfers</a>
       </div>
     </div>
     <a href="/accommodation">Accommodation</a>
@@ -176,6 +176,7 @@ a{text-decoration:none;}
 </nav>
 <div class="mob-nav" id="mobNav">
   <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
   <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
   <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
   <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
@@ -196,7 +197,8 @@ a{text-decoration:none;}
     <p class="hero-sub">World-ranked links. Heathland classics. Unspoiled English countryside. For the first time, properly packaged for the international travelling golfer.</p>
     <div class="hero-btns">
       <a href="/itineraries" class="btn-primary">Plan your journey</a>
-      <a href="/norfolk" class="btn-ghost">Explore courses</a>
+      <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/norfolk" class="btn-ghost">Explore courses</a>
     </div>
   </div>
   <div class="hero-aside">
@@ -355,5 +357,20 @@ a{text-decoration:none;}
   <a href="/" class="fl footer-logo"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
   <p class="fp">enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists &nbsp;·&nbsp; <a href="/trade" style="color:rgba(232,226,214,0.18);text-decoration:none;">Travel trade</a></p>
 </footer>
+<script>
+  document.querySelectorAll('.nl-drop-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var menu = trigger.nextElementSibling;
+      var isOpen = menu.classList.contains('open');
+      // close all first
+      document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+      if (!isOpen) menu.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+  });
+</script>
 </body>
 </html>

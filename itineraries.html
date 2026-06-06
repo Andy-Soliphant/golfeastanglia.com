@@ -174,9 +174,11 @@ a{text-decoration:none;}
     <div class="nl-drop">
       <span class="nl-drop-trigger act">Explore</span>
       <div class="nl-drop-menu">
-        <a href="/norfolk">Courses</a>
+        <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/norfolk">Courses</a>
         <a href="/itineraries">Itineraries</a>
         <a href="/experiences">Experiences</a>
+        <a href="/transfers">Transfers</a>
       </div>
     </div>
     <a href="/accommodation">Accommodation</a>
@@ -196,6 +198,7 @@ a{text-decoration:none;}
 </nav>
 <div class="mob-nav" id="mobNav">
   <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
   <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
   <a href="/itineraries" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
   <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
