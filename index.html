@@ -20,10 +20,20 @@ a{text-decoration:none;}
 .lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
 .ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
 .lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
-.nl{display:flex;gap:28px;}
-.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;}
+.nl{display:flex;gap:28px;align-items:center;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
 .nl a:hover,.nl a.act{color:var(--gold);}
-.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;}
+/* DROPDOWN */
+.nl-drop{position:relative;display:flex;align-items:center;}
+.nl-drop-trigger{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;cursor:pointer;display:flex;align-items:center;gap:5px;user-select:none;}
+.nl-drop-trigger::after{content:'';display:inline-block;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid currentColor;transition:transform .2s;margin-top:1px;}
+.nl-drop:hover .nl-drop-trigger,
+.nl-drop-trigger:hover{color:var(--gold);}
+.nl-drop-menu{display:none;position:absolute;top:calc(100% + 16px);left:0;background:var(--bg);border:1px solid var(--bdr);min-width:160px;padding:8px 0;z-index:200;}
+.nl-drop:hover .nl-drop-menu{display:block;}
+.nl-drop-menu a{display:block;padding:9px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nl-drop-menu a:hover{color:var(--gold);}
+.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;text-decoration:none;}
 .enq:hover{background:var(--gold-l);}
 /* HERO */
 .hero{padding:80px 48px 70px;border-bottom:1px solid var(--bdr);display:grid;grid-template-columns:1fr 340px;gap:80px;align-items:center;}
@@ -140,13 +150,23 @@ a{text-decoration:none;}
     <span class="lsub">Norfolk &amp; Suffolk</span>
   </a>
   <div class="nl">
-    <a href="/norfolk">Courses</a>
-    <a href="/itineraries">Itineraries</a>
-    <a href="/experiences">Experiences</a>
-    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">Explore</span>
+      <div class="nl-drop-menu">
+        <a href="/norfolk">Courses</a>
+        <a href="/itineraries">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+      </div>
+    </div>
     <a href="/accommodation">Accommodation</a>
-    <a href="/blog">Journal</a>
-    <a href="/about">About</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">About</span>
+      <div class="nl-drop-menu">
+        <a href="/blog">Journal</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
   </div>
   <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
     <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -158,14 +178,14 @@ a{text-decoration:none;}
   <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
   <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
   <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
-  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
   <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
   <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
   <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
   <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
 </div>
 
-<div class="rc-img-wrap"><img src="images/rc-golfers-sunset-green-sea.jpg" alt="Royal Cromer — golfers on the green at sunset with sea behind" class="rc-hero-img"></div>
+<div class="rc-img-wrap"><img src="rc-golfers-sunset-green-sea.jpg" alt="Royal Cromer — golfers on the green at sunset with sea behind" class="rc-hero-img"></div>
 
 <div class="hero">
 
@@ -227,7 +247,7 @@ a{text-decoration:none;}
 </div>
 
 
-<div class="rc-img-wrap"><img src="images/hunstanton-bunkers-evening.jpg" alt="Hunstanton Golf Club — bunkers and flagstick in evening light" class="rc-wide-img"></div>
+<div class="rc-img-wrap"><img src="hunstanton-bunkers-evening.jpg" alt="Hunstanton Golf Club — bunkers and flagstick in evening light" class="rc-wide-img"></div>
 <div class="intro">
   <div>
     <div class="intro-lbl">The proposition</div>
@@ -261,7 +281,7 @@ a{text-decoration:none;}
 </div>
 
 
-<div class="rc-img-wrap"><img src="images/rc-rainbow-landscape.jpg" alt="Royal Cromer — full rainbow arc over the links" class="rc-strip-img"></div>
+<div class="rc-img-wrap"><img src="rc-rainbow-landscape.jpg" alt="Royal Cromer — full rainbow arc over the links" class="rc-strip-img"></div>
 <div style="height:56px;"></div>
 
 <div class="itin-preview">
