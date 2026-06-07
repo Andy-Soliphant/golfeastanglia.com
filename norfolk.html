@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Norfolk Golf Courses | Golf Breaks Norfolk | Golf East Anglia</title>
-  <meta name="description" content="Discover the finest Norfolk golf courses for your golf break — from links masterpieces on the North Norfolk coast to heathland gems and stay & play options near Norwich. Expert curation by Golf East Anglia.">
+  <title>Golf Courses Norfolk & Suffolk | Golf East Anglia</title>
+  <meta name="description" content="The finest golf courses in Norfolk and Suffolk — from world-ranked links on the north Norfolk coast to heathland classics and championship courses throughout East Anglia.">
   <link rel="canonical" href="https://www.golfeastanglia.com/norfolk">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -299,6 +299,13 @@
   .mob-toggle{display:block;}
   .enq{display:none;}
 }
+    /* COUNTY TABS */
+    .county-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin:48px 0 0;padding:0 80px;}
+    .county-tab{padding:14px 32px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);cursor:pointer;border:none;background:none;font-family:'Outfit',sans-serif;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s;}
+    .county-tab.active{color:var(--gold);border-bottom-color:var(--gold);}
+    .county-tab:hover{color:var(--gold);}
+    .county-pane{display:none;padding:0 80px;}
+    .county-pane.active{display:block;}
 </style>
 </head>
 <body>
@@ -348,20 +355,332 @@
 <header class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Norfolk Golf Courses</p>
-    <h1>Where Links Golf<br><em>Meets Open Sky</em></h1>
-    <p>From the windswept magnificence of Royal West Norfolk to heathland gems and stay &amp; play retreats — Norfolk's golf courses reward those who seek them out. We know every one personally.</p>
+    <p class="hero-eyebrow">Norfolk &amp; Suffolk Golf Courses</p>
+    <h1>England's Last<br><em>Great Golf Region</em></h1>
+    <p>World-ranked links on the north Norfolk coast. Championship heathland in Suffolk. Clifftop courses. Breckland classics. Every course here is known to us personally — curated, not listed.</p>
   </div>
 </header>
 
+<div class="county-tabs">
+  <button class="county-tab active" onclick="showCounty('norfolk',this)">Norfolk</button>
+  <button class="county-tab" onclick="showCounty('suffolk',this)">Suffolk</button>
+</div>
+
+<!-- NORFOLK -->
+<div id="norfolk" class="county-pane active">
 <main>
 
-  <!-- PREMIUM TIER -->
   <div class="tier-header">
     <span class="tier-badge premium">Signature</span>
     <div class="tier-line"></div>
     <span class="tier-title premium">Signature Courses</span>
   </div>
+  <p class="tier-desc">World-ranked. Historically significant. The courses that define a Golf East Anglia journey — each a destination in its own right.</p>
+
+  <div class="courses-grid">
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <img src="images/rc-enquire-flagstick.jpg" alt="Royal West Norfolk — flagstick with North Sea behind" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+      </div>
+      <div class="course-body">
+        <p class="course-type">Links · Brancaster · North Norfolk</p>
+        <h2 class="course-name">Royal West Norfolk</h2>
+        <p class="course-desc">Ranked 42nd in Britain &amp; Ireland. Reached across a tidal causeway — access varies with the tides. Strictly limited visitor numbers. One of England's most extraordinary links, and the course that anchors almost every GEA itinerary.</p>
+        <div class="course-tags"><span class="tag">World Top 100</span><span class="tag">Tidal Access</span><span class="tag">Historic</span><span class="tag">Championship</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <img src="images/hunstanton-bunkers-evening.jpg" alt="Hunstanton Golf Club — links bunkers at evening" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+      </div>
+      <div class="course-body">
+        <p class="course-type">Links · Hunstanton · North West Norfolk</p>
+        <h2 class="course-name">Hunstanton Golf Club</h2>
+        <p class="course-desc">Consistently in England's Top 20 and a regular qualifying venue for national championships. Classic out-and-back links routing along the Wash, with exceptional par threes and a back nine that settles scores. One of the finest traditional links in England.</p>
+        <div class="course-tags"><span class="tag">Top 20 England</span><span class="tag">Links</span><span class="tag">Championship</span><span class="tag">Qualifying Venue</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <img src="images/rc-golfers-sunset-green-sea.jpg" alt="Royal Cromer — golfers on the clifftop at sunset" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+      </div>
+      <div class="course-body">
+        <p class="course-type">Clifftop Links · Cromer · North Norfolk</p>
+        <h2 class="course-name">Royal Cromer</h2>
+        <p class="course-desc">Founded 1888. Designed with the involvement of Old Tom Morris, JH Taylor and James Braid. Perched on the highest clifftop on England's east coast, with the North Sea visible from nearly every hole. Visually arresting, genuinely demanding — and more accessible than its stature might suggest.</p>
+        <div class="course-tags"><span class="tag">Est. 1888</span><span class="tag">Clifftop</span><span class="tag">Top 100 England</span><span class="tag">Royal</span></div>
+        <a href="/blog-royal-cromer" style="display:inline-block;margin-top:12px;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);text-decoration:none;">Course guide →</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Clifftop · Sheringham · North Norfolk</p>
+        <h2 class="course-name">Sheringham Golf Club</h2>
+        <p class="course-desc">Established 1892. A clifftop course of real character perched between the cliff edge and the town, with some of the most dramatic drops and views on the Norfolk coast. Ranked in England's Top 100. Shorter than its neighbours but technically demanding — particularly around the greens and bunkers. Pairs naturally with Royal Cromer.</p>
+        <div class="course-tags"><span class="tag">Est. 1892</span><span class="tag">Clifftop</span><span class="tag">Top 100 England</span><span class="tag">Sea Views</span></div>
+      </div>
+    </div>
+
+  </div><!-- /courses-grid -->
+
+  <hr class="section-divider">
+
+  <div class="tier-header">
+    <span class="tier-badge" style="background:rgba(183,157,100,0.12);color:var(--gold);border:1px solid rgba(183,157,100,0.3);padding:4px 14px;font-size:9px;letter-spacing:2px;text-transform:uppercase;">Classic</span>
+    <div class="tier-line"></div>
+    <span class="tier-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--text-muted);">Classic Courses</span>
+  </div>
+  <p class="tier-desc">Well-established courses of genuine quality — excellent additions to any multi-day itinerary. Strong enough to stand alone; even better alongside the Signature courses.</p>
+
+  <div class="discovery-grid">
+
+    <div class="discovery-card">
+      <p class="course-type">Heathland · Thetford · Breckland</p>
+      <h2 class="course-name">Thetford Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Designed by James Braid and Phillip Mackenzie Ross, widely regarded as one of the finest heathland courses in East Anglia. Mature pine, oak and birch frame holes that change direction constantly — a proper test year-round thanks to excellent drainage. Pairs beautifully with Royal Worlington for a Breckland golf day.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Braid Design</span><span class="tag">Heathland</span><span class="tag">Breckland</span><span class="tag">Year-Round</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Heathland · Swaffham · Breckland</p>
+      <h2 class="course-name">Swaffham Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">An absolute gem of a heathland course on Norfolk Breckland heath — one reviewer compared it favourably to Woburn. 190 acres, superb greens, no water hazards, exceptional drainage. Established 1922, expanded to 18 holes in 2001 with seamless integration. Genuinely welcoming to visitors and outstanding value.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Heathland</span><span class="tag">Breckland</span><span class="tag">Est. 1922</span><span class="tag">Excellent Greens</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Royal Norwich</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Recently relocated and redesigned by Ross McMurray to championship standard at Weston Park — stretching to 7,209 yards from the tips, officially opened by Ian Poulter in 2019. The strongest course in the Norwich area and the right choice for groups basing themselves in the city.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Championship</span><span class="tag">Royal</span><span class="tag">Norwich</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · West Norfolk</p>
+      <h2 class="course-name">King's Lynn Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Regarded as the gateway to North Norfolk's golf coast — a woodland parkland with mature tree-lined fairways and a genuine test of accuracy. The 10th hole is regarded as one of the best in the East of England. Convenient for groups combining west Norfolk courses with Hunstanton.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">West Norfolk</span><span class="tag">Tree-Lined</span></div>
+    </div>
+
+  </div>
+
+  <hr class="section-divider">
+
+  <div class="tier-header">
+    <span class="tier-badge discovery">Discovery</span>
+    <div class="tier-line"></div>
+    <span class="tier-title discovery">Discovery Courses</span>
+  </div>
+  <p class="tier-desc">Accessible, enjoyable and well-run — ideal for rounding out a longer stay or for groups who want variety alongside the marquee rounds.</p>
+
+  <div class="discovery-grid">
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Sprowston Manor</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Hotel and spa complex on the edge of Norwich with an 18-hole championship parkland course. Ideal for groups wanting golf and accommodation together, or as a comfortable city base with golf on the doorstep.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Hotel</span><span class="tag">Stay &amp; Play</span><span class="tag">Norwich</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Bawburgh Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Parkland course west of Norwich set on undulating land with views over the Yare Valley. Comfortable lodges for stay &amp; play, good practice facilities, relaxed atmosphere. A social round with good accommodation.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Stay &amp; Play</span><span class="tag">Lodges</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Mid-Norfolk</p>
+      <h2 class="course-name">Fakenham Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Compact, friendly and enjoyable — set in the heart of Norfolk with a fast-running links feel despite being inland. Excellent for a relaxed round between the coastal courses, and good value.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Mid-Norfolk</span><span class="tag">Value</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Resort Parkland · Hunstanton</p>
+      <h2 class="course-name">Heacham Manor</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">The on-site course at Heacham Manor Hotel — 18 holes influenced by the Heacham River and four lakes. The visual 7th is the standout hole. Ideal for groups staying at the hotel who want golf without travelling.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Hotel Course</span><span class="tag">Resort</span><span class="tag">Near Hunstanton</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Barnham Broom</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Two courses played along the Yare River Valley — the Valley course is the more senior layout, parkland with water to navigate and good elevation. Hotel and leisure facilities make it a complete stay &amp; play option south-west of Norwich.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Two Courses</span><span class="tag">Parkland</span><span class="tag">Stay &amp; Play</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Mundesley · North Norfolk</p>
+      <h2 class="course-name">Mundesley Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A nine-hole clifftop and parkland course near Mundesley — compact, characterful and with coastal views. A friendly club that makes a pleasant addition to a north Norfolk stay, particularly for groups of mixed ability.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Nine Holes</span><span class="tag">Coastal</span><span class="tag">North Norfolk</span></div>
+    </div>
+
+  </div>
+
+  <div class="cta-strip">
+    <h2>Plan Your Norfolk Golf Break</h2>
+    <p>Tell us which courses appeal, your dates and group size — we'll design the itinerary around them.</p>
+    <a href="/enquire" class="btn-gold">Start Planning</a>
+  </div>
+
+</main>
+</div>
+
+<!-- SUFFOLK -->
+<div id="suffolk" class="county-pane">
+<main>
+
+  <div class="tier-header">
+    <span class="tier-badge premium">Signature</span>
+    <div class="tier-line"></div>
+    <span class="tier-title premium">Signature Courses</span>
+  </div>
+  <p class="tier-desc">Suffolk's finest — championship courses of national standing, each with a distinct character. The courses that make a Suffolk golf trip genuinely memorable.</p>
+
+  <div class="courses-grid">
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Heathland · West Suffolk · The Sacred Nine</p>
+        <h2 class="course-name">Royal Worlington &amp; Newmarket</h2>
+        <p class="course-desc">Bernard Darwin named it "the sacred nine" in 1928. Consistently ranked in the Top 100 of Britain &amp; Ireland. Nine holes played twice — forty acres of west Suffolk heathland with more history per hole than almost anywhere else in the game. A pilgrimage for every serious golfer. The perfect closer to any East Anglia golf trip.</p>
+        <div class="course-tags"><span class="tag">Top 100 GB&amp;I</span><span class="tag">Nine Holes</span><span class="tag">Heathland</span><span class="tag">Pilgrimage</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Heathland · Aldeburgh · Suffolk Coast</p>
+        <h2 class="course-name">Aldeburgh Golf Club</h2>
+        <p class="course-desc">Ranked in the Top 100 of Britain &amp; Ireland. Championship course designed by Willie Park Jr, JH Taylor and Harry Colt — an Open-winning trio. Maritime heathland that plays with a genuine links feel: gorse-lined, fast-draining, par 68 that is a far sterner test than the yardage suggests. Foursomes preferred. Black labradors optional.</p>
+        <div class="course-tags"><span class="tag">Top 100 GB&amp;I</span><span class="tag">Heathland Links</span><span class="tag">Championship</span><span class="tag">Open Design Pedigree</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Heathland · Thorpeness · Suffolk Coast</p>
+        <h2 class="course-name">Thorpeness Golf Club</h2>
+        <p class="course-desc">Designed by James Braid in 1922 and largely unchanged — a heathland layout through silver birch, pine, gorse and heather with the famous House in the Clouds visible above the tree line. Almost next door to Aldeburgh, making them a natural two-course pairing. One of Suffolk's best-kept secrets from the wider golfing world.</p>
+        <div class="course-tags"><span class="tag">James Braid 1922</span><span class="tag">Heathland</span><span class="tag">Hotel On-Site</span><span class="tag">Suffolk Coast</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Links · Felixstowe · Suffolk Coast</p>
+        <h2 class="course-name">Felixstowe Ferry Golf Club</h2>
+        <p class="course-desc">The only true links course in Suffolk — and one of only 246 true links courses in the entire world. The Martello Course, named after the tower between the 14th tee and penultimate green, is one of England's oldest courses, founded 1880. Fully exposed to the North Sea wind. When it's blowing at Felixstowe, hang on to your hat.</p>
+        <div class="course-tags"><span class="tag">True Links</span><span class="tag">Est. 1880</span><span class="tag">One of 246 Links Worldwide</span><span class="tag">Coastal</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="section-divider">
+
+  <div class="tier-header">
+    <span class="tier-badge" style="background:rgba(183,157,100,0.12);color:var(--gold);border:1px solid rgba(183,157,100,0.3);padding:4px 14px;font-size:9px;letter-spacing:2px;text-transform:uppercase;">Classic</span>
+    <div class="tier-line"></div>
+    <span class="tier-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--text-muted);">Classic Courses</span>
+  </div>
+  <p class="tier-desc">Excellent courses that reward the golfer looking for depth and variety alongside the Signature experiences.</p>
+
+  <div class="discovery-grid">
+
+    <div class="discovery-card">
+      <p class="course-type">Heathland · Woodbridge · Central Suffolk</p>
+      <h2 class="course-name">Woodbridge Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Founded 1893 — one of Suffolk's most respected clubs. The Heath course is a fine heathland layout through pine and heather with tight, well-defined fairways. Consistently well-maintained and popular with serious county golfers. A natural partner for Aldeburgh and Thorpeness on a Suffolk tour.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Heathland</span><span class="tag">Est. 1893</span><span class="tag">Suffolk</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Heathland · Ipswich · South Suffolk</p>
+      <h2 class="course-name">Ipswich Golf Club (Purdis Heath)</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A classic James Braid design opened in 1926, taking full advantage of undulating heathland to provide a traditional experience. Well-regarded for its course condition and variety — a strong option for groups based in south Suffolk or Ipswich.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">James Braid 1926</span><span class="tag">Heathland</span><span class="tag">Ipswich</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Bury St Edmunds · West Suffolk</p>
+      <h2 class="course-name">Flempton Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A nine-hole JH Taylor design dating back to 1906 — one of the most enjoyable nine-hole courses in East Anglia. Compact, precise, and with a charm entirely its own. An excellent addition to a west Suffolk day alongside Royal Worlington.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Nine Holes</span><span class="tag">JH Taylor 1906</span><span class="tag">West Suffolk</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Fynn Valley · Ipswich</p>
+      <h2 class="course-name">Fynn Valley Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Picturesque valley setting near Ipswich with a challenging 18-hole course — tree-lined, contoured greens and nearly 100 bunkers. Driving range, 9-hole course, golf lessons and self-catering cottages on-site. A complete facility for groups wanting to combine golf with a longer stay.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Stay &amp; Play</span><span class="tag">Practice Facilities</span></div>
+    </div>
+
+  </div>
+
+  <hr class="section-divider">
+
+  <div class="tier-header">
+    <span class="tier-badge discovery">Discovery</span>
+    <div class="tier-line"></div>
+    <span class="tier-title discovery">Discovery Courses</span>
+  </div>
+  <p class="tier-desc">Enjoyable, well-run courses that complete the picture for longer Suffolk stays.</p>
+
+  <div class="discovery-grid">
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Beccles · North Suffolk</p>
+      <h2 class="course-name">Rookery Park Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A popular Suffolk parkland course near Beccles with a scenic setting and good atmosphere. Well-regarded locally — a solid Discovery option for groups based in the Waveney Valley or visiting the Norfolk Broads.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">North Suffolk</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Halesworth · North Suffolk</p>
+      <h2 class="course-name">Halesworth Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A well-maintained Suffolk parkland course in beautiful countryside near Halesworth. Good value, welcoming atmosphere and a pleasant round — a solid addition for groups basing themselves in north Suffolk.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Suffolk</span><span class="tag">Value</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland / Hotel · Woodbridge · Suffolk</p>
+      <h2 class="course-name">Ufford Park</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A championship 18-hole course open year-round thanks to excellent drainage — voted a Top 10 Winter Course by Today's Golfer. Hotel and leisure facilities on-site. A practical choice for groups wanting a complete stay &amp; play package in Suffolk.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Hotel Course</span><span class="tag">Stay &amp; Play</span><span class="tag">Top 10 Winter</span></div>
+    </div>
+
+  </div>
+
+  <div class="cta-strip">
+    <h2>Plan Your Suffolk Golf Break</h2>
+    <p>Tell us which courses appeal, your dates and group size — we'll design the itinerary around them.</p>
+    <a href="/enquire" class="btn-gold">Start Planning</a>
+  </div>
+
+</main>
+</div>
   <p class="tier-desc">World-ranked. Historically significant. The courses that define a Golf East Anglia journey — each a destination in its own right, best experienced as part of a curated <a href="/itineraries" style="color:var(--gold);text-decoration:none;">Golf East Anglia itinerary</a>.</p>
 
   <div class="courses-grid">
@@ -616,6 +935,12 @@
 </footer>
 
 <script>
+  function showCounty(id, btn) {
+    document.querySelectorAll('.county-pane').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.county-tab').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+  }
   document.querySelectorAll('.nl-drop-trigger').forEach(function(trigger) {
     trigger.addEventListener('click', function(e) {
       e.stopPropagation();
