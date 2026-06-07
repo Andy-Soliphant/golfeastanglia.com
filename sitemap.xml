@@ -1,18 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.golfeastanglia.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.golfeastanglia.com/norfolk.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.golfeastanglia.com/suffolk.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.golfeastanglia.com/itineraries.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.golfeastanglia.com/accommodation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.golfeastanglia.com/transfers.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.golfeastanglia.com/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.golfeastanglia.com/blog-royal-west-norfolk.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.golfeastanglia.com/blog-three-day-norfolk.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.golfeastanglia.com/blog-stay-play-norwich.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.golfeastanglia.com/cote-dopale-collection.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.golfeastanglia.com/experiences.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.golfeastanglia.com/pga-pro.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.golfeastanglia.com/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.golfeastanglia.com/enquire.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Core pages -->
+  <url>
+    <loc>https://www.golfeastanglia.com/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/norfolk</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/itineraries</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/experiences</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/accommodation</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/transfers</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/enquire</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/about</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/trade</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Pascal -->
+  <url>
+    <loc>https://www.golfeastanglia.com/pascal</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Côte d'Opale -->
+  <url>
+    <loc>https://www.golfeastanglia.com/cote-dopale-collection</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog index -->
+  <url>
+    <loc>https://www.golfeastanglia.com/blog</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog articles -->
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-royal-cromer</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-east-coast-links</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-three-day-norfolk</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-pascal-ogden</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-royal-west-norfolk</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-stay-play-norwich</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
