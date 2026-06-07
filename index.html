@@ -61,7 +61,8 @@ a{text-decoration:none;}
 .ticker{overflow:hidden;border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:14px 0;background:rgba(183,157,100,0.03);}
 .ticker-inner{display:flex;gap:48px;white-space:nowrap;animation:ticker 25s linear infinite;}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.ticker-item{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(232,226,214,0.28);}
+.ticker-item{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(232,226,214,0.28);text-decoration:none;transition:color .2s;}
+.ticker-item:hover{color:var(--gold);}
 .ticker-item::after{content:' ·';color:var(--gold);margin-left:48px;}
 /* INTRO */
 .intro{padding:64px 48px;display:grid;grid-template-columns:260px 1fr;gap:60px;border-bottom:1px solid var(--bdr);}
@@ -227,19 +228,26 @@ a{text-decoration:none;}
 
 <div class="ticker">
   <div class="ticker-inner">
-    <span class="ticker-item">Royal West Norfolk</span>
-    <span class="ticker-item">Hunstanton</span>
-    <span class="ticker-item">Aldeburgh</span>
-    <span class="ticker-item">Thorpeness</span>
-    <span class="ticker-item">Royal Cromer</span>
-    <span class="ticker-item">Sheringham</span>
-    <span class="ticker-item">Woodbridge</span>
-    <span class="ticker-item">Felixstowe Ferry</span>
-    <span class="ticker-item">Royal Worlington</span>
-    <span class="ticker-item">Royal West Norfolk</span>
-    <span class="ticker-item">Hunstanton</span>
-    <span class="ticker-item">Aldeburgh</span>
-    <span class="ticker-item">Thorpeness</span>
+    <a href="/norfolk#royal-west-norfolk" class="ticker-item">Royal West Norfolk</a>
+    <a href="/norfolk#hunstanton" class="ticker-item">Hunstanton</a>
+    <a href="/norfolk#aldeburgh" class="ticker-item" data-county="suffolk">Aldeburgh</a>
+    <a href="/norfolk#thorpeness" class="ticker-item" data-county="suffolk">Thorpeness</a>
+    <a href="/norfolk#royal-cromer" class="ticker-item">Royal Cromer</a>
+    <a href="/norfolk#sheringham" class="ticker-item">Sheringham</a>
+    <a href="/norfolk#woodbridge" class="ticker-item" data-county="suffolk">Woodbridge</a>
+    <a href="/norfolk#felixstowe-ferry" class="ticker-item" data-county="suffolk">Felixstowe Ferry</a>
+    <a href="/norfolk#royal-worlington" class="ticker-item" data-county="suffolk">Royal Worlington</a>
+    <a href="/norfolk#royal-west-norfolk" class="ticker-item">Royal West Norfolk</a>
+    <a href="/norfolk#hunstanton" class="ticker-item">Hunstanton</a>
+    <a href="/norfolk#aldeburgh" class="ticker-item" data-county="suffolk">Aldeburgh</a>
+    <a href="/norfolk#thorpeness" class="ticker-item" data-county="suffolk">Thorpeness</a>
+    <a href="/norfolk#royal-cromer" class="ticker-item">Royal Cromer</a>
+    <a href="/norfolk#sheringham" class="ticker-item">Sheringham</a>
+    <a href="/norfolk#woodbridge" class="ticker-item" data-county="suffolk">Woodbridge</a>
+    <a href="/norfolk#felixstowe-ferry" class="ticker-item" data-county="suffolk">Felixstowe Ferry</a>
+    <a href="/norfolk#royal-worlington" class="ticker-item" data-county="suffolk">Royal Worlington</a>
+  </div>
+</div>
     <span class="ticker-item">Royal Cromer</span>
     <span class="ticker-item">Sheringham</span>
     <span class="ticker-item">Woodbridge</span>
