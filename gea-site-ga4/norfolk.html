@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-54VBHY01CG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-54VBHY01CG");
+  </script>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Courses Norfolk & Suffolk | Golf East Anglia</title>
+  <meta name="description" content="The finest golf courses in Norfolk and Suffolk — from world-ranked links on the north Norfolk coast to heathland classics and championship courses throughout East Anglia.">
+  <link rel="canonical" href="https://www.golfeastanglia.com/norfolk">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1f0f;
+      --bg-mid: #111f13;
+      --bg-card: #0f2211;
+      --gold: #b79d64;
+      --gold-light: #cdb97a;
+      --gold-dim: rgba(183,157,100,0.15);
+      --text: #e8e0d0;
+      --text-muted: #9a9080;
+      --border: rgba(183,157,100,0.2);
+      --premium: #b79d64;
+      --discovery: #7a9e6e;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);position:sticky;top:0;background:var(--bg);z-index:100;}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+.nl{display:flex;gap:28px;align-items:center;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.nl-drop{position:relative;display:flex;align-items:center;}
+.nl-drop-trigger{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;cursor:pointer;display:flex;align-items:center;gap:5px;user-select:none;}
+.nl-drop-trigger::after{content:'';display:inline-block;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid currentColor;transition:transform .2s;margin-top:1px;}
+.nl-drop-trigger:hover{color:var(--gold);}
+.nl-drop-trigger.act{color:var(--gold);}
+.nl-drop-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;background:var(--bg);border:1px solid var(--bdr);min-width:160px;padding:8px 0;z-index:200;}
+.nl-drop-menu.open{display:block;}
+.nl-drop-menu a{display:block;padding:9px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nl-drop-menu a:hover{color:var(--gold);}
+.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;text-decoration:none;}
+.enq:hover{background:var(--gold-l);}
+/* HERO */
+    .hero {
+      position: relative;
+      height: 480px;
+      display: flex; align-items: flex-end;
+      padding: 64px 80px;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, #1a3a1c 0%, #0d2410 40%, #061408 100%);
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 30% 60%, rgba(183,157,100,0.08) 0%, transparent 60%);
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(40px, 5vw, 64px);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero p {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    /* MAIN */
+    main { max-width: 1200px; margin: 0 auto; padding: 80px 48px; }
+
+    /* TIER HEADERS */
+    .tier-header {
+      display: flex; align-items: center; gap: 20px;
+      margin-bottom: 48px;
+    }
+    .tier-badge {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border: 1px solid currentColor;
+      font-family: 'Outfit', sans-serif;
+    }
+    .tier-badge.premium { color: var(--premium); border-color: var(--premium); }
+    .tier-badge.discovery { color: var(--discovery); border-color: var(--discovery); }
+    .tier-line { flex: 1; height: 1px; background: var(--border); }
+    .tier-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 300;
+    }
+    .tier-title.premium { color: var(--premium); }
+    .tier-title.discovery { color: var(--discovery); }
+    .tier-desc {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 48px;
+      margin-top: -32px;
+      max-width: 700px;
+    }
+
+    /* COURSE CARDS — PREMIUM */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 32px;
+      margin-bottom: 80px;
+    }
+    .course-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .course-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .course-img {
+      width: 100%; height: 220px;
+      object-fit: cover;
+      display: block;
+      background: #1a2f1c;
+    }
+    .course-img-placeholder {
+      width: 100%; height: 220px;
+      background: linear-gradient(135deg, #1a2f1c 0%, #0d2010 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .course-img-placeholder svg { opacity: 0.2; }
+    .course-body { padding: 28px; }
+    .course-type {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .course-card.discovery-card .course-type { color: var(--discovery); }
+    .course-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .course-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+    .course-tags {
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+    .tag {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    /* DISCOVERY SECTION */
+    .discovery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 80px;
+    }
+    .discovery-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(122,158,110,0.2);
+      padding: 28px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .discovery-card:hover {
+      border-color: var(--discovery);
+      transform: translateY(-3px);
+    }
+    .discovery-card .course-type { color: var(--discovery); }
+    .discovery-card .course-name { font-size: 21px; }
+
+    /* SECTION DIVIDER */
+    .section-divider { margin: 80px 0; border: none; border-top: 1px solid var(--border); }
+
+    /* CTA STRIP */
+    .cta-strip {
+      border: 1px solid var(--border);
+      padding: 56px 64px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(183,157,100,0.05) 0%, transparent 60%);
+      margin-top: 80px;
+    }
+    .cta-strip h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+    .cta-strip p { color: var(--text-muted); margin-bottom: 32px; font-size: 15px; }
+    .btn-gold {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--bg);
+      padding: 14px 40px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .btn-gold:hover { background: var(--gold-light); }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      color: var(--gold);
+    }
+    .footer-links { display: flex; gap: 32px; flex-wrap: wrap; }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { color: var(--text-muted); font-size: 12px; width: 100%; text-align: center; }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { padding: 40px 24px; height: auto; min-height: 360px; }
+      main { padding: 48px 24px; }
+      .courses-grid { grid-template-columns: 1fr; }
+      .discovery-grid { grid-template-columns: 1fr; }
+      .cta-strip { padding: 40px 24px; }
+      footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+    }
+  
+/* NAV - nl class */
+.nl{display:flex;gap:22px;flex-wrap:wrap;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.enq{border:1px solid rgba(183,157,100,0.3);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;text-decoration:none;}
+.enq:hover{background:rgba(183,157,100,0.15);}
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+    /* COUNTY TABS */
+    .county-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin:48px 0 0;padding:0 80px;}
+    .county-tab{padding:14px 32px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);cursor:pointer;border:none;background:none;font-family:'Outfit',sans-serif;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s;}
+    .county-tab.active{color:var(--gold);border-bottom-color:var(--gold);}
+    .county-tab:hover{color:var(--gold);}
+    .county-pane{display:none;padding:0 80px;}
+    .county-pane.active{display:block;}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <div class="nl">
+    <div class="nl-drop">
+      <span class="nl-drop-trigger act">Explore</span>
+            <div class="nl-drop-menu">
+        <a href="/norfolk">Courses</a>
+        <a href="/itineraries">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/transfers">Transfers</a>
+      </div>
+    </div>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">About</span>
+      <div class="nl-drop-menu">
+        <a href="/blog">Journal</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="/enquire" class="enq">Enquire</a>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/norfolk" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Norfolk &amp; Suffolk Golf Courses</p>
+    <h1>England's Last<br><em>Great Golf Region</em></h1>
+    <p>World-ranked links on the north Norfolk coast. Championship heathland in Suffolk. Clifftop courses. Breckland classics. Every course here is known to us personally — curated, not listed.</p>
+  </div>
+</header>
+
+<div class="county-tabs">
+  <button class="county-tab active" onclick="showCounty('norfolk',this)">Norfolk</button>
+  <button class="county-tab" onclick="showCounty('suffolk',this)">Suffolk</button>
+</div>
+
+<!-- NORFOLK -->
+<div id="norfolk" class="county-pane active">
+<main>
+
+  <div class="tier-header">
+    <span class="tier-badge premium">Signature</span>
+    <div class="tier-line"></div>
+    <span class="tier-title premium">Signature Courses</span>
+  </div>
+  <p class="tier-desc">World-ranked. Historically significant. The courses that define a Golf East Anglia journey — each a destination in its own right.</p>
+
+  <div class="courses-grid">
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Links · Brancaster · North Norfolk</p>
+        <span id="royal-west-norfolk" style="position:relative;top:-100px;display:block;visibility:hidden;"></span><h2 class="course-name">Royal West Norfolk</h2>
+        <p class="course-desc">Ranked 42nd in Britain &amp; Ireland. Reached across a tidal causeway — access varies with the tides. Strictly limited visitor numbers. One of England's most extraordinary links, and the course that anchors almost every GEA itinerary.</p>
+        <div class="course-tags"><span class="tag">World Top 100</span><span class="tag">Tidal Access</span><span class="tag">Historic</span><span class="tag">Championship</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <img src="images/hunstanton-beachhuts-wide.jpg" alt="Hunstanton Golf Club — links course with beach huts" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+      </div>
+      <div class="course-body">
+        <p class="course-type">Links · Hunstanton · North West Norfolk</p>
+        <span id="hunstanton" style="position:relative;top:-100px;display:block;visibility:hidden;"></span><h2 class="course-name">Hunstanton Golf Club</h2>
+        <p class="course-desc">Consistently in England's Top 20 and a regular qualifying venue for national championships. Classic out-and-back links routing along the Wash, with exceptional par threes and a back nine that settles scores. One of the finest traditional links in England.</p>
+        <div class="course-tags"><span class="tag">Top 20 England</span><span class="tag">Links</span><span class="tag">Championship</span><span class="tag">Qualifying Venue</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <img src="images/rc-golfers-sunset-green-sea.jpg" alt="Royal Cromer — golfers on the clifftop at sunset" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+      </div>
+      <div class="course-body">
+        <p class="course-type">Clifftop Links · Cromer · North Norfolk</p>
+        <span id="royal-cromer" style="position:relative;top:-100px;display:block;visibility:hidden;"></span><h2 class="course-name">Royal Cromer</h2>
+        <p class="course-desc">Founded 1888. Designed with the involvement of Old Tom Morris, JH Taylor and James Braid. Perched on the highest clifftop on England's east coast, with the North Sea visible from nearly every hole. Visually arresting, genuinely demanding — and more accessible than its stature might suggest.</p>
+        <div class="course-tags"><span class="tag">Est. 1888</span><span class="tag">Clifftop</span><span class="tag">Top 100 England</span><span class="tag">Royal</span></div>
+        <a href="/blog-royal-cromer" style="display:inline-block;margin-top:12px;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);text-decoration:none;">Course guide →</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Clifftop · Sheringham · North Norfolk</p>
+        <span id="sheringham" style="position:relative;top:-100px;display:block;visibility:hidden;"></span><h2 class="course-name">Sheringham Golf Club</h2>
+        <p class="course-desc">Established 1892. A clifftop course of real character perched between the cliff edge and the town, with some of the most dramatic drops and views on the Norfolk coast. Ranked in England's Top 100. Shorter than its neighbours but technically demanding — particularly around the greens and bunkers. Pairs naturally with Royal Cromer.</p>
+        <div class="course-tags"><span class="tag">Est. 1892</span><span class="tag">Clifftop</span><span class="tag">Top 100 England</span><span class="tag">Sea Views</span></div>
+      </div>
+    </div>
+
+  </div><!-- /courses-grid -->
+
+  <hr class="section-divider">
+
+  <div class="tier-header">
+    <span class="tier-badge" style="background:rgba(183,157,100,0.12);color:var(--gold);border:1px solid rgba(183,157,100,0.3);padding:4px 14px;font-size:9px;letter-spacing:2px;text-transform:uppercase;">Classic</span>
+    <div class="tier-line"></div>
+    <span class="tier-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--text-muted);">Classic Courses</span>
+  </div>
+  <p class="tier-desc">Well-established courses of genuine quality — excellent additions to any multi-day itinerary. Strong enough to stand alone; even better alongside the Signature courses.</p>
+
+  <div class="discovery-grid">
+
+    <div class="discovery-card">
+      <p class="course-type">Heathland · Thetford · Breckland</p>
+      <h2 class="course-name">Thetford Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Designed by James Braid and Phillip Mackenzie Ross, widely regarded as one of the finest heathland courses in East Anglia. Mature pine, oak and birch frame holes that change direction constantly — a proper test year-round thanks to excellent drainage. Pairs beautifully with Royal Worlington for a Breckland golf day.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Braid Design</span><span class="tag">Heathland</span><span class="tag">Breckland</span><span class="tag">Year-Round</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Heathland · Swaffham · Breckland</p>
+      <h2 class="course-name">Swaffham Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">An absolute gem of a heathland course on Norfolk Breckland heath — one reviewer compared it favourably to Woburn. 190 acres, superb greens, no water hazards, exceptional drainage. Established 1922, expanded to 18 holes in 2001 with seamless integration. Genuinely welcoming to visitors and outstanding value.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Heathland</span><span class="tag">Breckland</span><span class="tag">Est. 1922</span><span class="tag">Excellent Greens</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Links · Great Yarmouth · East Norfolk</p>
+      <h2 class="course-name">Great Yarmouth &amp; Caister</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Norfolk's oldest golf club, founded 1882 — and the <em>Home of Bogey</em>, the actual birthplace of bogey golf in 1890. A traditional links laid out through and around the Great Yarmouth racecourse, where golfers cross under the rails mid-round. Designed by Tom Dunn of North Berwick. Historically fascinating, genuinely playable, and unlike anywhere else in the game.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Est. 1882</span><span class="tag">Home of Bogey</span><span class="tag">Links</span><span class="tag">Racecourse</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Royal Norwich</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Recently relocated and redesigned by Ross McMurray to championship standard at Weston Park — stretching to 7,209 yards from the tips, officially opened by Ian Poulter in 2019. The strongest course in the Norwich area and the right choice for groups basing themselves in the city.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Championship</span><span class="tag">Royal</span><span class="tag">Norwich</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · West Norfolk</p>
+      <h2 class="course-name">King's Lynn Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Regarded as the gateway to North Norfolk's golf coast — a woodland parkland with mature tree-lined fairways and a genuine test of accuracy. The 10th hole is regarded as one of the best in the East of England. Convenient for groups combining west Norfolk courses with Hunstanton.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">West Norfolk</span><span class="tag">Tree-Lined</span></div>
+    </div>
+
+  </div>
+
+  <hr class="section-divider">
+
+  <div class="tier-header">
+    <span class="tier-badge discovery">Discovery</span>
+    <div class="tier-line"></div>
+    <span class="tier-title discovery">Discovery Courses</span>
+  </div>
+  <p class="tier-desc">Accessible, enjoyable and well-run — ideal for rounding out a longer stay or for groups who want variety alongside the marquee rounds.</p>
+
+  <div class="discovery-grid">
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Sprowston Manor</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Hotel and spa complex on the edge of Norwich with an 18-hole championship parkland course. Ideal for groups wanting golf and accommodation together, or as a comfortable city base with golf on the doorstep.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Hotel</span><span class="tag">Stay &amp; Play</span><span class="tag">Norwich</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Bawburgh Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Parkland course west of Norwich set on undulating land with views over the Yare Valley. Comfortable lodges for stay &amp; play, good practice facilities, relaxed atmosphere. A social round with good accommodation.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Stay &amp; Play</span><span class="tag">Lodges</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Mid-Norfolk</p>
+      <h2 class="course-name">Fakenham Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Compact, friendly and enjoyable — set in the heart of Norfolk with a fast-running links feel despite being inland. Excellent for a relaxed round between the coastal courses, and good value.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Mid-Norfolk</span><span class="tag">Value</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Resort Parkland · Hunstanton</p>
+      <h2 class="course-name">Heacham Manor</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">The on-site course at Heacham Manor Hotel — 18 holes influenced by the Heacham River and four lakes. The visual 7th is the standout hole. Ideal for groups staying at the hotel who want golf without travelling.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Hotel Course</span><span class="tag">Resort</span><span class="tag">Near Hunstanton</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Barnham Broom</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Two courses played along the Yare River Valley — the Valley course is the more senior layout, parkland with water to navigate and good elevation. Hotel and leisure facilities make it a complete stay &amp; play option south-west of Norwich.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Two Courses</span><span class="tag">Parkland</span><span class="tag">Stay &amp; Play</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Norwich</p>
+      <h2 class="course-name">Eaton Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A well-regarded parkland course close to Norwich city centre — a good test framed by mature trees with a sandy heathland feel and excellent greens. One of Norfolk's better-kept inland secrets, popular with serious county golfers and well worth a round for groups based in the city.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Norwich</span><span class="tag">Heathland Feel</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Hotel Parkland · Norwich</p>
+      <h2 class="course-name">Dunston Hall</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A hotel and golf complex south of Norwich with an 18-hole parkland course and full leisure facilities. A solid stay &amp; play base for groups who want hotel comfort alongside their golf, or who need a rest day option during a longer Norfolk itinerary.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Hotel Course</span><span class="tag">Stay &amp; Play</span><span class="tag">Norwich</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Mundesley · North Norfolk</p>
+      <h2 class="course-name">Mundesley Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A nine-hole clifftop and parkland course near Mundesley — compact, characterful and with coastal views. A friendly club that makes a pleasant addition to a north Norfolk stay, particularly for groups of mixed ability.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Nine Holes</span><span class="tag">Coastal</span><span class="tag">North Norfolk</span></div>
+    </div>
+
+  </div>
+
+  <div class="cta-strip">
+    <h2>Plan Your Norfolk Golf Break</h2>
+    <p>Tell us which courses appeal, your dates and group size — we'll design the itinerary around them.</p>
+    <a href="/enquire" class="btn-gold">Start Planning</a>
+  </div>
+
+</main>
+</div>
+
+<!-- SUFFOLK -->
+<div id="suffolk" class="county-pane">
+<main>
+
+  <div class="tier-header">
+    <span class="tier-badge premium">Signature</span>
+    <div class="tier-line"></div>
+    <span class="tier-title premium">Signature Courses</span>
+  </div>
+  <p class="tier-desc">Suffolk's finest — championship courses of national standing, each with a distinct character. The courses that make a Suffolk golf trip genuinely memorable.</p>
+
+  <div class="courses-grid">
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Heathland · West Suffolk · The Sacred Nine</p>
+        <span id="royal-worlington" style="position:relative;top:-100px;display:block;visibility:hidden;"></span><h2 class="course-name">Royal Worlington &amp; Newmarket</h2>
+        <p class="course-desc">Bernard Darwin named it "the sacred nine" in 1928. Consistently ranked in the Top 100 of Britain &amp; Ireland. Nine holes played twice — forty acres of west Suffolk heathland with more history per hole than almost anywhere else in the game. A pilgrimage for every serious golfer. The perfect closer to any East Anglia golf trip.</p>
+        <div class="course-tags"><span class="tag">Top 100 GB&amp;I</span><span class="tag">Nine Holes</span><span class="tag">Heathland</span><span class="tag">Pilgrimage</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Heathland · Aldeburgh · Suffolk Coast</p>
+        <span id="aldeburgh" style="position:relative;top:-100px;display:block;visibility:hidden;"></span><h2 class="course-name">Aldeburgh Golf Club</h2>
+        <p class="course-desc">Ranked in the Top 100 of Britain &amp; Ireland. Championship course designed by Willie Park Jr, JH Taylor and Harry Colt — an Open-winning trio. Maritime heathland that plays with a genuine links feel: gorse-lined, fast-draining, par 68 that is a far sterner test than the yardage suggests. Foursomes preferred. Black labradors optional.</p>
+        <div class="course-tags"><span class="tag">Top 100 GB&amp;I</span><span class="tag">Heathland Links</span><span class="tag">Championship</span><span class="tag">Open Design Pedigree</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Heathland · Thorpeness · Suffolk Coast</p>
+        <span id="thorpeness" style="position:relative;top:-100px;display:block;visibility:hidden;"></span><h2 class="course-name">Thorpeness Golf Club</h2>
+        <p class="course-desc">Designed by James Braid in 1922 and largely unchanged — a heathland layout through silver birch, pine, gorse and heather with the famous House in the Clouds visible above the tree line. Almost next door to Aldeburgh, making them a natural two-course pairing. One of Suffolk's best-kept secrets from the wider golfing world.</p>
+        <div class="course-tags"><span class="tag">James Braid 1922</span><span class="tag">Heathland</span><span class="tag">Hotel On-Site</span><span class="tag">Suffolk Coast</span></div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#b79d64" stroke-width="1.5"/><path d="M24 8v32M8 24h32" stroke="#b79d64" stroke-width="1"/></svg>
+      </div>
+      <div class="course-body">
+        <p class="course-type">Links · Felixstowe · Suffolk Coast</p>
+        <span id="felixstowe-ferry" style="position:relative;top:-100px;display:block;visibility:hidden;"></span><h2 class="course-name">Felixstowe Ferry Golf Club</h2>
+        <p class="course-desc">The only true links course in Suffolk — and one of only 246 true links courses in the entire world. The Martello Course, named after the tower between the 14th tee and penultimate green, is one of England's oldest courses, founded 1880. Fully exposed to the North Sea wind. When it's blowing at Felixstowe, hang on to your hat.</p>
+        <div class="course-tags"><span class="tag">True Links</span><span class="tag">Est. 1880</span><span class="tag">One of 246 Links Worldwide</span><span class="tag">Coastal</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="section-divider">
+
+  <div class="tier-header">
+    <span class="tier-badge" style="background:rgba(183,157,100,0.12);color:var(--gold);border:1px solid rgba(183,157,100,0.3);padding:4px 14px;font-size:9px;letter-spacing:2px;text-transform:uppercase;">Classic</span>
+    <div class="tier-line"></div>
+    <span class="tier-title" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--text-muted);">Classic Courses</span>
+  </div>
+  <p class="tier-desc">Excellent courses that reward the golfer looking for depth and variety alongside the Signature experiences.</p>
+
+  <div class="discovery-grid">
+
+    <div class="discovery-card">
+      <p class="course-type">Heathland · Woodbridge · Central Suffolk</p>
+      <span id="woodbridge" style="position:relative;top:-100px;display:block;visibility:hidden;"></span><h2 class="course-name">Woodbridge Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Founded 1893 — one of Suffolk's most respected clubs. The Heath course is a fine heathland layout through pine and heather with tight, well-defined fairways. Consistently well-maintained and popular with serious county golfers. A natural partner for Aldeburgh and Thorpeness on a Suffolk tour.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Heathland</span><span class="tag">Est. 1893</span><span class="tag">Suffolk</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Heathland · Ipswich · South Suffolk</p>
+      <h2 class="course-name">Ipswich Golf Club (Purdis Heath)</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A classic James Braid design opened in 1926, taking full advantage of undulating heathland to provide a traditional experience. Well-regarded for its course condition and variety — a strong option for groups based in south Suffolk or Ipswich.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">James Braid 1926</span><span class="tag">Heathland</span><span class="tag">Ipswich</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Bury St Edmunds · West Suffolk</p>
+      <h2 class="course-name">Flempton Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A nine-hole JH Taylor design dating back to 1906 — one of the most enjoyable nine-hole courses in East Anglia. Compact, precise, and with a charm entirely its own. An excellent addition to a west Suffolk day alongside Royal Worlington.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Nine Holes</span><span class="tag">JH Taylor 1906</span><span class="tag">West Suffolk</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Fynn Valley · Ipswich</p>
+      <h2 class="course-name">Fynn Valley Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">Picturesque valley setting near Ipswich with a challenging 18-hole course — tree-lined, contoured greens and nearly 100 bunkers. Driving range, 9-hole course, golf lessons and self-catering cottages on-site. A complete facility for groups wanting to combine golf with a longer stay.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Stay &amp; Play</span><span class="tag">Practice Facilities</span></div>
+    </div>
+
+  </div>
+
+  <hr class="section-divider">
+
+  <div class="tier-header">
+    <span class="tier-badge discovery">Discovery</span>
+    <div class="tier-line"></div>
+    <span class="tier-title discovery">Discovery Courses</span>
+  </div>
+  <p class="tier-desc">Enjoyable, well-run courses that complete the picture for longer Suffolk stays.</p>
+
+  <div class="discovery-grid">
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Beccles · North Suffolk</p>
+      <h2 class="course-name">Rookery Park Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A popular Suffolk parkland course near Beccles with a scenic setting and good atmosphere. Well-regarded locally — a solid Discovery option for groups based in the Waveney Valley or visiting the Norfolk Broads.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">North Suffolk</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Halesworth · North Suffolk</p>
+      <h2 class="course-name">Halesworth Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A well-maintained Suffolk parkland course in beautiful countryside near Halesworth. Good value, welcoming atmosphere and a pleasant round — a solid addition for groups basing themselves in north Suffolk.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Suffolk</span><span class="tag">Value</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Stowmarket · Mid-Suffolk</p>
+      <h2 class="course-name">Stowmarket Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A well-regarded mid-Suffolk parkland course admired by the late Peter Alliss — a tough test for better players with tree-lined fairways, bracken rough and challenging lies for anything off target. Par 69, always in good condition, and set in beautiful Suffolk countryside near the market town of Stowmarket.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">Mid-Suffolk</span><span class="tag">Challenging</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland · Bury St Edmunds · West Suffolk</p>
+      <h2 class="course-name">Bury St Edmunds Golf Club</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A well-maintained parkland course on the edge of Bury St Edmunds — one of England's most beautiful market towns. A natural companion to Royal Worlington &amp; Newmarket for a west Suffolk golf day, with the cathedral, abbey ruins and excellent restaurants close by for the evening.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Parkland</span><span class="tag">West Suffolk</span><span class="tag">Historic Town</span></div>
+    </div>
+
+    <div class="discovery-card">
+      <p class="course-type">Parkland / Hotel · Woodbridge · Suffolk</p>
+      <h2 class="course-name">Ufford Park</h2>
+      <p class="course-desc" style="font-size:14px;color:var(--text-muted);line-height:1.6;margin-top:10px;">A championship 18-hole course open year-round thanks to excellent drainage — voted a Top 10 Winter Course by Today's Golfer. Hotel and leisure facilities on-site. A practical choice for groups wanting a complete stay &amp; play package in Suffolk.</p>
+      <div class="course-tags" style="margin-top:16px;"><span class="tag">Hotel Course</span><span class="tag">Stay &amp; Play</span><span class="tag">Top 10 Winter</span></div>
+    </div>
+
+  </div>
+
+  <div class="cta-strip">
+    <h2>Plan Your Suffolk Golf Break</h2>
+    <p>Tell us which courses appeal, your dates and group size — we'll design the itinerary around them.</p>
+    <a href="/enquire" class="btn-gold">Start Planning</a>
+  </div>
+
+</main>
+</div>
+<footer>
+  <span class="footer-logo">Golf East Anglia</span>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/norfolk">Norfolk</a>
+    <a href="/suffolk">Suffolk</a>
+    <a href="/itineraries">Itineraries</a>
+    <a href="/experiences">Experiences</a>
+    <a href="/about">About</a>
+    <a href="/blog">Journal</a>
+    <a href="/enquire">Enquire</a>
+    <a href="/trade">Travel Trade</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Golf East Anglia. All rights reserved.</p>
+</footer>
+
+<script>
+  function showCounty(id, btn) {
+    document.querySelectorAll('.county-pane').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.county-tab').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  // On load: check hash and switch to correct county tab, then scroll to anchor
+  var suffolkAnchors = ['aldeburgh','thorpeness','felixstowe-ferry','royal-worlington','woodbridge','ipswich','flempton','fynn-valley','rookery-park','halesworth','stowmarket','bury-st-edmunds','ufford-park'];
+  window.addEventListener('DOMContentLoaded', function() {
+    var hash = window.location.hash.replace('#','');
+    if (hash) {
+      if (suffolkAnchors.indexOf(hash) !== -1) {
+        // Switch to Suffolk tab
+        var suffolkBtn = document.querySelector('.county-tab:nth-child(2)');
+        showCounty('suffolk', suffolkBtn);
+      }
+      // Scroll to anchor after short delay to allow tab switch
+      setTimeout(function() {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      }, 100);
+    }
+  });
+
+  document.querySelectorAll('.nl-drop-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var menu = trigger.nextElementSibling;
+      var isOpen = menu.classList.contains('open');
+      document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+      if (!isOpen) menu.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+  });
+</script>
+</body>
+</html>

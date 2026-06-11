@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-54VBHY01CG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-54VBHY01CG");
+  </script>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golf Holidays Norfolk &amp; Suffolk | Itineraries | Golf East Anglia</title>
+<meta name="description" content="Bespoke golf holidays in Norfolk and Suffolk — 3, 5, 7 and 10 night itineraries from the Long Weekend to the Grand Tour of both counties.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--gold:#b79d64;--gold-l:rgba(183,157,100,0.15);--gold-b:rgba(183,157,100,0.3);--bg:#0d1f0f;--bg2:#111f12;--text:#e8e2d6;--tmid:rgba(232,226,214,0.5);--tlow:rgba(232,226,214,0.28);--bdr:rgba(255,255,255,0.07);--serif:'Cormorant Garamond',serif;--sans:'Outfit',sans-serif;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1;}
+a{text-decoration:none;}
+.nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);position:sticky;top:0;background:var(--bg);z-index:100;}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;}
+.enq:hover{background:var(--gold-l);}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+.eline{width:36px;height:1px;background:var(--gold);flex-shrink:0;}
+.etxt{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+.hero{padding:56px 48px 48px;border-bottom:1px solid var(--bdr);}
+.hero h1{font-family:var(--serif);font-size:52px;font-weight:300;line-height:1.08;color:var(--text);}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-sub{font-size:16px;color:var(--tmid);line-height:1.85;margin-top:18px;font-weight:300;max-width:640px;}
+.pkg-nav{padding:0 48px;display:flex;border-bottom:1px solid var(--bdr);}
+.ptab{padding:15px 0;margin-right:36px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.32);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;}
+.ptab a{color:inherit;}
+/* PACKAGE */
+.pkg{padding:48px;border-bottom:1px solid var(--bdr);}
+.pkg-header{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start;margin-bottom:36px;}
+.pkg-meta{display:flex;align-items:center;gap:14px;margin-bottom:14px;flex-wrap:wrap;}
+.pkg-dur{font-family:var(--serif);font-size:42px;color:var(--gold);line-height:1;}
+.pkg-dur-lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--tlow);margin-top:4px;}
+.pkg-tag{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border:1px solid var(--gold-b);color:var(--gold);}
+.pkg-tag.hi{background:var(--gold-l);}
+.pkg h2{font-family:var(--serif);font-size:32px;font-weight:300;color:var(--text);line-height:1.15;margin-bottom:8px;}
+.pkg-sub{font-size:15px;color:rgba(232,226,214,0.45);line-height:1.8;font-weight:300;max-width:560px;}
+.price-block{background:var(--bg2);border:1px solid var(--bdr);padding:22px 24px;text-align:right;min-width:190px;}
+.pb-from{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--tlow);margin-bottom:6px;}
+.pb-price{font-family:var(--serif);font-size:34px;color:var(--text);line-height:1;}
+.pb-price span{color:var(--gold);}
+.pb-note{font-size:11px;color:var(--tlow);margin-top:6px;line-height:1.5;}
+.pkg-body{display:grid;grid-template-columns:1fr 260px;gap:32px;}
+.itin{border:1px solid var(--bdr);}
+.itin-head{padding:14px 18px;border-bottom:1px solid var(--bdr);font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);display:flex;justify-content:space-between;align-items:center;cursor:pointer;user-select:none;}
+.itin-head:hover{background:rgba(183,157,100,0.05);}
+.itin-arrow{font-size:14px;color:var(--gold);transition:transform 0.3s ease;display:inline-block;}
+.itin-body{overflow:hidden;transition:max-height 0.4s ease;}
+.itin-body.collapsed{max-height:0 !important;}
+.day{display:flex;border-bottom:1px solid rgba(255,255,255,0.05);}
+.day:last-child{border-bottom:none;}
+.day-num{padding:14px 16px;border-right:1px solid rgba(255,255,255,0.05);min-width:64px;text-align:center;}
+.dn{font-family:var(--serif);font-size:20px;color:rgba(183,157,100,0.45);line-height:1;}
+.dl{font-size:9px;color:rgba(232,226,214,0.2);letter-spacing:1px;text-transform:uppercase;margin-top:2px;}
+.day-content{padding:14px 16px;}
+.day-title{font-size:15px;color:var(--text);font-weight:500;margin-bottom:4px;}
+.day-detail{font-size:14px;color:rgba(232,226,214,0.4);line-height:1.65;font-weight:300;}
+.course-tag{display:inline-flex;align-items:center;background:rgba(183,157,100,0.07);border:1px solid rgba(183,157,100,0.18);color:var(--gold);font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;margin-top:6px;margin-right:4px;}
+.sidebar{}
+.incl{background:var(--bg2);border:1px solid var(--bdr);padding:20px;margin-bottom:14px;}
+.incl-hd{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.incl-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:9px;}
+.incl-dot{width:3px;height:3px;background:var(--gold);border-radius:50%;margin-top:7px;flex-shrink:0;}
+.incl-item p{font-size:14px;color:rgba(232,226,214,0.42);line-height:1.6;font-weight:300;}
+.pro-box{border:1px solid rgba(183,157,100,0.22);padding:18px 20px;background:rgba(183,157,100,0.03);}
+.pro-hd{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+.pro-title{font-family:var(--serif);font-size:16px;color:var(--text);margin-bottom:7px;}
+.pro-box p{font-size:11px;color:rgba(232,226,214,0.38);line-height:1.65;font-weight:300;}
+.pro-link{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-top:10px;display:inline-block;}
+/* GRAND */
+.grand{background:var(--bg2);border-top:1px solid rgba(183,157,100,0.18);border-bottom:1px solid rgba(183,157,100,0.18);}
+.grand-banner{background:rgba(183,157,100,0.07);padding:12px 48px;border-bottom:1px solid rgba(183,157,100,0.12);display:flex;align-items:center;gap:10px;}
+.grand-banner-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0;}
+.grand-banner p{font-size:11px;color:var(--gold);letter-spacing:.5px;}
+.grand-inner{padding:48px;}
+.stage{margin-bottom:32px;}
+.stage-hd{display:flex;align-items:center;gap:14px;margin-bottom:16px;}
+.stage-num{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(183,157,100,0.45);}
+.stage-line{flex:1;height:1px;background:var(--bdr);}
+.stage-title{font-family:var(--serif);font-size:18px;font-weight:300;color:var(--text);}
+.stage-days{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--bdr);}
+.sd{background:var(--bg);padding:16px 18px;}
+.sd-dn{font-family:var(--serif);font-size:11px;color:rgba(183,157,100,0.4);letter-spacing:1px;margin-bottom:5px;}
+.sd-title{font-size:15px;color:var(--text);font-weight:500;margin-bottom:4px;}
+.sd-detail{font-size:14px;color:rgba(232,226,214,0.38);line-height:1.6;font-weight:300;}
+.sd-course{display:inline-flex;margin-top:5px;margin-right:4px;background:rgba(183,157,100,0.06);border:1px solid rgba(183,157,100,0.16);color:var(--gold);font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;}
+.grand-bottom{display:grid;grid-template-columns:1fr 280px;gap:32px;margin-top:36px;}
+.incl-2col{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;}
+/* CTA */
+.cta-wrap{padding:0 48px 48px;}
+.cta{border:1px solid var(--bdr);padding:36px;display:flex;justify-content:space-between;align-items:center;gap:24px;}
+.cta h3{font-family:var(--serif);font-size:28px;font-weight:300;color:var(--text);margin-bottom:6px;}
+.cta p{font-size:15px;color:var(--tmid);font-weight:300;line-height:1.7;}
+.cta-btn{background:var(--gold);color:var(--bg);padding:13px 28px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;white-space:nowrap;flex-shrink:0;font-family:var(--sans);}
+.footer{padding:24px 48px;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;}
+.fl{font-family:var(--serif);font-size:15px;}
+.flg{font-style:italic;color:var(--gold);}
+.flr{color:rgba(232,226,214,0.4);font-weight:300;letter-spacing:1px;}
+.fp{font-size:11px;color:rgba(232,226,214,0.18);}
+@media(max-width:768px){
+  .nav{padding:16px 20px;}.nl{display:none;}.lsub,.ldiv{display:none;}
+  .hero{padding:32px 20px;}.hero h1{font-size:36px;}
+  .pkg{padding:24px 20px;}
+  .pkg-header{grid-template-columns:1fr;}.price-block{text-align:left;}
+  .pkg-body{grid-template-columns:1fr;}
+  .stage-days{grid-template-columns:1fr;}
+  .grand-bottom{grid-template-columns:1fr;}
+  .incl-2col{grid-template-columns:1fr;}
+  .grand-inner{padding:24px 20px;}
+  .grand-banner{padding:12px 20px;}
+  .cta-wrap{padding:0 20px 40px;}.cta{flex-direction:column;align-items:flex-start;}
+  .footer{padding:20px;flex-direction:column;gap:8px;text-align:center;}
+}
+
+/* ── Royal Cromer photography ── */
+.rc-img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.rc-img-wrap{overflow:hidden;line-height:0;}
+.rc-hero-img{width:100%;height:480px;object-fit:cover;object-position:center;display:block;}
+.rc-panel-img{width:100%;height:320px;object-fit:cover;object-position:center;display:block;}
+.rc-wide-img{width:100%;height:400px;object-fit:cover;object-position:center;display:block;}
+.rc-strip-img{width:100%;height:240px;object-fit:cover;object-position:center;display:block;}
+@media(max-width:768px){
+  .rc-hero-img{height:260px;}
+  .rc-panel-img{height:200px;}
+  .rc-wide-img{height:220px;}
+  .rc-strip-img{height:160px;}
+}
+
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+
+
+.ch-note{font-size:10px;color:rgba(232,226,214,0.35);margin-top:6px;letter-spacing:0.04em;}
+
+/* DUAL PRICE DISPLAY */
+.price-pair{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(183,157,100,0.15);}
+.price-option{background:var(--bg2);padding:18px 20px;}
+.price-option.featured{background:linear-gradient(135deg,rgba(183,157,100,0.08),var(--bg2));}
+.po-label{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.po-price{font-family:var(--serif);font-size:28px;color:var(--text);line-height:1;margin-bottom:4px;}
+.po-price span{color:var(--gold);}
+.po-note{font-size:10px;color:rgba(232,226,214,0.35);line-height:1.5;}
+@media(max-width:480px){.price-pair{grid-template-columns:1fr;}}
+
+/* NAV DROPDOWNS */
+.nl{display:flex;gap:28px;align-items:center;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.nl-drop{position:relative;display:flex;align-items:center;}
+.nl-drop-trigger{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;cursor:pointer;display:flex;align-items:center;gap:5px;user-select:none;}
+.nl-drop-trigger::after{content:'';display:inline-block;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid currentColor;transition:transform .2s;margin-top:1px;}
+.nl-drop-trigger:hover,.nl-drop-trigger.act{color:var(--gold);}
+.nl-drop-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;background:var(--bg);border:1px solid var(--bdr);min-width:160px;padding:8px 0;z-index:200;}
+.nl-drop-menu.open{display:block;}
+.nl-drop-menu a{display:block;padding:9px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nl-drop-menu a:hover{color:var(--gold);}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <div class="nl">
+    <div class="nl-drop">
+      <span class="nl-drop-trigger act">Explore</span>
+            <div class="nl-drop-menu">
+        <a href="/norfolk">Courses</a>
+        <a href="/itineraries">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/transfers">Transfers</a>
+      </div>
+    </div>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">About</span>
+      <div class="nl-drop-menu">
+        <a href="/blog">Journal</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="/enquire" class="enq">Enquire</a>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+<div class="hero">
+<img src="images/rc-itineraries-sunset.jpg" alt="Royal Cromer — golfer putting at sunset" class="rc-hero-img">
+
+  <div class="eyebrow"><div class="eline"></div><div class="etxt">Itineraries</div></div>
+  <h1>Four journeys.<br>Two counties.<br><em>One region.</em></h1>
+  <p class="hero-sub">Every itinerary below is a starting point, not a fixed product. Browse our <a href="/norfolk" style="color:var(--gold);">Norfolk courses</a> and <a href="/suffolk" style="color:var(--gold);">Suffolk courses</a> first — then tell us what appeals. We build each trip around the group — the courses they want to play, the pace they prefer, the accommodation that suits them. Tell us what appeals and we'll shape something around you.</p>
+</div>
+
+<div class="pkg-nav">
+  <div class="ptab"><a href="#three">3 nights</a></div>
+  <div class="ptab"><a href="#five">5 nights</a></div>
+  <div class="ptab"><a href="#seven">7 nights</a></div>
+  <div class="ptab"><a href="#ten">10 nights</a></div>
+</div>
+
+<!-- 3 NIGHTS -->
+<div class="pkg" id="three">
+  <div class="pkg-header">
+    <div>
+      <div class="pkg-meta">
+        <div><div class="pkg-dur">3</div><div class="pkg-dur-lbl">Nights</div></div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <span class="pkg-tag hi">County introduction</span>
+          <span class="pkg-tag">Choose: Norfolk or Suffolk</span>
+          <span class="pkg-tag">3 rounds</span>
+        </div>
+      </div>
+      <h2>The Long Weekend</h2>
+      <p class="pkg-sub">Three nights, one county, three courses. The ideal entry point — a proper golf break that gives a genuine flavour of the region without overstretching. Available as a Norfolk edition or a Suffolk edition.</p>
+    </div>
+    <div class="price-block">
+      <div class="price-pair">
+        <div class="price-option">
+          <div class="po-label">⊙ Self-Drive</div>
+          <div class="po-price"><span>£</span>750<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+          <div class="po-note">Golf &amp; accommodation<br>Drive yourself</div>
+        </div>
+        <div class="price-option featured">
+          <div class="po-label">✦ Chauffeured</div>
+          <div class="po-price"><span>£</span>1,050<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+          <div class="po-note">Golf, accommodation<br>&amp; private transfers</div>
+        </div>
+      </div>
+      <div class="pb-note">Min. 4 guests<br>USD · EUR · AUD on request</div>
+    </div>
+  </div>
+  <div class="pkg-body">
+    <div>
+      <div class="itin">
+        <div class="itin-head" onclick="toggleItin(this)">Norfolk edition — sample itinerary <span class="itin-arrow">▼</span></div>
+        <div class="itin-body"><div class="day"><div class="day-num"><div class="dn">1</div></div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · North Norfolk coast</div><div class="day-detail">Arrive at your North Norfolk base — Burnham Market or Holt recommended. Evening meal at a local restaurant.</div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">2</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Morning tee time · Afternoon at leisure</div><div class="day-detail">First round of the trip. Settle into the pace of links golf — the wind, the firm turf, the bump-and-run game that rewards thinking over power.</div><div><span class="course-tag">Royal Cromer</span><span style="font-size:11px;color:var(--tlow);"> or </span><span class="course-tag">Sheringham</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">3</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Hunstanton — championship links</div><div class="day-detail">The centrepiece of the Norfolk long weekend. A championship links that demands your best. Consider 36 holes if the group is willing.</div><div><span class="course-tag">Hunstanton</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">4</div><div class="dl">Depart</div></div><div class="day-content"><div class="day-title">Morning golf · Afternoon departure</div><div class="day-detail">A final morning round before checkout and departure — tee time scheduled to allow a comfortable onward journey.</div><div><span class="course-tag">Royal Cromer</span><span style="font-size:11px;color:var(--tlow);"> or </span><span class="course-tag">Sheringham</span></div></div></div>
+      </div>
+      <div style="margin-top:12px;padding:14px 18px;background:var(--bg2);border:1px solid var(--bdr);">
+        <div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);margin-bottom:6px;">Suffolk edition</div>
+        <div style="font-size:14px;color:rgba(232,226,214,0.38);line-height:1.7;font-weight:300;">The <a href="/suffolk" style="color:var(--gold);">Suffolk</a> long weekend centres on Aldeburgh and Thorpeness — two James Braid heathland classics just two miles apart — plus Woodbridge or Felixstowe Ferry. Based on the Heritage Coast near Aldeburgh. Ask us for the full Suffolk edition itinerary.</div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="incl">
+        <div class="incl-hd">What's included</div>
+        <div class="incl-item"><div class="incl-dot"></div><p>3 nights accommodation, handpicked and confirmed</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>3 rounds of golf, all tee times reserved in advance</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>Full itinerary, route guide and course notes</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>Restaurant recommendations for each evening</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>On-call local support throughout your stay</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>All green fees for included rounds</p></div>
+      </div>
+      <div class="pro-box">
+        <div class="pro-hd">Optional experience</div>
+        <div class="pro-title">Add a PGA Pro session</div>
+        <p>Begin your trip with a targeted session from our PGA professional — practice ground plus on-course holes in context.</p>
+        <a href="/pga-pro" class="pro-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="rc-img-wrap"><img src="images/hunstanton-beachhuts-wide.jpg" alt="Hunstanton Golf Club — wide links fairway" class="rc-strip-img" style="object-position:center bottom"></div>
+
+<!-- 5 NIGHTS -->
+<div class="pkg" id="five">
+  <div class="pkg-header">
+    <div>
+      <div class="pkg-meta">
+        <div><div class="pkg-dur">5</div><div class="pkg-dur-lbl">Nights</div></div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <span class="pkg-tag hi">County deep dive</span>
+          <span class="pkg-tag">Choose: Norfolk or Suffolk</span>
+          <span class="pkg-tag">4–5 rounds</span>
+        </div>
+      </div>
+      <h2>The County Tour</h2>
+      <p class="pkg-sub">Five nights, one county explored in full. Every significant course, unhurried. Time between rounds to discover the coastline, the towns, the food. The right length for a group that wants to do a county properly.</p>
+    </div>
+    <div class="price-block">
+      <div class="price-pair">
+        <div class="price-option">
+          <div class="po-label">⊙ Self-Drive</div>
+          <div class="po-price"><span>£</span>1,175<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+          <div class="po-note">Golf &amp; accommodation<br>Drive yourself</div>
+        </div>
+        <div class="price-option featured">
+          <div class="po-label">✦ Chauffeured</div>
+          <div class="po-price"><span>£</span>1,525<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+          <div class="po-note">Golf, accommodation<br>&amp; private transfers</div>
+        </div>
+      </div>
+      <div class="pb-note">Min. 4 guests<br>USD · EUR · AUD on request</div>
+    </div>
+  </div>
+  <div class="pkg-body">
+    <div>
+      <div class="itin">
+        <div class="itin-head" onclick="toggleItin(this)">Norfolk edition — sample itinerary <span class="itin-arrow">▼</span></div>
+        <div class="itin-body"><div class="day"><div class="day-num"><div class="dn">1</div></div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · North Norfolk</div><div class="day-detail">Arrive and settle in. We recommend the Holt or Fakenham area — central to all four courses. Evening dinner.</div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">2</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Royal Cromer · Morning tee time</div><div class="day-detail">Open the tour on the clifftops. Royal Cromer sets the tone — dramatic setting, warm welcome, views down the coast. Afternoon free to explore.</div><div><span class="course-tag">Royal Cromer</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">3</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Sheringham · Full day</div><div class="day-detail">The clifftop theatre continues at Sheringham — the North Norfolk steam railway passing below as you play.</div><div><span class="course-tag">Sheringham</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">4</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Hunstanton · Championship day</div><div class="day-detail">The centrepiece of the Norfolk tour. 36 holes if the group wants it. Sunset over The Wash if you time it right.</div><div><span class="course-tag">Hunstanton</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">5</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Royal West Norfolk · Brancaster</div><div class="day-detail">The pilgrimage. Tee time timed to the tide — we handle this as standard. Foursomes format. Nothing else like it in England.</div><div><span class="course-tag">Royal West Norfolk</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">6</div><div class="dl">Depart</div></div><div class="day-content"><div class="day-title">Departure day</div><div class="day-detail">Morning at leisure before checkout. We arrange onward transfers or route guidance as needed.</div></div></div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="incl">
+        <div class="incl-hd">What's included</div>
+        <div class="incl-item"><div class="incl-dot"></div><p>5 nights accommodation, one or two bases</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>4–5 rounds across all flagship county courses</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>All tee times including Brancaster logistics</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>Full itinerary with day-by-day route and notes</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>Restaurant recommendations throughout</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>On-call support for the full duration</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>All green fees for included rounds</p></div>
+      </div>
+      <div class="pro-box">
+        <div class="pro-hd">Optional experience</div>
+        <div class="pro-title">PGA Pro — links masterclass</div>
+        <p>A half-day session built around the links courses on your itinerary. Particularly valuable before Brancaster or Hunstanton.</p>
+        <a href="/pga-pro" class="pro-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7 NIGHTS -->
+<div class="pkg" id="seven">
+  <div class="pkg-header">
+    <div>
+      <div class="pkg-meta">
+        <div><div class="pkg-dur">7</div><div class="pkg-dur-lbl">Nights</div></div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <span class="pkg-tag hi">Signature journey</span>
+          <span class="pkg-tag">Norfolk &amp; Suffolk</span>
+          <span class="pkg-tag">6 rounds</span>
+        </div>
+      </div>
+      <h2>The Two Counties</h2>
+      <p class="pkg-sub">Our signature itinerary. Seven nights across both Norfolk and Suffolk — the full breadth of the region, from the tidal marshes of Brancaster to the heathland of Aldeburgh. Two entirely different characters of golf. The journey that defines Golf East Anglia.</p>
+    </div>
+    <div class="price-block">
+      <div class="price-pair">
+        <div class="price-option">
+          <div class="po-label">⊙ Self-Drive</div>
+          <div class="po-price"><span>£</span>1,650<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+          <div class="po-note">Golf &amp; accommodation<br>Drive yourself</div>
+        </div>
+        <div class="price-option featured">
+          <div class="po-label">✦ Chauffeured</div>
+          <div class="po-price"><span>£</span>2,100<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+          <div class="po-note">Golf, accommodation<br>&amp; private transfers</div>
+        </div>
+      </div>
+      <div class="pb-note">Min. 4 guests<br>USD · EUR · AUD on request</div>
+    </div>
+  </div>
+  <div class="pkg-body">
+    <div>
+      <div class="itin">
+        <div class="itin-head" onclick="toggleItin(this)">Sample itinerary — north to south <span class="itin-arrow">▼</span></div>
+        <div class="itin-body"><div class="day"><div class="day-num"><div class="dn">1</div></div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · North Norfolk</div><div class="day-detail">Fly into Norwich or drive from London (2.5 hrs). Base yourself on the North Norfolk coast for the first half.</div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">2</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Hunstanton — championship links</div><div class="day-detail">Open the week at the west-facing jewel of North Norfolk. A Top 100 course that repays a morning of proper concentration.</div><div><span class="course-tag">Hunstanton</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">3</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Royal West Norfolk · Brancaster</div><div class="day-detail">The tidal pilgrimage. Timed to the tide, foursomes format, salt marsh views. Nothing else like it in England.</div><div><span class="course-tag">Royal West Norfolk</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">4</div><div class="dl">Travel</div></div><div class="day-content"><div class="day-title">Royal Cromer · Move south</div><div class="day-detail">Morning round at Royal Cromer before moving south to the Suffolk Heritage Coast.</div><div><span class="course-tag">Royal Cromer</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">5</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Aldeburgh Golf Club</div><div class="day-detail">The heathland masterclass begins. A different game entirely from the links of Norfolk, and equally compelling.</div><div><span class="course-tag">Aldeburgh</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">6</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Thorpeness Golf Club</div><div class="day-detail">James Braid at his most characterful. The eccentric village, the House in the Clouds, the gorse-lined fairways.</div><div><span class="course-tag">Thorpeness</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">7</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Felixstowe Ferry · Final round</div><div class="day-detail">Close the journey at Suffolk's only true links — the fifth oldest club in England, at the mouth of the River Deben.</div><div><span class="course-tag">Felixstowe Ferry</span></div></div></div>
+        <div class="day"><div class="day-num"><div class="dn">8</div><div class="dl">Depart</div></div><div class="day-content"><div class="day-title">Departure · Ipswich, Stansted or London</div><div class="day-detail">Morning at leisure. Ipswich to London Liverpool Street in under 90 minutes. Stansted Airport 60 miles south.</div></div></div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="incl">
+        <div class="incl-hd">What's included</div>
+        <div class="incl-item"><div class="incl-dot"></div><p>7 nights across two or three bases</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>6 rounds across both counties' flagship courses</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>All tee times including Brancaster tide scheduling</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>Inter-county transfer guidance and route planning</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>Full day-by-day itinerary and course notes</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>Restaurant recommendations throughout</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>On-call support for the full duration</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>All green fees for included rounds</p></div>
+      </div>
+      <div class="pro-box">
+        <div class="pro-hd">Optional experience</div>
+        <div class="pro-title">PGA Pro — two sessions</div>
+        <p>One session in Norfolk (links focus) and one in Suffolk (heathland strategy). The most comprehensive way to get the most from both counties.</p>
+        <a href="/pga-pro" class="pro-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="rc-img-wrap"><img src="images/rc-itineraries-sunset.jpg" alt="Royal Cromer — golfer putting at sunset" class="rc-strip-img"></div>
+
+<!-- 10 NIGHTS GRAND TOUR -->
+<div class="grand" id="ten">
+  <div class="grand-banner">
+    <div class="grand-banner-dot"></div>
+    <p>The Grand Tour — Golf East Anglia's defining journey. Both counties in full. Eight courses. Ten nights.</p>
+  </div>
+  <div class="grand-inner">
+    <div class="pkg-header">
+      <div>
+        <div class="pkg-meta">
+          <div><div class="pkg-dur">10</div><div class="pkg-dur-lbl">Nights</div></div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <span class="pkg-tag hi">The Grand Tour</span>
+            <span class="pkg-tag">Norfolk &amp; Suffolk in full</span>
+            <span class="pkg-tag">8 rounds + the Sacred Nine</span>
+          </div>
+        </div>
+        <h2>England's East Coast<br>Golf Grand Tour</h2>
+        <p class="pkg-sub">Ten nights. Both counties explored completely. Eight full rounds including Royal West Norfolk, Hunstanton, all four Suffolk flagships, and a pilgrimage to <a href="/worlington" style="color:var(--gold);">the Sacred Nine at Royal Worlington</a>. The journey for the golfer who wants everything this region can offer.</p>
+      </div>
+      <div class="price-block">
+        <div class="price-pair">
+          <div class="price-option">
+            <div class="po-label">⊙ Self-Drive</div>
+            <div class="po-price"><span>£</span>2,450<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+            <div class="po-note">Golf &amp; accommodation<br>Drive yourself</div>
+          </div>
+          <div class="price-option featured">
+            <div class="po-label">✦ Chauffeured</div>
+            <div class="po-price"><span>£</span>3,000<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+            <div class="po-note">Golf, accommodation<br>&amp; private transfers</div>
+          </div>
+        </div>
+        <div class="pb-note">Min. 4 guests<br>USD · EUR · AUD on request</div>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="stage-hd"><div class="stage-num">Stage one · Nights 1–4</div><div class="stage-line"></div><div class="stage-title">North Norfolk — the links coast</div></div>
+      <div class="stage-days">
+        <div class="sd"><div class="sd-dn">Night 1</div><div class="sd-title">Arrival · North Norfolk coast</div><div class="sd-detail">Arrive into Norwich or drive from London. Base: Burnham Market, Holt or Wells-next-the-Sea area. Evening dinner.</div></div>
+        <div class="sd"><div class="sd-dn">Day 2</div><div class="sd-title">Hunstanton Golf Club</div><div class="sd-detail">The week opens at the Top 100 championship links overlooking The Wash. The only west-facing course on England's east coast.</div><div><span class="sd-course">Hunstanton</span></div></div>
+        <div class="sd"><div class="sd-dn">Day 3</div><div class="sd-title">Royal West Norfolk · Brancaster</div><div class="sd-detail">The centrepiece of North Norfolk golf. Timed to the tide, foursomes format, salt marsh views. The most elemental golf in England.</div><div><span class="sd-course">Royal West Norfolk</span></div></div>
+        <div class="sd"><div class="sd-dn">Day 4</div><div class="sd-title">Sheringham Golf Club</div><div class="sd-detail">The clifftop course beside the North Norfolk steam railway. Afternoon free to explore the coast path or the market towns.</div><div><span class="sd-course">Sheringham</span></div></div>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="stage-hd"><div class="stage-num">Stage two · Nights 5–7</div><div class="stage-line"></div><div class="stage-title">East Norfolk into Suffolk — the transition</div></div>
+      <div class="stage-days">
+        <div class="sd"><div class="sd-dn">Day 5</div><div class="sd-title">Royal Cromer · Move south</div><div class="sd-detail">Morning round at Royal Cromer — one of 66 Royal clubs in the world. Afternoon drive south to the Suffolk Heritage Coast.</div><div><span class="sd-course">Royal Cromer</span></div></div>
+        <div class="sd"><div class="sd-dn">Day 6</div><div class="sd-title">Aldeburgh Golf Club</div><div class="sd-detail">The Suffolk heathland experience begins. Fast-draining sandy turf, gorse-lined fairways, views of the River Alde.</div><div><span class="sd-course">Aldeburgh</span></div></div>
+        <div class="sd"><div class="sd-dn">Day 7</div><div class="sd-title">Thorpeness Golf Club</div><div class="sd-detail">James Braid's heathland masterwork, two miles from Aldeburgh. Afternoon exploring the extraordinary village.</div><div><span class="sd-course">Thorpeness</span></div></div>
+        <div class="sd"><div class="sd-dn">Night 7</div><div class="sd-title">Move to Woodbridge area</div><div class="sd-detail">Relocate south to the Woodbridge or Ipswich area for the final stage of the tour.</div></div>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="stage-hd"><div class="stage-num">Stage three · Nights 8–10</div><div class="stage-line"></div><div class="stage-title">South Suffolk — heathland, links &amp; the Sacred Nine</div></div>
+      <div class="stage-days">
+        <div class="sd"><div class="sd-dn">Day 8</div><div class="sd-title">Woodbridge Golf Club</div><div class="sd-detail">The Heath Course on high ground in an Area of Outstanding Natural Beauty. Heathland golf of a very high order.</div><div><span class="sd-course">Woodbridge</span></div></div>
+        <div class="sd"><div class="sd-dn">Day 9</div><div class="sd-title">Royal Worlington · The Sacred Nine</div><div class="sd-detail">A pilgrimage. The finest nine-hole course in the world, on 40 acres of west Suffolk heathland. A morning unlike any other.</div><div><span class="sd-course">Royal Worlington</span></div></div>
+        <div class="sd"><div class="sd-dn">Day 10</div><div class="sd-title">Felixstowe Ferry · The final round</div><div class="sd-detail">Close the Grand Tour at Suffolk's only true links. The fifth oldest club in England. A worthy final chapter.</div><div><span class="sd-course">Felixstowe Ferry</span></div></div>
+        <div class="sd"><div class="sd-dn">Day 11</div><div class="sd-title">Departure</div><div class="sd-detail">Morning at leisure. Ipswich to London in 90 minutes. Stansted Airport 60 miles. Heathrow via A14 and M11.</div></div>
+      </div>
+    </div>
+    <div class="grand-bottom">
+      <div class="incl" style="margin:0;">
+        <div class="incl-hd">Everything included in the Grand Tour</div>
+        <div class="incl-2col">
+          <div>
+            <div class="incl-item"><div class="incl-dot"></div><p>10 nights across three carefully chosen bases</p></div>
+            <div class="incl-item"><div class="incl-dot"></div><p>8 full rounds across both counties</p></div>
+            <div class="incl-item"><div class="incl-dot"></div><p>The Sacred Nine at Royal Worlington</p></div>
+            <div class="incl-item"><div class="incl-dot"></div><p>All tee times including Brancaster tide planning</p></div>
+            <div class="incl-item"><div class="incl-dot"></div><p>All green fees for included rounds</p></div>
+          </div>
+          <div>
+            <div class="incl-item"><div class="incl-dot"></div><p>Inter-stage transfer guidance and route planning</p></div>
+            <div class="incl-item"><div class="incl-dot"></div><p>Full day-by-day itinerary and course notes</p></div>
+            <div class="incl-item"><div class="incl-dot"></div><p>Restaurant recommendations for each evening</p></div>
+            <div class="incl-item"><div class="incl-dot"></div><p>On-call specialist support for all 10 nights</p></div>
+            <div class="incl-item"><div class="incl-dot"></div><p>Airport and station transfer guidance</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="pro-box" style="margin:0;">
+        <div class="pro-hd">Signature experience</div>
+        <div class="pro-title">PGA Pro — Grand Tour programme</div>
+        <p>Three sessions across the tour. One before the Norfolk links, one before the Suffolk heathland, and a final session before the Sacred Nine.</p>
+        <a href="/pga-pro" class="pro-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-wrap" style="padding-top:48px;">
+  <div class="cta">
+    <div>
+      <h3>Every itinerary is a starting point.</h3>
+      <p>Tell us your dates, group size and the courses that matter to you. We'll come back within 24 hours with a clear proposal. No obligation. International guests: we quote in GBP, USD, EUR or AUD.</p>
+    </div>
+    <a href="/enquire" class="cta-btn">Start planning</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="/" class="fl"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
+  <p class="fp">enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists &nbsp;·&nbsp; <a href="/trade" style="color:rgba(232,226,214,0.18);text-decoration:none;">Travel trade</a></p>
+</footer>
+
+
+
+
+<script>
+function toggleItin(head) {
+  var body = head.nextElementSibling;
+  var arrow = head.querySelector('.itin-arrow');
+  if (body && body.classList.contains('itin-body')) {
+    if (body.classList.contains('collapsed')) {
+      body.classList.remove('collapsed');
+      body.style.maxHeight = body.scrollHeight + 'px';
+      if (arrow) arrow.style.transform = 'rotate(0deg)';
+    } else {
+      body.style.maxHeight = body.scrollHeight + 'px';
+      requestAnimationFrame(function() {
+        body.classList.add('collapsed');
+        if (arrow) arrow.style.transform = 'rotate(-90deg)';
+      });
+    }
+  }
+}
+// Set initial max-height for all itin-bodies
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.itin-body').forEach(function(b) {
+    b.style.maxHeight = b.scrollHeight + 'px';
+  });
+});
+</script>
+
+<script>
+  document.querySelectorAll('.nl-drop-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var menu = trigger.nextElementSibling;
+      var isOpen = menu.classList.contains('open');
+      document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+      if (!isOpen) menu.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+  });
+</script>
+</body>
+</html>

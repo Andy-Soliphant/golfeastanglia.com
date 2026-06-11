@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-54VBHY01CG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-54VBHY01CG");
+  </script>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Golf East Anglia | Norfolk &amp; Suffolk Golf Break Specialist</title>
+<meta name="description" content="Golf East Anglia — the inbound golf specialist for Norfolk and Suffolk. Expert-arranged golf breaks, from links on the north Norfolk coast to the heathland classics of Suffolk.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--gold:#b79d64;--gold-l:rgba(183,157,100,0.15);--gold-b:rgba(183,157,100,0.3);--bg:#0d1f0f;--bg2:#111f12;--text:#e8e2d6;--tmid:rgba(232,226,214,0.5);--tlow:rgba(232,226,214,0.28);--bdr:rgba(255,255,255,0.07);--serif:'Cormorant Garamond',serif;--sans:'Outfit',sans-serif;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1;}
+a{text-decoration:none;}
+.nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);position:sticky;top:0;background:var(--bg);z-index:100;}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;}
+.enq:hover{background:var(--gold-l);}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+.eline{width:36px;height:1px;background:var(--gold);flex-shrink:0;}
+.etxt{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+.hero{padding:64px 48px 56px;border-bottom:1px solid var(--bdr);display:grid;grid-template-columns:1fr 340px;gap:80px;align-items:end;}
+.hero h1{font-family:var(--serif);font-size:52px;font-weight:300;line-height:1.08;color:var(--text);}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-sub{font-size:16px;color:var(--tmid);line-height:1.9;margin-top:20px;font-weight:300;}
+.manifesto{border:1px solid rgba(183,157,100,0.2);padding:28px;background:rgba(183,157,100,0.03);}
+.manifesto-lbl{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.manifesto p{font-family:var(--serif);font-size:17px;font-style:italic;color:rgba(232,226,214,0.65);line-height:1.7;font-weight:300;}
+.body{padding:60px 48px;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-bottom:56px;}
+.col-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.col h2{font-family:var(--serif);font-size:34px;font-weight:300;color:var(--text);line-height:1.2;margin-bottom:20px;}
+.col p{font-size:15px;color:var(--tmid);line-height:1.9;font-weight:300;margin-bottom:14px;}
+.col p strong{color:rgba(232,226,214,0.75);font-weight:400;}
+.col p:last-child{margin-bottom:0;}
+.divider{height:1px;background:var(--bdr);margin:0 48px 56px;}
+.principles{padding:0 48px 56px;}
+.prin-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
+.prin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bdr);}
+.prin{background:var(--bg);padding:28px;}
+.prin-num{font-family:var(--serif);font-size:40px;color:rgba(183,157,100,0.2);line-height:1;margin-bottom:14px;}
+.prin h3{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--text);margin-bottom:10px;}
+.prin p{font-size:14px;color:rgba(232,226,214,0.42);line-height:1.8;font-weight:300;}
+.region-strip{margin:0 48px 56px;background:var(--bg2);border:1px solid var(--bdr);padding:36px;}
+.rs-top{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:32px;}
+.rs-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.rs-top h2{font-family:var(--serif);font-size:30px;font-weight:300;color:var(--text);line-height:1.2;margin-bottom:14px;}
+.rs-top p{font-size:15px;color:rgba(232,226,214,0.48);line-height:1.85;font-weight:300;margin-bottom:14px;}
+.rs-top p strong{color:rgba(232,226,214,0.72);font-weight:400;}
+.credentials{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.08);}
+.cred{background:var(--bg2);padding:20px;}
+.cred-v{font-family:var(--serif);font-size:22px;color:var(--text);line-height:1;}
+.cred-l{font-size:11px;color:var(--tlow);margin-top:5px;line-height:1.4;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cta-wrap{padding:0 48px 48px;}
+.cta{border:1px solid var(--bdr);padding:36px;display:flex;justify-content:space-between;align-items:center;gap:24px;}
+.cta h3{font-family:var(--serif);font-size:28px;font-weight:300;color:var(--text);margin-bottom:6px;}
+.cta p{font-size:15px;color:var(--tmid);font-weight:300;line-height:1.7;}
+.cta-btn{background:var(--gold);color:var(--bg);padding:13px 28px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;white-space:nowrap;flex-shrink:0;font-family:var(--sans);}
+.footer{padding:24px 48px;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;}
+.fl{font-family:var(--serif);font-size:15px;}
+.flg{font-style:italic;color:var(--gold);}
+.flr{color:rgba(232,226,214,0.4);font-weight:300;letter-spacing:1px;}
+.fp{font-size:11px;color:rgba(232,226,214,0.18);}
+@media(max-width:768px){
+  .nav{padding:16px 20px;}.nl{display:none;}.lsub,.ldiv{display:none;}
+  .hero{grid-template-columns:1fr;padding:32px 20px;gap:24px;}.manifesto{display:none;}
+  .hero h1{font-size:36px;}
+  .body{padding:32px 20px;}
+  .two-col{grid-template-columns:1fr;}
+  .divider{margin:0 20px 36px;}
+  .principles{padding:0 20px 36px;}
+  .prin-grid{grid-template-columns:1fr;}
+  .region-strip{margin:0 20px 36px;padding:24px;}
+  .rs-top{grid-template-columns:1fr;}
+  .credentials{grid-template-columns:1fr 1fr;}
+  
+  
+  .cta-wrap{padding:0 20px 40px;}.cta{flex-direction:column;align-items:flex-start;}
+  .footer{padding:20px;flex-direction:column;gap:8px;text-align:center;}
+}
+
+/* ── Royal Cromer photography ── */
+.rc-img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.rc-img-wrap{overflow:hidden;line-height:0;}
+.rc-hero-img{width:100%;height:480px;object-fit:cover;object-position:center;display:block;}
+.rc-panel-img{width:100%;height:320px;object-fit:cover;object-position:center;display:block;}
+.rc-wide-img{width:100%;height:400px;object-fit:cover;object-position:center;display:block;}
+.rc-strip-img{width:100%;height:240px;object-fit:cover;object-position:center;display:block;}
+@media(max-width:768px){
+  .rc-hero-img{height:260px;}
+  .rc-panel-img{height:200px;}
+  .rc-wide-img{height:220px;}
+  .rc-strip-img{height:160px;}
+}
+
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+
+/* NAV DROPDOWNS */
+.nl{display:flex;gap:28px;align-items:center;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+.nl-drop{position:relative;display:flex;align-items:center;}
+.nl-drop-trigger{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;cursor:pointer;display:flex;align-items:center;gap:5px;user-select:none;}
+.nl-drop-trigger::after{content:'';display:inline-block;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid currentColor;transition:transform .2s;margin-top:1px;}
+.nl-drop-trigger:hover,.nl-drop-trigger.act{color:var(--gold);}
+.nl-drop-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;background:var(--bg);border:1px solid var(--bdr);min-width:160px;padding:8px 0;z-index:200;}
+.nl-drop-menu.open{display:block;}
+.nl-drop-menu a{display:block;padding:9px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nl-drop-menu a:hover{color:var(--gold);}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <div class="nl">
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">Explore</span>
+            <div class="nl-drop-menu">
+        <a href="/norfolk">Courses</a>
+        <a href="/itineraries">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/transfers">Transfers</a>
+      </div>
+    </div>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <div class="nl-drop">
+      <span class="nl-drop-trigger act">About</span>
+      <div class="nl-drop-menu">
+        <a href="/blog">Journal</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="/enquire" class="enq">Enquire</a>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+<div class="hero">
+<img src="images/rc-norfolk-hero.jpg" alt="Royal Cromer — summer course with golfers and sea horizon" class="rc-hero-img" style="object-position:center bottom">
+
+  <div>
+    <div class="eyebrow"><div class="eline"></div><div class="etxt">About us</div></div>
+    <h1>We exist because<br>this region deserves<br><em>better packaging.</em></h1>
+    <p class="hero-sub">Norfolk and Suffolk have some of the finest golf in England — world-ranked courses, heathland classics, royal clubs with centuries of history. What they have lacked is a specialist who puts it together properly for the visiting golfer. That is what Golf East Anglia is for.</p>
+  </div>
+  <div>
+    <div class="manifesto">
+      <div class="manifesto-lbl">What we believe</div>
+      <p>"The best golf experiences aren't found. They're arranged by someone who knows the courses, knows the region, and cares enough to get the details right."</p>
+    </div>
+  </div>
+</div>
+
+<div class="body">
+  <div class="two-col">
+    <div>
+      <div class="col-lbl">The story</div>
+      <h2>Built from a deep travel background.</h2>
+      <p>Golf East Anglia was founded by people who have spent careers building bespoke travel experiences — not in offices, but in the field. Our background is in specialist travel: putting together journeys that go beyond accommodation and transport to create something that feels genuinely considered and properly local.</p>
+      <p>We turned that experience toward <a href="/norfolk" style="color:var(--gold);">Norfolk</a> and <a href="/suffolk" style="color:var(--gold);">Suffolk</a> because the opportunity was obvious and the gap was real. <strong>Two Top 100 courses. One World Top 100. Four courses in the NCG Top 100 for England. And no specialist operator in the market packaging it properly for the visiting golfer.</strong></p>
+      <p>That is the gap we are filling. And because we come from a travel background rather than a golf retail background, the experience we build around the golf — the accommodation, the restaurants, the pace and flow of each day — is as carefully considered as the tee times themselves.</p>
+    </div>
+    <div>
+      <div class="col-lbl">The approach</div>
+      <h2>Bespoke, not brochure.</h2>
+      <p>We do not sell packages in the traditional sense. We sell itineraries — and there is a meaningful difference. A package is fixed. An itinerary is a starting point that we shape around the people taking it.</p>
+      <p>When you enquire with Golf East Anglia, you receive a reply from a person who knows the courses, has thought about your group, and has built something around your dates, your size, and the experience you are looking for. <strong>Not a form response. Not a call centre. A considered proposal, within 24 hours.</strong></p>
+      <p>We handle every tee time, manage every logistical detail — including the Brancaster tide tables — and remain available throughout your stay. You arrive, you play, you enjoy. Everything else is our responsibility.</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+
+<div class="rc-img-wrap"><img src="images/hunstanton-fairway-dunes.jpg" alt="Hunstanton Golf Club — classic links fairway with dunes" class="rc-strip-img" style="object-position:center bottom"></div>
+<div class="principles">
+  <div class="prin-lbl">How we work</div>
+  <div class="prin-grid">
+    <div class="prin"><div class="prin-num">01</div><h3>The region first</h3><p>We are specialists, not generalists. Our focus is Norfolk and Suffolk — two counties with a concentration of exceptional golf. We know these courses, these roads, these restaurants, and these tides.</p></div>
+    <div class="prin"><div class="prin-num">02</div><h3>Details that matter</h3><p>Royal West Norfolk is inaccessible at high tide. Hunstanton is primarily a foursomes course. Woodbridge is weekdays only. These are the details that catch independent bookers off guard — and that we manage as standard.</p></div>
+    <div class="prin"><div class="prin-num">03</div><h3>Genuinely bespoke</h3><p>No two groups are alike. We do not have a fixed catalogue. We have a region, a network, and the experience to shape something that fits — from a long weekend for four to a ten-night grand tour.</p></div>
+    <div class="prin"><div class="prin-num">04</div><h3>International fluency</h3><p>We work with visitors from the US, Europe, Australia and Asia. We quote in the currency that suits you and build itineraries that work for guests arriving from outside the UK.</p></div>
+    <div class="prin"><div class="prin-num">05</div><h3>Year-round golf</h3><p>The sandy soils of Suffolk and the firm links turf of Norfolk make East Anglia one of England's most reliable year-round golf destinations. We build itineraries for every month — not just peak summer. <a href="/enquire" style="color:var(--gold);">Ask us about winter golf.</a></p></div>
+    <div class="prin"><div class="prin-num">06</div><h3>The full experience</h3><p>Golf is the reason. The coast, the food, the countryside, and the unhurried pace of this part of England are what make a trip here truly memorable. We design around all of it.</p></div>
+  </div>
+</div>
+
+
+<div class="rc-img-wrap"><img src="images/rc-course-to-sea-dusk.jpg" alt="Royal Cromer — course rolling to sea at dusk" class="rc-strip-img" style="object-position:center bottom"></div>
+<div class="region-strip">
+  <div class="rs-top">
+    <div>
+      <div class="rs-lbl">The golf</div>
+      <h2>A concentration of quality found nowhere else in eastern England.</h2>
+      <p>Within thirty miles of the North Norfolk coast you will find four genuinely world-class courses. Royal West Norfolk at Brancaster is ranked in the world's top 100 and among the top 17 in England. Hunstanton is a championship links that serious golfers compare to the great courses of Scotland's west coast. Royal Cromer and Sheringham sit on dramatic clifftops and have been welcoming visitors since the Victorian era.</p>
+      <p><strong>In Suffolk, the picture is equally compelling.</strong> Aldeburgh and Thorpeness are heathland classics praised by the greatest golf writers in the language. Woodbridge and Felixstowe Ferry complete a county offer of genuine depth — and <a href="/worlington" style="color:var(--gold);">Royal Worlington's Sacred Nine</a> is widely regarded as the finest nine holes in the world.</p>
+    </div>
+    <div>
+      <div class="rs-lbl">The opportunity</div>
+      <h2>World-class golf. Almost entirely undiscovered.</h2>
+      <p>This is not a region that lacks quality. It lacks a specialist voice. The courses ranked among England's finest for over a century remain largely unknown to the international visiting golfer — not because they are hard to reach, but because no one has packaged them properly.</p>
+      <p><strong>Norfolk is within 2.5 hours of London by road. Suffolk is served by direct trains from London Liverpool Street in under 90 minutes.</strong> Both counties are easily reached from continental Europe by ferry, and from international airports at Stansted, Heathrow and Norwich. The infrastructure is there. The golf is extraordinary.</p>
+    </div>
+  </div>
+  <div class="credentials">
+    <div class="cred"><div class="cred-v">World Top 100</div><div class="cred-l">Royal West Norfolk · Brancaster</div></div>
+    <div class="cred"><div class="cred-v">Top 100 GB&amp;I</div><div class="cred-l">Hunstanton Golf Club</div></div>
+    <div class="cred"><div class="cred-v">4 courses</div><div class="cred-l">In NCG Top 100 England — Suffolk alone</div></div>
+    <div class="cred"><div class="cred-v">2 Royal clubs</div><div class="cred-l">Royal Cromer &amp; Royal West Norfolk</div></div>
+  </div>
+</div>
+
+
+<div class="rc-img-wrap"><img src="images/rc-course-to-sea-dusk-v2.jpg" alt="Royal Cromer — course to sea at dusk, second angle" class="rc-strip-img" style="object-position:center bottom"></div>
+<div class="cta-wrap">
+  <div class="cta">
+    <div>
+      <h3>Ready to start a conversation?</h3>
+      <p>Whether you are planning a trip for yourself or a group — the <a href="/enquire" style="color:var(--gold);">enquiry process</a> is the same. Browse our <a href="/itineraries" style="color:var(--gold);">itineraries</a> and <a href="/experiences" style="color:var(--gold);">experiences</a> first if you'd like some inspiration. Tell us what you have in mind.</p>
+    </div>
+    <a href="/enquire" class="cta-btn">Make an enquiry</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="/" class="fl"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
+  <p class="fp">enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists &nbsp;·&nbsp; <a href="/trade" style="color:rgba(232,226,214,0.18);text-decoration:none;">Travel trade</a></p>
+</footer>
+<script>
+  document.querySelectorAll('.nl-drop-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var menu = trigger.nextElementSibling;
+      var isOpen = menu.classList.contains('open');
+      document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+      if (!isOpen) menu.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+  });
+</script>
+</body>
+</html>

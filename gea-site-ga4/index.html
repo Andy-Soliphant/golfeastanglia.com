@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-54VBHY01CG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-54VBHY01CG");
+  </script>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://www.golfeastanglia.com/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golf Breaks Norfolk &amp; Suffolk | Golf Holidays East Anglia | Golf East Anglia</title>
+<meta name="description" content="Golf breaks in Norfolk and Suffolk — world-ranked links, heathland classics, and bespoke golf holidays on England's east coast. The inbound golf specialist for East Anglia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--gold:#b79d64;--gold-l:rgba(183,157,100,0.15);--gold-b:rgba(183,157,100,0.3);--bg:#0d1f0f;--bg2:#111f12;--text:#e8e2d6;--tmid:rgba(232,226,214,0.5);--tlow:rgba(232,226,214,0.28);--bdr:rgba(255,255,255,0.07);--serif:'Cormorant Garamond',serif;--sans:'Outfit',sans-serif;}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1;}
+a{text-decoration:none;}
+/* NAV */
+.nav{padding:20px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bdr);position:sticky;top:0;background:var(--bg);z-index:100;}
+.logo{display:flex;align-items:baseline;gap:3px;}
+.lg{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);}
+.lr{font-family:var(--serif);font-size:20px;color:var(--text);font-weight:300;letter-spacing:2px;}
+.ldiv{width:1px;height:16px;background:var(--gold-b);margin:0 10px;align-self:center;}
+.lsub{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);align-self:center;}
+.nl{display:flex;gap:28px;align-items:center;}
+.nl a{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;text-decoration:none;}
+.nl a:hover,.nl a.act{color:var(--gold);}
+/* DROPDOWN */
+.nl-drop{position:relative;display:flex;align-items:center;}
+.nl-drop-trigger{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);transition:color .2s;cursor:pointer;display:flex;align-items:center;gap:5px;user-select:none;}
+.nl-drop-trigger::after{content:'';display:inline-block;width:0;height:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:4px solid currentColor;transition:transform .2s;margin-top:1px;}
+.nl-drop-trigger:hover{color:var(--gold);}
+.nl-drop-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;background:var(--bg);border:1px solid var(--bdr);min-width:160px;padding:8px 0;z-index:200;}
+.nl-drop-menu.open{display:block;}
+.nl-drop-menu a{display:block;padding:9px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nl-drop-menu a:hover{color:var(--gold);}
+.enq{border:1px solid var(--gold-b);color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;transition:background .2s;text-decoration:none;}
+.enq:hover{background:var(--gold-l);}
+/* HERO */
+.hero{padding:80px 48px 70px;border-bottom:1px solid var(--bdr);display:grid;grid-template-columns:1fr 340px;gap:80px;align-items:center;}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:24px;}
+.eline{width:36px;height:1px;background:var(--gold);flex-shrink:0;}
+.etxt{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);}
+.hero h1{font-family:var(--serif);font-size:64px;font-weight:300;line-height:1.06;color:var(--text);}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-sub{font-size:15px;color:var(--tmid);line-height:1.85;margin:22px 0 36px;font-weight:300;max-width:480px;}
+.hero-btns{display:flex;gap:14px;align-items:center;}
+.btn-primary{background:var(--gold);color:var(--bg);padding:14px 32px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;font-family:var(--sans);}
+.btn-ghost{border:1px solid rgba(232,226,214,0.2);color:rgba(232,226,214,0.6);padding:14px 32px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-family:var(--sans);}
+.btn-primary:hover{opacity:.9;}
+.btn-ghost:hover{border-color:var(--gold-b);color:var(--gold);}
+/* HERO ASIDE */
+.hero-aside{border:1px solid var(--bdr);padding:28px;}
+.ha-lbl{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
+.ha-item{padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.ha-item:last-child{border-bottom:none;padding-bottom:0;}
+.ha-item:first-of-type{padding-top:0;}
+.ha-name{font-family:var(--serif);font-size:18px;color:var(--text);margin-bottom:3px;}
+.ha-detail{font-size:11px;color:var(--tlow);display:flex;justify-content:space-between;}
+.ha-tag{color:var(--gold);}
+/* TICKER */
+.ticker{overflow:hidden;border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:14px 0;background:rgba(183,157,100,0.03);}
+.ticker-inner{display:flex;gap:48px;white-space:nowrap;animation:ticker 25s linear infinite;}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ticker-item{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(232,226,214,0.28);text-decoration:none;transition:color .2s;}
+.ticker-item:hover{color:var(--gold);}
+.ticker-item::after{content:' ·';color:var(--gold);margin-left:48px;}
+/* INTRO */
+.intro{padding:64px 48px;display:grid;grid-template-columns:260px 1fr;gap:60px;border-bottom:1px solid var(--bdr);}
+.intro-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.intro h2{font-family:var(--serif);font-size:38px;font-weight:300;color:var(--text);line-height:1.2;}
+.intro-right p{font-size:14px;color:var(--tmid);line-height:1.9;font-weight:300;margin-bottom:18px;}
+.intro-right p strong{color:rgba(232,226,214,0.8);font-weight:400;}
+.intro-right p:last-child{margin-bottom:0;}
+/* THREE BOXES */
+.boxes{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bdr);}
+.box{background:var(--bg);padding:32px;}
+.box-n{font-family:var(--serif);font-size:44px;color:rgba(183,157,100,0.18);line-height:1;margin-bottom:14px;}
+.box-type{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.box h3{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--text);margin-bottom:10px;}
+.box p{font-size:14px;color:rgba(232,226,214,0.4);line-height:1.8;font-weight:300;}
+/* ITINS PREVIEW */
+.itin-preview{padding:0 48px 64px;}
+.ip-lbl{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
+.ip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);}
+.ip-card{background:var(--bg2);padding:28px;}
+.ip-nights{font-family:var(--serif);font-size:40px;color:var(--gold);line-height:1;margin-bottom:4px;}
+.ip-nights-lbl{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--tlow);margin-bottom:16px;}
+.ip-name{font-family:var(--serif);font-size:18px;color:var(--text);margin-bottom:8px;}
+.ip-desc{font-size:14px;color:rgba(232,226,214,0.38);line-height:1.7;font-weight:300;}
+.ip-link{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-top:16px;display:inline-block;}
+/* CTA */
+.cta-wrap{padding:0 48px 48px;}
+.cta{border:1px solid var(--bdr);padding:36px;display:flex;justify-content:space-between;align-items:center;gap:24px;}
+.cta h3{font-family:var(--serif);font-size:28px;font-weight:300;color:var(--text);margin-bottom:6px;}
+.cta p{font-size:15px;color:var(--tmid);font-weight:300;line-height:1.7;}
+.cta-btn{background:var(--gold);color:var(--bg);padding:13px 28px;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:500;white-space:nowrap;flex-shrink:0;font-family:var(--sans);}
+/* FOOTER */
+.footer{padding:24px 48px;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;}
+.fl{font-family:var(--serif);font-size:15px;}
+.flg{font-style:italic;color:var(--gold);}
+.flr{color:rgba(232,226,214,0.4);font-weight:300;letter-spacing:1px;}
+.fp{font-size:11px;color:rgba(232,226,214,0.18);}
+@media(max-width:768px){
+  .nav{padding:16px 20px;}.nl{display:none;}.lsub,.ldiv{display:none;}
+  .hero{grid-template-columns:1fr;padding:40px 20px;gap:32px;}
+  .hero h1{font-size:40px;}.hero-aside{display:none;}
+  .intro{grid-template-columns:1fr;padding:40px 20px;}
+  .boxes{grid-template-columns:1fr;}
+  .ip-grid{grid-template-columns:1fr 1fr;}
+  .itin-preview{padding:0 20px 40px;}
+  .cta-wrap{padding:0 20px 40px;}
+  .cta{flex-direction:column;align-items:flex-start;}
+  .footer{padding:20px;flex-direction:column;gap:8px;text-align:center;}
+}
+
+/* ── Royal Cromer photography ── */
+.rc-img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.rc-img-wrap{overflow:hidden;line-height:0;}
+.rc-hero-img{width:100%;height:480px;object-fit:cover;object-position:center;display:block;}
+.rc-panel-img{width:100%;height:320px;object-fit:cover;object-position:center;display:block;}
+.rc-wide-img{width:100%;height:400px;object-fit:cover;object-position:center;display:block;}
+.rc-strip-img{width:100%;height:240px;object-fit:cover;object-position:center;display:block;}
+@media(max-width:768px){
+  .rc-hero-img{height:260px;}
+  .rc-panel-img{height:200px;}
+  .rc-wide-img{height:220px;}
+  .rc-strip-img{height:160px;}
+}
+
+
+/* MOBILE NAV */
+.mob-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--gold);}
+.mob-toggle svg{display:block;width:22px;height:22px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;}
+.mob-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,31,15,0.98);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:0;}
+.mob-nav.open{display:flex;}
+.mob-nav a{font-size:22px;font-family:var(--serif);font-weight:300;color:var(--text);text-decoration:none;padding:14px 0;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.06);width:100%;text-align:center;transition:color .2s;}
+.mob-nav a:hover,.mob-nav a.act{color:var(--gold);}
+.mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
+.mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
+@media(max-width:768px){
+  .mob-toggle{display:block;}
+  .enq{display:none;}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="logo">
+    <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
+    <div class="ldiv"></div>
+    <span class="lsub">Norfolk &amp; Suffolk</span>
+  </a>
+  <div class="nl">
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">Explore</span>
+            <div class="nl-drop-menu">
+        <a href="/norfolk">Courses</a>
+        <a href="/itineraries">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/transfers">Transfers</a>
+      </div>
+    </div>
+    <a href="/accommodation">Accommodation</a>
+    <a href="/cote-dopale-collection">Côte d'Opale</a>
+    <div class="nl-drop">
+      <span class="nl-drop-trigger">About</span>
+      <div class="nl-drop-menu">
+        <a href="/blog">Journal</a>
+        <a href="/about">About</a>
+      </div>
+    </div>
+  </div>
+  <button class="mob-toggle" onclick="document.getElementById('mobNav').classList.toggle('open')" aria-label="Open menu">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a href="/enquire" class="enq">Enquire</a>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
+  <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
+  <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
+  <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
+  <a href="/cote-dopale-collection" onclick="document.getElementById('mobNav').classList.remove('open')">Côte d'Opale</a>
+  <a href="/blog" onclick="document.getElementById('mobNav').classList.remove('open')">Journal</a>
+  <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
+  <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
+</div>
+
+<div class="rc-img-wrap"><img src="images/rc-golfers-sunset-green-sea.jpg" alt="Royal Cromer — golfers on the green at sunset with sea behind" class="rc-hero-img"></div>
+
+<div class="hero">
+
+  <div>
+    <div class="eyebrow"><div class="eline"></div><div class="etxt">Norfolk &amp; Suffolk · Inbound Golf Specialists</div></div>
+    <h1>England's <em>last</em><br>undiscovered<br>golf coast.</h1>
+    <p class="hero-sub">World-ranked links. Heathland classics. Unspoiled English countryside. For the first time, properly packaged for the international travelling golfer.</p>
+    <div class="hero-btns">
+      <a href="/itineraries" class="btn-primary">Plan your journey</a>
+      <a href="/norfolk" class="btn-ghost">Explore courses</a>
+    </div>
+  </div>
+  <div class="hero-aside">
+    <div class="ha-lbl">Featured courses</div>
+    <div class="ha-item">
+      <div class="ha-name">Royal West Norfolk</div>
+      <div class="ha-detail"><span>Brancaster · North Norfolk</span><span class="ha-tag">World Top 100</span></div>
+    </div>
+    <div class="ha-item">
+      <div class="ha-name">Hunstanton Golf Club</div>
+      <div class="ha-detail"><span>North West Norfolk</span><span class="ha-tag">Top 100 GB&amp;I</span></div>
+    </div>
+    <div class="ha-item">
+      <div class="ha-name">Aldeburgh Golf Club</div>
+      <div class="ha-detail"><span>Suffolk Heritage Coast</span><span class="ha-tag">Championship</span></div>
+    </div>
+    <div class="ha-item">
+      <div class="ha-name">Thorpeness</div>
+      <div class="ha-detail"><span>Suffolk · James Braid</span><span class="ha-tag">Heathland</span></div>
+    </div>
+    <div class="ha-item">
+      <div class="ha-name">Royal Worlington</div>
+      <div class="ha-detail"><span>West Suffolk</span><span class="ha-tag">The Sacred Nine</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="ticker">
+  <div class="ticker-inner">
+    <a href="/norfolk#royal-west-norfolk" class="ticker-item">Royal West Norfolk</a>
+    <a href="/norfolk#hunstanton" class="ticker-item">Hunstanton</a>
+    <a href="/norfolk#aldeburgh" class="ticker-item" data-county="suffolk">Aldeburgh</a>
+    <a href="/norfolk#thorpeness" class="ticker-item" data-county="suffolk">Thorpeness</a>
+    <a href="/norfolk#royal-cromer" class="ticker-item">Royal Cromer</a>
+    <a href="/norfolk#sheringham" class="ticker-item">Sheringham</a>
+    <a href="/norfolk#woodbridge" class="ticker-item" data-county="suffolk">Woodbridge</a>
+    <a href="/norfolk#felixstowe-ferry" class="ticker-item" data-county="suffolk">Felixstowe Ferry</a>
+    <a href="/norfolk#royal-worlington" class="ticker-item" data-county="suffolk">Royal Worlington</a>
+    <a href="/norfolk#royal-west-norfolk" class="ticker-item">Royal West Norfolk</a>
+    <a href="/norfolk#hunstanton" class="ticker-item">Hunstanton</a>
+    <a href="/norfolk#aldeburgh" class="ticker-item" data-county="suffolk">Aldeburgh</a>
+    <a href="/norfolk#thorpeness" class="ticker-item" data-county="suffolk">Thorpeness</a>
+    <a href="/norfolk#royal-cromer" class="ticker-item">Royal Cromer</a>
+    <a href="/norfolk#sheringham" class="ticker-item">Sheringham</a>
+    <a href="/norfolk#woodbridge" class="ticker-item" data-county="suffolk">Woodbridge</a>
+    <a href="/norfolk#felixstowe-ferry" class="ticker-item" data-county="suffolk">Felixstowe Ferry</a>
+    <a href="/norfolk#royal-worlington" class="ticker-item" data-county="suffolk">Royal Worlington</a>
+  </div>
+</div>
+    <span class="ticker-item">Royal Cromer</span>
+    <span class="ticker-item">Sheringham</span>
+    <span class="ticker-item">Woodbridge</span>
+    <span class="ticker-item">Felixstowe Ferry</span>
+    <span class="ticker-item">Royal Worlington</span>
+  </div>
+</div>
+
+
+<div class="rc-img-wrap"><img src="images/hunstanton-bunkers-evening.jpg" alt="Hunstanton Golf Club — bunkers and flagstick in evening light" class="rc-wide-img"></div>
+<div class="intro">
+  <div>
+    <div class="intro-lbl">The proposition</div>
+    <h2>Two counties.<br>A lifetime of<br>golf to explore.</h2>
+  </div>
+  <div class="intro-right">
+    <p>Norfolk and Suffolk offer the rarest combination in English golf — world-class links courses on the North Sea coast, and inland heathland classics of the very highest quality. All within easy reach of London, and yet almost entirely unmarketed to the international visitor.</p>
+    <p><strong>Golf East Anglia exists to change that.</strong> We package the region properly: curated itineraries, handpicked accommodation, and the local knowledge to make every round count. Whether you are a solo golfer, a group, or a travel agent — this is the specialist you have been looking for. We offer <a href="/experiences" style="color:var(--gold);">bespoke golf experiences</a> alongside every itinerary.</p>
+  </div>
+</div>
+
+<div class="boxes">
+  <div class="box">
+    <div class="box-n">01</div>
+    <div class="box-type">Links</div>
+    <h3>North Norfolk coast</h3>
+    <p>Royal West Norfolk, Hunstanton, Royal Cromer and Sheringham — four of England's finest links, all within 30 miles of each other. Including one World Top 100 course.</p>
+  </div>
+  <div class="box">
+    <div class="box-n">02</div>
+    <div class="box-type">Heathland</div>
+    <h3>Suffolk coastal golf</h3>
+    <p>Aldeburgh, Thorpeness, Woodbridge and Felixstowe Ferry — gorse, heather and fast-draining sandy soil. Playable 12 months a year. Largely unknown to the international visitor.</p>
+  </div>
+  <div class="box">
+    <div class="box-n">03</div>
+    <div class="box-type">Bespoke stays</div>
+    <h3>Accommodation to match</h3>
+    <p>From North Norfolk flint farmhouses to Suffolk coastal retreats. Every stay chosen to complete the journey — not just fill a bed between rounds.</p>
+  </div>
+</div>
+
+
+<div class="rc-img-wrap"><img src="images/rc-rainbow-landscape.jpg" alt="Royal Cromer — full rainbow arc over the links" class="rc-strip-img"></div>
+<div style="height:56px;"></div>
+
+<div class="itin-preview">
+  <div class="ip-lbl">Our itineraries</div>
+  <div class="ip-grid">
+    <div class="ip-card">
+      <div class="ip-nights">3</div>
+      <div class="ip-nights-lbl">Nights</div>
+      <div class="ip-name">The Long Weekend</div>
+      <div class="ip-desc">One county, three courses, three nights. The ideal introduction to the region.</div>
+      <a href="/itineraries" class="ip-link">View itinerary →</a>
+    </div>
+    <div class="ip-card">
+      <div class="ip-nights">5</div>
+      <div class="ip-nights-lbl">Nights</div>
+      <div class="ip-name">The County Tour</div>
+      <div class="ip-desc">One county explored in full. Every flagship course. Unhurried.</div>
+      <a href="/itineraries" class="ip-link">View itinerary →</a>
+    </div>
+    <div class="ip-card">
+      <div class="ip-nights">7</div>
+      <div class="ip-nights-lbl">Nights</div>
+      <div class="ip-name">The Two Counties</div>
+      <div class="ip-desc">Our signature journey. Norfolk and Suffolk combined. Six rounds.</div>
+      <a href="/itineraries" class="ip-link">View itinerary →</a>
+    </div>
+    <div class="ip-card">
+      <div class="ip-nights">10</div>
+      <div class="ip-nights-lbl">Nights</div>
+      <div class="ip-name">The Grand Tour</div>
+      <div class="ip-desc">Both counties in full. Eight rounds plus the Sacred Nine. Once in a golfing lifetime.</div>
+      <a href="/itineraries" class="ip-link">View itinerary →</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Côte d'Opale Collection Banner -->
+<div style="margin:0 48px 0;border:1px solid rgba(183,157,100,0.28);overflow:hidden;position:relative;">
+  <div style="position:relative;height:320px;background:linear-gradient(160deg,#1a3a1c 0%,#0d2410 40%,#061408 100%);">
+    <img src="course-belle-dune.jpg" alt="Belle Dune golf course — Côte d'Opale, Northern France" 
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:0.35;">
+    <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(13,31,20,0.95) 0%,rgba(13,31,20,0.6) 50%,rgba(13,31,20,0.3) 100%);"></div>
+    <div style="position:relative;z-index:1;height:100%;display:flex;align-items:center;padding:0 52px;">
+      <div style="max-width:580px;">
+        <p style="font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;font-family:var(--sans);">New · September 2026 · Northern France</p>
+        <h2 style="font-family:var(--serif);font-size:clamp(28px,4vw,44px);font-weight:300;line-height:1.08;margin-bottom:12px;">The Côte d'Opale<br><em style="font-style:italic;color:var(--gold);">Collection</em></h2>
+        <p style="font-size:14px;color:rgba(232,224,208,0.65);line-height:1.75;margin-bottom:20px;font-family:var(--sans);font-weight:300;max-width:460px;">Four nights in Northern France. Morning coaching with Pascal Ogden, PGA Professional. Four championship courses — La Forêt, Belle Dune, Les Pins and La Mer. A private wine evening. Places limited to 14.</p>
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+          <a href="/cote-dopale-collection" style="display:inline-block;background:var(--gold);color:var(--bg);padding:11px 28px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;font-family:var(--sans);font-weight:500;">Register Interest</a>
+          <span style="font-size:12px;color:rgba(232,224,208,0.4);font-family:var(--sans);">£1,995 per person · All-inclusive · 12–16 Sep 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="height:48px;"></div>
+
+<div class="cta-wrap">
+  <div class="cta">
+    <div>
+      <h3>Ready to start planning?</h3>
+      <p>Tell us your dates, group size and the courses that interest you. We'll come back within 24 hours with a suggested itinerary, availability and a clear price. No obligation. International guests: we quote in USD, EUR and AUD on request.</p>
+    </div>
+    <a href="/enquire" class="cta-btn">Make an enquiry</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <a href="/" class="fl footer-logo"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
+  <p class="fp">enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists &nbsp;·&nbsp; <a href="/trade" style="color:rgba(232,226,214,0.18);text-decoration:none;">Travel trade</a></p>
+</footer>
+<script>
+  document.querySelectorAll('.nl-drop-trigger').forEach(function(trigger) {
+    trigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var menu = trigger.nextElementSibling;
+      var isOpen = menu.classList.contains('open');
+      // close all first
+      document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+      if (!isOpen) menu.classList.add('open');
+    });
+  });
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
+  });
+</script>
+</body>
+</html>
