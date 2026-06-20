@@ -101,6 +101,28 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- New Journal posts — June 2026 -->
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-sheringham</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-norfolk-vs-suffolk</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-east-coast-vs-scotland</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-american-guide-east-coast</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+
   <!-- US-targeted articles -->
   <url>
     <loc>https://www.golfeastanglia.com/us-golf-norfolk-article</loc>
