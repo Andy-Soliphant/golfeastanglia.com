@@ -113,13 +113,15 @@
   <a href="/" class="logo">
     <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
     <div class="ldiv"></div>
-    <span class="lsub">Norfolk &amp; Suffolk</span>
+    <span class="lsub">Golf East Anglia</span>
   </a>
   <div class="nl">
     <div class="nl-drop">
       <span class="nl-drop-trigger">Explore</span>
             <div class="nl-drop-menu">
-        <a href="/norfolk">Courses</a>
+        <a href="/norfolk">Norfolk</a>
+        <a href="/suffolk">Suffolk</a>
+        <a href="/cambridgeshire">Cambridgeshire</a>
         <a href="/itineraries">Itineraries</a>
         <a href="/experiences">Experiences</a>
         <a href="/transfers">Transfers</a>
@@ -143,7 +145,9 @@
 <div class="mob-nav" id="mobNav">
   <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
   <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
-  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Norfolk</a>
+  <a href="/suffolk" onclick="document.getElementById('mobNav').classList.remove('open')">Suffolk</a>
+  <a href="/cambridgeshire" onclick="document.getElementById('mobNav').classList.remove('open')">Cambridgeshire</a>
   <a href="/itineraries" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
   <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
   <a href="/accommodation" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
@@ -166,6 +170,7 @@
     <button class="tab active" onclick="showTab('north-norfolk',this)">North Norfolk Coast</button>
     <button class="tab" onclick="showTab('norwich',this)">Norwich Area</button>
     <button class="tab" onclick="showTab('suffolk',this)">Suffolk &amp; Breckland</button>
+    <button class="tab" onclick="showTab('cambridge',this)">Cambridge</button>
   </div>
 
   <!-- NORTH NORFOLK -->
@@ -359,6 +364,52 @@
     </div>
   </div>
 
+  <div id="cambridge" class="tab-pane">
+    <div class="properties-grid">
+
+      <div class="property">
+        <div class="property-body">
+          <p class="property-tag">Flagship Hotel · Autograph Collection</p>
+          <h2 class="property-name">University Arms</h2>
+          <p class="property-location">Parker's Piece, Cambridge</p>
+          <p class="property-desc">Cambridge's flagship hotel — 192 rooms and suites overlooking the 25-acre Parker's Piece park, a short walk from the heart of the colleges. An Autograph Collection property by Marriott, with Parker's Tavern brasserie widely regarded as the best restaurant in Cambridge. The natural base for golfers combining Gog Magog with a Cambridge cultural day. For US guests who want recognised quality and a central location, this is the first recommendation.</p>
+          <div class="property-tags"><span class="ptag">Parker's Piece Views</span><span class="ptag">Parker's Tavern</span><span class="ptag">City Centre</span><span class="ptag">10 mins Gog Magog</span></div>
+        </div>
+      </div>
+
+      <div class="property">
+        <div class="property-body">
+          <p class="property-tag">Boutique Hotel · River Cam</p>
+          <h2 class="property-name">The Varsity Hotel &amp; Spa</h2>
+          <p class="property-location">Thompson's Lane, Cambridge</p>
+          <p class="property-desc">A contemporary boutique hotel sitting directly on the River Cam, with a sixth-floor rooftop terrace offering some of the most spectacular views of the college Backs available anywhere in the city. Just 44 rooms, each individually designed and celebrating Cambridge's heritage. The spa makes it particularly well-suited to a golf group wanting to unwind properly. For the visitor who wants the most visually memorable base in Cambridge, this is it.</p>
+          <div class="property-tags"><span class="ptag">River Cam Views</span><span class="ptag">Rooftop Terrace</span><span class="ptag">Spa</span><span class="ptag">44 Rooms</span></div>
+        </div>
+      </div>
+
+      <div class="property">
+        <div class="property-body">
+          <p class="property-tag">Country House · Northwest Cambridge</p>
+          <h2 class="property-name">Hotel Felix</h2>
+          <p class="property-location">Huntingdon Road, Cambridge</p>
+          <p class="property-desc">A handsome Victorian mansion set in two acres of grounds to the northwest of the city — rated the top luxury choice in Cambridge by independent reviewers in 2026. The Graffiti restaurant, with its chef's theatre kitchen, is outstanding. For a golf group wanting space, quiet and genuine grounds to decompress in after Gog Magog or Royal Worlington, Hotel Felix is the right choice — still within easy cycling distance of the university and the city centre.</p>
+          <div class="property-tags"><span class="ptag">2 Acres Grounds</span><span class="ptag">Graffiti Restaurant</span><span class="ptag">Country House</span><span class="ptag">Top Rated 2026</span></div>
+        </div>
+      </div>
+
+      <div class="property">
+        <div class="property-body">
+          <p class="property-tag">Classic Boutique · Trumpington Street</p>
+          <h2 class="property-name">Hotel du Vin Cambridge</h2>
+          <p class="property-location">Trumpington Street, Cambridge</p>
+          <p class="property-desc">A handsome Victorian building on Trumpington Street, a short walk from the Fitzwilliam Museum and the southern entrance to the colleges. The Hotel du Vin formula — wine-themed rooms, roll-top baths, excellent bistro and reliably warm service — translates well in Cambridge. For UK guests who know and trust the brand, and for those who want a boutique feel with a consistent standard, this is a strong choice. The wine list is exceptional.</p>
+          <div class="property-tags"><span class="ptag">Near Fitzwilliam</span><span class="ptag">Wine Rooms</span><span class="ptag">Bistro</span><span class="ptag">Boutique</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <div class="cta-strip">
     <h2>Build Your Stay Around the Golf</h2>
     <p>Tell us your dates, group size and the courses you want to play — we'll propose the right accommodation for your itinerary.</p>
@@ -374,6 +425,7 @@
     <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
   <a href="/norfolk">Norfolk</a>
     <a href="/suffolk">Suffolk</a>
+    <a href="/cambridgeshire">Cambridgeshire</a>
     <a href="/itineraries">Itineraries</a>
     <a href="/accommodation">Accommodation</a>
     <a href="/blog">Journal</a>
