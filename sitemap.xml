@@ -13,6 +13,16 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.golfeastanglia.com/suffolk</loc>
+    <lastmod>2026-06-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/cambridgeshire</loc>
+    <lastmod>2026-07-13</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.golfeastanglia.com/itineraries</loc>
     <lastmod>2026-06-07</lastmod>
     <priority>0.9</priority>
@@ -132,21 +142,6 @@
     <lastmod>2026-06-27</lastmod>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.golfeastanglia.com/blog-book-early-2027-uk</loc>
-    <lastmod>2026-07-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.golfeastanglia.com/blog-book-early-2027-us</loc>
-    <lastmod>2026-07-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.golfeastanglia.com/blog-when-to-play-norfolk</loc>
-    <lastmod>2026-07-03</lastmod>
-    <priority>0.8</priority>
-  </url>
 
   <!-- US-targeted articles -->
   <url>
@@ -162,16 +157,6 @@
   <url>
     <loc>https://www.golfeastanglia.com/why-book-local-uk-golf-expert</loc>
     <lastmod>2026-06-11</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.golfeastanglia.com/blog-grove-cromer-uk</loc>
-    <lastmod>2026-07-06</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.golfeastanglia.com/blog-grove-cromer-us</loc>
-    <lastmod>2026-07-06</lastmod>
     <priority>0.8</priority>
   </url>
 

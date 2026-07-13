@@ -189,13 +189,14 @@ a{text-decoration:none;}
   <a href="/" class="logo">
     <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
     <div class="ldiv"></div>
-    <span class="lsub">Norfolk &amp; Suffolk</span>
+    <span class="lsub">Norfolk &amp; Suffolk &amp; Cambridgeshire</span>
   </a>
   <div class="nl">
     <div class="nl-drop">
       <span class="nl-drop-trigger act">Explore</span>
             <div class="nl-drop-menu">
-        <a href="/norfolk">Courses</a>
+        <a href="/norfolk">Norfolk &amp; Suffolk</a>
+        <a href="/cambridgeshire">Cambridgeshire</a>
         <a href="/itineraries">Itineraries</a>
         <a href="/experiences">Experiences</a>
         <a href="/transfers">Transfers</a>
@@ -219,7 +220,8 @@ a{text-decoration:none;}
 <div class="mob-nav" id="mobNav">
   <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
   <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
-  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Courses</a>
+  <a href="/norfolk" onclick="document.getElementById('mobNav').classList.remove('open')">Norfolk &amp; Suffolk</a>
+  <a href="/cambridgeshire" onclick="document.getElementById('mobNav').classList.remove('open')">Cambridgeshire</a>
   <a href="/itineraries" class="act" onclick="document.getElementById('mobNav').classList.remove('open')">Itineraries</a>
   <a href="/experiences" onclick="document.getElementById('mobNav').classList.remove('open')">Experiences</a>
   <a href="/accommodation" onclick="document.getElementById('mobNav').classList.remove('open')">Accommodation</a>
@@ -533,6 +535,77 @@ a{text-decoration:none;}
         <div class="pro-title">PGA Pro — Grand Tour programme</div>
         <p>Three sessions across the tour. One before the Norfolk links, one before the Suffolk heathland, and a final session before the Sacred Nine.</p>
         <a href="/pga-pro" class="pro-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="rc-img-wrap"><img src="images/rc-rainbow-landscape.jpg" alt="East Anglia golf — the complete region" class="rc-strip-img" style="object-position:center"></div>
+
+<!-- CAMBRIDGE GATEWAY ITINERARY -->
+<div class="pkg" id="cambridge">
+  <div class="pkg-header">
+    <div>
+      <div class="pkg-meta">
+        <div><div class="pkg-dur">4</div><div class="pkg-dur-lbl">Nights</div></div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <span class="pkg-tag hi">Cambridge Gateway</span>
+          <span class="pkg-tag">3 counties in one trip</span>
+          <span class="pkg-tag">3–4 rounds</span>
+        </div>
+      </div>
+      <h2>The Cambridge Gateway</h2>
+      <p class="pkg-sub">Four nights. Three counties. Cambridge as the opening chapter, then north into Suffolk's heathland and the Norfolk coast. The ideal itinerary for international visitors — particularly those arriving via London or Stansted — who want the complete East Anglia story.</p>
+    </div>
+    <div class="price-block">
+      <div class="price-pair">
+        <div class="price-option">
+          <div class="po-label">⊙ Self-Drive</div>
+          <div class="po-price"><span>£</span>950<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+          <div class="po-note">Golf &amp; accommodation<br>Drive yourself</div>
+        </div>
+        <div class="price-option featured">
+          <div class="po-label">✦ Chauffeured</div>
+          <div class="po-price"><span>£</span>1,350<span style="font-size:13px;color:var(--tlow)"> pp</span></div>
+          <div class="po-note">Golf, accommodation<br>&amp; private transfers</div>
+        </div>
+      </div>
+      <div class="pb-note">Min. 4 guests<br>USD · EUR · AUD on request</div>
+    </div>
+  </div>
+  <div class="pkg-body">
+    <div>
+      <div class="itin">
+        <div class="itin-head" onclick="toggleItin(this)">Cambridge Gateway — sample itinerary <span class="itin-arrow">▼</span></div>
+        <div class="itin-body">
+          <div class="day"><div class="day-num"><div class="dn">1</div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · Cambridge</div><div class="day-detail">Arrive into Stansted Airport or London and transfer directly to Cambridge. Afternoon exploring the city — the Backs, the colleges, the Fitzwilliam Museum. Evening dinner in Cambridge.</div></div></div>
+          <div class="day"><div class="day-num"><div class="dn">2</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Gog Magog Golf Club · The Sacred Nine</div><div class="day-detail">Morning round at Gog Magog — the only true downland golf in East Anglia, ranked inside the Top 100 in England. Afternoon pilgrimage to Royal Worlington &amp; Newmarket, Bernard Darwin's Sacred Nine. Two of East Anglia's finest courses in a single day.</div><div><span class="course-tag">Gog Magog</span><span style="font-size:11px;color:var(--tlow);"> + </span><span class="course-tag">Royal Worlington</span></div></div></div>
+          <div class="day"><div class="day-num"><div class="dn">3</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">North into Suffolk · Aldeburgh</div><div class="day-detail">Drive north to the Suffolk Heritage Coast. Afternoon round at Aldeburgh Golf Club — James Braid's heathland classic on fast-draining sandy soil. Base: Aldeburgh or Woodbridge area.</div><div><span class="course-tag">Aldeburgh</span></div></div></div>
+          <div class="day"><div class="day-num"><div class="dn">4</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Thorpeness · Move to Norfolk</div><div class="day-detail">Morning round at Thorpeness — two miles from Aldeburgh, a completely different test. Afternoon drive north to the Norfolk coast. Base: Holt or Burnham Market area.</div><div><span class="course-tag">Thorpeness</span></div></div></div>
+          <div class="day"><div class="day-num"><div class="dn">5</div><div class="dl">Depart</div></div><div class="day-content"><div class="day-title">Royal Cromer · Departure</div><div class="day-detail">Final morning round at Royal Cromer — clifftop links with the North Sea behind every hole. Afternoon departure: Norwich Airport, or London via the A11 in under two hours.</div><div><span class="course-tag">Royal Cromer</span></div></div></div>
+        </div>
+      </div>
+      <div style="margin-top:12px;padding:14px 18px;background:var(--bg2);border:1px solid var(--bdr);">
+        <div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(183,157,100,0.45);margin-bottom:6px;">Extension available</div>
+        <div style="font-size:14px;color:rgba(232,226,214,0.38);line-height:1.7;font-weight:300;">Add two nights on the Norfolk coast to include <span style="color:rgba(232,226,214,0.6);">Royal West Norfolk at Brancaster</span> and <span style="color:rgba(232,226,214,0.6);">Hunstanton</span> — creating a five-county, seven-night Grand Circuit of all East Anglia has to offer.</div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="incl">
+        <div class="incl-hd">What's included</div>
+        <div class="incl-item"><div class="incl-dot"></div><p>4 nights across Cambridge, Suffolk Heritage Coast and Norfolk</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>4 rounds across all three counties</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>Gog Magog, Royal Worlington, Aldeburgh, Thorpeness, Royal Cromer</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>All tee times reserved and confirmed in advance</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>All green fees for included rounds</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>Full itinerary, route guide and course notes</p></div>
+        <div class="incl-item"><div class="incl-dot"></div><p>On-call local support throughout</p></div>
+      </div>
+      <div class="pro-box">
+        <div class="pro-hd">Ideal for</div>
+        <div class="pro-title">International visitors via London or Stansted</div>
+        <p>Cambridge is two hours from London and 45 minutes from Stansted Airport — the natural gateway for visitors arriving from the US, Europe or beyond.</p>
+        <a href="/cambridgeshire" class="pro-link">Explore Cambridgeshire →</a>
       </div>
     </div>
   </div>
