@@ -1,13 +1,15 @@
 // GEA Email Capture Popup
 // Kit form UID: 97dcf287d3
-// Triggers after 30 seconds, once per session
+// Triggers on 50% scroll depth OR 20 seconds, whichever comes first.
+// Once per session. Exit-intent backstop on desktop.
 
 (function() {
   'use strict';
 
   var POPUP_ID = 'gea-email-popup';
   var SESSION_KEY = 'gea_popup_shown';
-  var DELAY_MS = 30000;
+  var DELAY_MS = 20000;
+  var SCROLL_TRIGGER = 0.5;   // fire at 50% page depth
 
   // Don't show if already seen this session
   if (sessionStorage.getItem(SESSION_KEY)) return;
@@ -279,7 +281,31 @@
     });
   }
 
-  // Fire after delay
-  setTimeout(showPopup, DELAY_MS);
+  // ---- Triggers: scroll depth OR timer OR exit intent, whichever fires first ----
+  var fired = false;
+  function fireOnce() {
+    if (fired) return;
+    fired = true;
+    window.removeEventListener('scroll', onScroll);
+    document.removeEventListener('mouseout', onExit);
+    showPopup();
+  }
+
+  function onScroll() {
+    var doc = document.documentElement;
+    var scrollable = doc.scrollHeight - window.innerHeight;
+    if (scrollable <= 0) return;
+    if ((window.scrollY || doc.scrollTop) / scrollable >= SCROLL_TRIGGER) fireOnce();
+  }
+
+  function onExit(e) {
+    // desktop only, and only when the cursor genuinely leaves the top of the viewport
+    if (window.innerWidth < 900) return;
+    if (!e.relatedTarget && e.clientY <= 0) fireOnce();
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  document.addEventListener('mouseout', onExit);
+  setTimeout(fireOnce, DELAY_MS);
 
 })();

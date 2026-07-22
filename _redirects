@@ -1,0 +1,50 @@
+# ---- Canonical host: force apex -> www (301) ----
+http://golfeastanglia.com/*      https://www.golfeastanglia.com/:splat   301!
+https://golfeastanglia.com/*     https://www.golfeastanglia.com/:splat   301!
+http://www.golfeastanglia.com/*  https://www.golfeastanglia.com/:splat   301!
+
+# ---- Canonical URL form: strip .html (301) ----
+/about.html                                   /about                                  301!
+/accommodation.html                           /accommodation                          301!
+/blog-american-guide-east-coast.html          /blog-american-guide-east-coast         301!
+/blog-best-hotels-east-anglia.html            /blog-best-hotels-east-anglia           301!
+/blog-book-early-2027-uk.html                 /blog-book-early-2027-uk                301!
+/blog-book-early-2027-us.html                 /blog-book-early-2027-us                301!
+/blog-east-coast-links.html                   /blog-east-coast-links                  301!
+/blog-east-coast-vs-scotland.html             /blog-east-coast-vs-scotland            301!
+/blog-golf-near-norwich.html                  /blog-golf-near-norwich                 301!
+/blog-golf-vacation-england.html              /blog-golf-vacation-england             301!
+/blog-grove-cromer-uk.html                    /blog-grove-cromer-uk                   301!
+/blog-grove-cromer-us.html                    /blog-grove-cromer-us                   301!
+/blog-luxury-transfers.html                   /blog-luxury-transfers                  301!
+/blog-norfolk-vs-suffolk.html                 /blog-norfolk-vs-suffolk                301!
+/blog-pascal-ogden.html                       /blog-pascal-ogden                      301!
+/blog-royal-cromer.html                       /blog-royal-cromer                      301!
+/blog-royal-west-norfolk.html                 /blog-royal-west-norfolk                301!
+/blog-sheringham.html                         /blog-sheringham                        301!
+/blog-stay-play-norwich.html                  /blog-stay-play-norwich                 301!
+/blog-three-day-norfolk.html                  /blog-three-day-norfolk                 301!
+/blog-when-to-play-norfolk.html               /blog-when-to-play-norfolk              301!
+/blog.html                                    /blog                                   301!
+/cambridgeshire.html                          /cambridgeshire                         301!
+/cote-dopale-collection.html                  /cote-dopale-collection                 301!
+/east-anglia-vs-scotland-golf.html            /east-anglia-vs-scotland-golf           301!
+/enquire.html                                 /enquire                                301!
+/experiences.html                             /experiences                            301!
+/grove-property-card.html                     /grove-property-card                    301!
+/itineraries.html                             /itineraries                            301!
+/norfolk.html                                 /norfolk                                301!
+/pascal.html                                  /pascal                                 301!
+/pga-pro.html                                 /pga-pro                                301!
+/suffolk.html                                 /suffolk                                301!
+/thank-you.html                               /thank-you                              301!
+/trade.html                                   /trade                                  301!
+/transfers.html                               /transfers                              301!
+/us-golf-norfolk-article.html                 /us-golf-norfolk-article                301!
+/why-book-local-uk-golf-expert.html           /why-book-local-uk-golf-expert          301!
+/worlington.html                              /worlington                             301!
+
+# ---- Retired duplicates ----
+/blog-when-to-play-norfolk2027                /blog-when-to-play-norfolk              301!
+/blog-american-guide-east-coast-FINAL         /blog-american-guide-east-coast         301!
+/blog-best-time-norfolk                       /blog-when-to-play-norfolk              301!
