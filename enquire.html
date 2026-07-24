@@ -12,8 +12,8 @@
 <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enquire | Plan Your Norfolk &amp; Suffolk Golf Break | Golf East Anglia</title>
-<meta name="description" content="Plan your Norfolk and Suffolk golf holiday. Enquire with Golf East Anglia — bespoke proposal within 24 hours, no obligation. Group golf breaks from 4 guests.">
+<title>Enquire | Plan Your East Anglia Golf Break | Golf East Anglia</title>
+<meta name="description" content="Plan your East Anglia golf break — Norfolk, Suffolk and Cambridgeshire. Enquire with Golf East Anglia for a bespoke proposal within 24 hours, no obligation.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -222,7 +222,7 @@ a{text-decoration:none;}
       <div class="field"><label>Preferred dates or timeframe</label><input type="text" name="dates" placeholder="e.g. June 2026 or 12–19 May"></div>
       <div class="field"><label>Preferred quote currency</label><select name="currency"><option>GBP — British Pounds</option><option>USD — US Dollars</option><option>EUR — Euros</option><option>AUD — Australian Dollars</option></select></div>
     </div>
-    <div class="field"><label>County preference</label><select name="county"><option value="">Select</option><option>Norfolk only</option><option>Suffolk only</option><option>Both counties</option><option>Not sure — advise me</option></select></div>
+    <div class="field"><label>County preference</label><select name="county"><option value="">Select</option><option>Norfolk only</option><option>Suffolk only</option><option>Cambridgeshire only</option><option>Norfolk &amp; Suffolk</option><option>All three counties</option><option>Not sure — advise me</option></select></div>
     <div class="field"><label>Courses of interest (optional)</label><input type="text" name="courses" placeholder="e.g. Brancaster, Aldeburgh, Hunstanton"><div class="field-note">Leave blank if you'd like us to recommend based on your group and dates.</div></div>
     <div class="sec-div"></div>
     <div class="sec-lbl-f">Anything else we should know</div>
@@ -263,6 +263,7 @@ a{text-decoration:none;}
   <p class="fp">enquire@golfeastanglia.com &nbsp;·&nbsp; A division of Asia Travel Specialists &nbsp;·&nbsp; <a href="/trade" style="color:rgba(232,226,214,0.18);text-decoration:none;">Travel trade</a></p>
 </footer>
 <script>
+  // Nav dropdown
   document.querySelectorAll('.nl-drop-trigger').forEach(function(trigger) {
     trigger.addEventListener('click', function(e) {
       e.stopPropagation();
@@ -275,6 +276,19 @@ a{text-decoration:none;}
   document.addEventListener('click', function() {
     document.querySelectorAll('.nl-drop-menu').forEach(function(m) { m.classList.remove('open'); });
   });
+
+  // GA4 enquiry_submitted event
+  var enquiryForm = document.querySelector('form[name="enquiry"]');
+  if (enquiryForm) {
+    enquiryForm.addEventListener('submit', function() {
+      if (typeof gtag === 'function') {
+        gtag('event', 'enquiry_submitted', {
+          'event_category': 'lead',
+          'event_label': 'enquire_form'
+        });
+      }
+    });
+  }
 </script>
 </body>
 </html>
