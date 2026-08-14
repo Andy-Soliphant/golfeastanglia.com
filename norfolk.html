@@ -314,7 +314,35 @@
     .county-tab:hover{color:var(--gold);}
     .county-pane{display:none;padding:0 80px;}
     .county-pane.active{display:block;}
+
+.ba-strip{border-bottom:1px solid var(--bdr);background:rgba(183,157,100,0.045);}
+.ba-inner{max-width:1400px;margin:0 auto;padding:11px 48px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;}
+.ba-lbl{font-family:var(--sans);font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);white-space:nowrap;}
+.ba-inner p{font-family:var(--sans);font-size:13px;font-weight:200;color:var(--tmid);margin:0;line-height:1.5;}
+.ba-inner a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-b);padding-bottom:1px;}
+.ba-inner a:hover{border-bottom-color:var(--gold);}
+@media(max-width:768px){.ba-inner{padding:9px 20px;gap:8px;}.ba-inner p{font-size:12px;}}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TouristDestination",
+"name":"Golf in Norfolk & Suffolk",
+"url":"https://www.golfeastanglia.com/norfolk",
+"description":"World-ranked links and heathland golf courses across Norfolk and Suffolk, including Royal West Norfolk, Hunstanton, Royal Cromer, Sheringham, Aldeburgh and Royal Worlington.",
+"touristType":["Golf travellers","Golf societies","International golf groups"],
+"includesAttraction":[
+{"@type":"GolfCourse","name":"Royal West Norfolk Golf Club","address":{"@type":"PostalAddress","addressLocality":"Brancaster","addressRegion":"Norfolk","addressCountry":"GB"}},
+{"@type":"GolfCourse","name":"Hunstanton Golf Club","address":{"@type":"PostalAddress","addressLocality":"Hunstanton","addressRegion":"Norfolk","addressCountry":"GB"}},
+{"@type":"GolfCourse","name":"Royal Cromer Golf Club","address":{"@type":"PostalAddress","addressLocality":"Cromer","addressRegion":"Norfolk","addressCountry":"GB"}},
+{"@type":"GolfCourse","name":"Sheringham Golf Club","address":{"@type":"PostalAddress","addressLocality":"Sheringham","addressRegion":"Norfolk","addressCountry":"GB"}},
+{"@type":"GolfCourse","name":"Aldeburgh Golf Club","address":{"@type":"PostalAddress","addressLocality":"Aldeburgh","addressRegion":"Suffolk","addressCountry":"GB"}},
+{"@type":"GolfCourse","name":"Royal Worlington & Newmarket Golf Club","address":{"@type":"PostalAddress","addressLocality":"Worlington","addressRegion":"Suffolk","addressCountry":"GB"}}],
+"provider":{"@type":"TravelAgency","name":"Golf East Anglia","url":"https://www.golfeastanglia.com/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Golf East Anglia","item":"https://www.golfeastanglia.com/"},
+{"@type":"ListItem","position":2,"name":"Norfolk & Suffolk","item":"https://www.golfeastanglia.com/norfolk"}]}
+</script>
 </head>
 <body>
 <nav class="nav">
@@ -349,6 +377,14 @@
   </button>
   <a href="/enquire" class="enq">Enquire</a>
 </nav>
+
+<div class="ba-strip">
+  <div class="ba-inner">
+    <span class="ba-lbl">By Arrangement</span>
+    <p>For a private commission &mdash; a course closed for a morning, arrival by air &mdash; see <a href="/by-arrangement">By Arrangement</a>.</p>
+  </div>
+</div>
+
 <div class="mob-nav" id="mobNav">
   <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
   <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>

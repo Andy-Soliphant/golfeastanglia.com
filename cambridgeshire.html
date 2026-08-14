@@ -146,7 +146,28 @@ a{text-decoration:none;}
 .mob-nav-close{position:absolute;top:20px;right:24px;background:none;border:none;cursor:pointer;color:var(--gold);font-size:28px;line-height:1;}
 .mob-nav-enquire{margin-top:24px!important;border:1px solid var(--gold-b)!important;color:var(--gold)!important;border-bottom:1px solid var(--gold-b)!important;padding:12px 40px!important;width:auto!important;}
 @media(max-width:768px){.mob-toggle{display:block;}.enq{display:none;}}
+
+.ba-strip{border-bottom:1px solid var(--bdr);background:rgba(183,157,100,0.045);}
+.ba-inner{max-width:1400px;margin:0 auto;padding:11px 48px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;}
+.ba-lbl{font-family:var(--sans);font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);white-space:nowrap;}
+.ba-inner p{font-family:var(--sans);font-size:13px;font-weight:200;color:var(--tmid);margin:0;line-height:1.5;}
+.ba-inner a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-b);padding-bottom:1px;}
+.ba-inner a:hover{border-bottom-color:var(--gold);}
+@media(max-width:768px){.ba-inner{padding:9px 20px;gap:8px;}.ba-inner p{font-size:12px;}}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TouristDestination",
+"name":"Golf in Cambridgeshire",
+"url":"https://www.golfeastanglia.com/cambridgeshire",
+"description":"Golf courses across Cambridgeshire, within easy reach of Cambridge, Newmarket and the Suffolk border.",
+"touristType":["Golf travellers","Golf societies","International golf groups"],
+"provider":{"@type":"TravelAgency","name":"Golf East Anglia","url":"https://www.golfeastanglia.com/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Golf East Anglia","item":"https://www.golfeastanglia.com/"},
+{"@type":"ListItem","position":2,"name":"Cambridgeshire","item":"https://www.golfeastanglia.com/cambridgeshire"}]}
+</script>
 </head>
 <body>
 <nav class="nav">
@@ -181,6 +202,14 @@ a{text-decoration:none;}
   </button>
   <a href="/enquire" class="enq">Enquire</a>
 </nav>
+
+<div class="ba-strip">
+  <div class="ba-inner">
+    <span class="ba-lbl">By Arrangement</span>
+    <p>For a private commission &mdash; a course closed for a morning, arrival by air &mdash; see <a href="/by-arrangement">By Arrangement</a>.</p>
+  </div>
+</div>
+
 <div class="mob-nav" id="mobNav">
   <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
   <a href="/" onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>

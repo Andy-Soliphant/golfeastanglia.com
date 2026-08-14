@@ -165,8 +165,29 @@ footer { background:#111a24; padding:28px 80px; display:flex; align-items:center
 .ft-links { display:flex; gap:28px; }
 .ft-links a { font-size:10px; font-weight:500; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.38); text-decoration:none; }
 .ft-copy { font-size:10px; color:rgba(255,255,255,0.28); }
+
+.ba-strip{border-bottom:1px solid var(--bdr);background:rgba(183,157,100,0.045);}
+.ba-inner{max-width:1400px;margin:0 auto;padding:11px 48px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;}
+.ba-lbl{font-family:var(--sans);font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);white-space:nowrap;}
+.ba-inner p{font-family:var(--sans);font-size:13px;font-weight:200;color:var(--tmid);margin:0;line-height:1.5;}
+.ba-inner a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-b);padding-bottom:1px;}
+.ba-inner a:hover{border-bottom-color:var(--gold);}
+@media(max-width:768px){.ba-inner{padding:9px 20px;gap:8px;}.ba-inner p{font-size:12px;}}
 </style>
   <link rel="canonical" href="https://www.golfeastanglia.com/cote-dopale-collection">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TouristDestination",
+"name":"The C\u00f4te d'Opale Collection",
+"url":"https://www.golfeastanglia.com/cote-dopale-collection",
+"description":"Links golf on the Opal Coast of northern France, reachable from East Anglia and combined with a stay on the English east coast.",
+"touristType":["Golf travellers","Golf societies"],
+"provider":{"@type":"TravelAgency","name":"Golf East Anglia","url":"https://www.golfeastanglia.com/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Golf East Anglia","item":"https://www.golfeastanglia.com/"},
+{"@type":"ListItem","position":2,"name":"C\u00f4te d'Opale","item":"https://www.golfeastanglia.com/cote-dopale-collection"}]}
+</script>
 </head>
 <body>
 
@@ -179,6 +200,14 @@ footer { background:#111a24; padding:28px 80px; display:flex; align-items:center
     <a href="#register" class="nav-cta">Reserve a Place</a>
   </div>
 </nav>
+
+<div class="ba-strip">
+  <div class="ba-inner">
+    <span class="ba-lbl">By Arrangement</span>
+    <p>For a private commission &mdash; a course closed for a morning, arrival by air &mdash; see <a href="/by-arrangement">By Arrangement</a>.</p>
+  </div>
+</div>
+
 
 <div class="hero">
   <div class="hero-bg"></div>

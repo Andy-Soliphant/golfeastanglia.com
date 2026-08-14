@@ -60,7 +60,7 @@ a{text-decoration:none;}
 .itin{border:1px solid var(--bdr);}
 .itin-head{padding:14px 18px;border-bottom:1px solid var(--bdr);font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);display:flex;justify-content:space-between;align-items:center;cursor:pointer;user-select:none;}
 .itin-head:hover{background:rgba(183,157,100,0.05);}
-.itin-arrow{font-size:14px;color:var(--gold);transition:transform 0.3s ease;display:inline-block;}
+.itin-arrow{transition:transform 0.3s ease;font-size:14px;color:var(--gold);transition:transform 0.3s ease;display:inline-block;}
 .itin-body{overflow:hidden;transition:max-height 0.4s ease;}
 .itin-body.collapsed{max-height:0 !important;}
 .day{display:flex;border-bottom:1px solid rgba(255,255,255,0.05);}
@@ -182,6 +182,14 @@ a{text-decoration:none;}
 .nl-drop-menu.open{display:block;}
 .nl-drop-menu a{display:block;padding:9px 20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(232,226,214,0.38);text-decoration:none;transition:color .2s;white-space:nowrap;}
 .nl-drop-menu a:hover{color:var(--gold);}
+
+.ba-strip{border-bottom:1px solid var(--bdr);background:rgba(183,157,100,0.045);}
+.ba-inner{max-width:1400px;margin:0 auto;padding:11px 48px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;}
+.ba-lbl{font-family:var(--sans);font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);white-space:nowrap;}
+.ba-inner p{font-family:var(--sans);font-size:13px;font-weight:200;color:var(--tmid);margin:0;line-height:1.5;}
+.ba-inner a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-b);padding-bottom:1px;}
+.ba-inner a:hover{border-bottom-color:var(--gold);}
+@media(max-width:768px){.ba-inner{padding:9px 20px;gap:8px;}.ba-inner p{font-size:12px;}}
 </style>
   <link rel="canonical" href="https://www.golfeastanglia.com/itineraries">
 </head>
@@ -217,6 +225,14 @@ a{text-decoration:none;}
   </button>
   <a href="/enquire" class="enq">Enquire</a>
 </nav>
+
+<div class="ba-strip">
+  <div class="ba-inner">
+    <span class="ba-lbl">By Arrangement</span>
+    <p>For a private commission &mdash; a course closed for a morning, arrival by air &mdash; see <a href="/by-arrangement">By Arrangement</a>.</p>
+  </div>
+</div>
+
 <div class="mob-nav" id="mobNav">
   <button class="mob-nav-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu">&times;</button>
   <a href="/transfers" onclick="document.getElementById('mobNav').classList.remove('open')">Transfers</a>
@@ -279,7 +295,7 @@ a{text-decoration:none;}
     <div>
       <div class="itin">
         <div class="itin-head" onclick="toggleItin(this)">Norfolk edition — sample itinerary <span class="itin-arrow">▼</span></div>
-        <div class="itin-body"><div class="day"><div class="day-num"><div class="dn">1</div></div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · North Norfolk coast</div><div class="day-detail">Arrive at your North Norfolk base — Burnham Market or Holt recommended. Evening meal at a local restaurant.</div></div></div>
+        <div class="itin-body collapsed"><div class="day"><div class="day-num"><div class="dn">1</div></div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · North Norfolk coast</div><div class="day-detail">Arrive at your North Norfolk base — Burnham Market or Holt recommended. Evening meal at a local restaurant.</div></div></div>
         <div class="day"><div class="day-num"><div class="dn">2</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Morning tee time · Afternoon at leisure</div><div class="day-detail">First round of the trip. Settle into the pace of links golf — the wind, the firm turf, the bump-and-run game that rewards thinking over power.</div><div><span class="course-tag">Royal Cromer</span><span style="font-size:11px;color:var(--tlow);"> or </span><span class="course-tag">Sheringham</span></div></div></div>
         <div class="day"><div class="day-num"><div class="dn">3</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Hunstanton — championship links</div><div class="day-detail">The centrepiece of the Norfolk long weekend. A championship links that demands your best. Consider 36 holes if the group is willing.</div><div><span class="course-tag">Hunstanton</span></div></div></div>
         <div class="day"><div class="day-num"><div class="dn">4</div><div class="dl">Depart</div></div><div class="day-content"><div class="day-title">Morning golf · Afternoon departure</div><div class="day-detail">A final morning round before checkout and departure — tee time scheduled to allow a comfortable onward journey.</div><div><span class="course-tag">Royal Cromer</span><span style="font-size:11px;color:var(--tlow);"> or </span><span class="course-tag">Sheringham</span></div></div></div>
@@ -347,7 +363,7 @@ a{text-decoration:none;}
     <div>
       <div class="itin">
         <div class="itin-head" onclick="toggleItin(this)">Norfolk edition — sample itinerary <span class="itin-arrow">▼</span></div>
-        <div class="itin-body"><div class="day"><div class="day-num"><div class="dn">1</div></div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · North Norfolk</div><div class="day-detail">Arrive and settle in. We recommend the Holt or Fakenham area — central to all four courses. Evening dinner.</div></div></div>
+        <div class="itin-body collapsed"><div class="day"><div class="day-num"><div class="dn">1</div></div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · North Norfolk</div><div class="day-detail">Arrive and settle in. We recommend the Holt or Fakenham area — central to all four courses. Evening dinner.</div></div></div>
         <div class="day"><div class="day-num"><div class="dn">2</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Royal Cromer · Morning tee time</div><div class="day-detail">Open the tour on the clifftops. Royal Cromer sets the tone — dramatic setting, warm welcome, views down the coast. Afternoon free to explore.</div><div><span class="course-tag">Royal Cromer</span></div></div></div>
         <div class="day"><div class="day-num"><div class="dn">3</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Sheringham · Full day</div><div class="day-detail">The clifftop theatre continues at Sheringham — the North Norfolk steam railway passing below as you play.</div><div><span class="course-tag">Sheringham</span></div></div></div>
         <div class="day"><div class="day-num"><div class="dn">4</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Hunstanton · Championship day</div><div class="day-detail">The centrepiece of the Norfolk tour. 36 holes if the group wants it. Sunset over The Wash if you time it right.</div><div><span class="course-tag">Hunstanton</span></div></div></div>
@@ -411,7 +427,7 @@ a{text-decoration:none;}
     <div>
       <div class="itin">
         <div class="itin-head" onclick="toggleItin(this)">Sample itinerary — north to south <span class="itin-arrow">▼</span></div>
-        <div class="itin-body"><div class="day"><div class="day-num"><div class="dn">1</div></div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · North Norfolk</div><div class="day-detail">Fly into Norwich or drive from London (2.5 hrs). Base yourself on the North Norfolk coast for the first half.</div></div></div>
+        <div class="itin-body collapsed"><div class="day"><div class="day-num"><div class="dn">1</div></div><div class="dl">Arrive</div></div><div class="day-content"><div class="day-title">Arrival · North Norfolk</div><div class="day-detail">Fly into Norwich or drive from London (2.5 hrs). Base yourself on the North Norfolk coast for the first half.</div></div></div>
         <div class="day"><div class="day-num"><div class="dn">2</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Hunstanton — championship links</div><div class="day-detail">Open the week at the west-facing jewel of North Norfolk. A Top 100 course that repays a morning of proper concentration.</div><div><span class="course-tag">Hunstanton</span></div></div></div>
         <div class="day"><div class="day-num"><div class="dn">3</div><div class="dl">Golf</div></div><div class="day-content"><div class="day-title">Royal West Norfolk · Brancaster</div><div class="day-detail">The tidal pilgrimage. Timed to the tide, foursomes format, salt marsh views. Nothing else like it in England.</div><div><span class="course-tag">Royal West Norfolk</span></div></div></div>
         <div class="day"><div class="day-num"><div class="dn">4</div><div class="dl">Travel</div></div><div class="day-content"><div class="day-title">Royal Cromer · Move south</div><div class="day-detail">Morning round at Royal Cromer before moving south to the Suffolk Heritage Coast.</div><div><span class="course-tag">Royal Cromer</span></div></div></div>
@@ -572,19 +588,34 @@ function toggleItin(head) {
       body.classList.remove('collapsed');
       body.style.maxHeight = body.scrollHeight + 'px';
       if (arrow) arrow.style.transform = 'rotate(0deg)';
+      head.setAttribute('aria-expanded','true');
     } else {
       body.style.maxHeight = body.scrollHeight + 'px';
       requestAnimationFrame(function() {
         body.classList.add('collapsed');
         if (arrow) arrow.style.transform = 'rotate(-90deg)';
+        head.setAttribute('aria-expanded','false');
       });
     }
   }
 }
-// Set initial max-height for all itin-bodies
+// Panels start closed; the arrow points right until opened.
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.itin-body').forEach(function(b) {
-    b.style.maxHeight = b.scrollHeight + 'px';
+    if (!b.classList.contains('collapsed')) { b.style.maxHeight = b.scrollHeight + 'px'; }
+  });
+  document.querySelectorAll('.itin-head').forEach(function(head) {
+    var body = head.nextElementSibling;
+    var arrow = head.querySelector('.itin-arrow');
+    if (arrow && body && body.classList.contains('collapsed')) {
+      arrow.style.transform = 'rotate(-90deg)';
+    }
+    head.setAttribute('role','button');
+    head.setAttribute('tabindex','0');
+    head.setAttribute('aria-expanded', body && body.classList.contains('collapsed') ? 'false' : 'true');
+    head.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleItin(head); }
+    });
   });
 });
 </script>
