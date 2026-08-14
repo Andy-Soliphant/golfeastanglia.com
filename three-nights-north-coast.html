@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Nights, Uncompromised | By Arrangement | Golf East Anglia</title>
+<meta name="description" content="Three nights on the north Norfolk coast at the same standard as a full week. Royal Cromer closed for a morning, Brancaster timed to the tide, Sheringham or Hunstanton to finish. By enquiry only.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.golfeastanglia.com/three-nights-north-coast">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Three Nights, Uncompromised | Golf East Anglia">
+<meta property="og:description" content="Three nights on the north Norfolk coast, arranged around one tide. The same standard as a week, in the time most people actually have.">
+<meta property="og:image" content="https://www.golfeastanglia.com/images/rc-golfers-golden-mist.jpg">
+<meta property="og:url" content="https://www.golfeastanglia.com/three-nights-north-coast">
+<meta property="og:site_name" content="Golf East Anglia">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Outfit:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#080f08;
+    --flint:#141c14;
+    --marsh:#5d6b55;
+    --bone:#e9e4d7;
+    --bone-dim:#a8a496;
+    --gold:#b79d64;
+    --rule:rgba(183,157,100,0.22);
+    --measure:34rem;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);color:var(--bone);
+    font-family:'Outfit',system-ui,sans-serif;font-weight:300;
+    font-size:16px;line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  img{display:block;width:100%;height:auto}
+
+  .lbl{
+    font-size:10px;letter-spacing:0.34em;text-transform:uppercase;
+    color:var(--gold);font-weight:400;line-height:1;
+  }
+  .wrap{width:100%;max-width:76rem;margin:0 auto;padding:0 2rem}
+  .col{max-width:var(--measure)}
+  .serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300}
+
+  /* ---------- masthead ---------- */
+  .mast{padding:2.25rem 0;border-bottom:1px solid var(--rule)}
+  .mast .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+  .mast a.home{font-family:'Cormorant Garamond',serif;font-size:1.25rem;letter-spacing:0.02em;text-decoration:none}
+  .mast a.home em{font-style:italic;color:var(--gold)}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero-img{position:absolute;inset:0}
+  .hero-img img{width:100%;height:100%;object-fit:cover;opacity:0.5}
+  .hero-img::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(8,15,8,0.55) 0%,rgba(8,15,8,0.35) 45%,var(--ink) 100%);
+  }
+  .hero .wrap{position:relative;padding-top:8rem;padding-bottom:5rem}
+  .hero h1{
+    font-family:'Cormorant Garamond',serif;font-weight:300;
+    font-size:clamp(3.2rem,10vw,7.5rem);line-height:0.94;letter-spacing:-0.015em;
+    margin:1.75rem 0 0;
+  }
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero .standfirst{
+    margin-top:2rem;max-width:30rem;font-size:1.05rem;color:var(--bone-dim);
+  }
+
+  /* ---------- sections ---------- */
+  section{padding:6.5rem 0}
+  section + section{border-top:1px solid var(--rule)}
+  .lede{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.6rem,3.4vw,2.4rem);line-height:1.32}
+  .lede em{font-style:italic;color:var(--gold)}
+  h2.head{
+    font-family:'Cormorant Garamond',serif;font-weight:300;
+    font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.1;margin:1.5rem 0 2.5rem;
+  }
+  p + p{margin-top:1.5rem}
+  .dim{color:var(--bone-dim)}
+
+  /* ---------- the day ---------- */
+  .day{display:grid;grid-template-columns:7rem 1fr;gap:2.5rem;padding:2.75rem 0;border-top:1px solid var(--rule)}
+  .day:last-of-type{border-bottom:1px solid var(--rule)}
+  .day .when{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--gold);line-height:1.1}
+  .day h3{font-size:1.02rem;font-weight:400;letter-spacing:0.01em;margin-bottom:0.6rem}
+  .day p{color:var(--bone-dim);max-width:38rem}
+
+  /* ---------- signature: tide band ---------- */
+  .tide{background:var(--flint)}
+  .tide-band{margin-top:3rem;border:1px solid var(--rule);padding:2.5rem 2rem 1.5rem;position:relative;overflow:hidden}
+  .tide-svg{width:100%;height:auto;display:block}
+  .tide-key{display:flex;gap:2.5rem;flex-wrap:wrap;margin-top:1.75rem;padding-top:1.5rem;border-top:1px solid var(--rule)}
+  .tide-key div{min-width:8rem}
+  .tide-key .k{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--bone)}
+  .tide-key .v{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--marsh);margin-top:0.35rem}
+
+  /* ---------- movements ---------- */
+  .movement{margin-top:5.5rem}
+  .movement:first-of-type{margin-top:3rem}
+  .mv-rule{display:flex;align-items:baseline;gap:1.5rem;border-top:1px solid var(--rule);padding-top:1.5rem}
+  .mv-num{font-family:'Cormorant Garamond',serif;font-size:2.6rem;color:var(--gold);line-height:1;font-style:italic}
+  .mv-title{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.15}
+  .mv-note{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--marsh);margin-left:auto;white-space:nowrap}
+  .stop{max-width:40rem;margin-top:2.75rem}
+  .stop h3{font-size:1.02rem;font-weight:400;margin-bottom:0.55rem}
+  .stop p{color:var(--bone-dim)}
+
+  /* ---------- other commissions ---------- */
+  .comm{margin-top:3rem;max-width:46rem}
+  .comm-item{padding:2.25rem 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:1fr auto;gap:0.4rem 2rem;align-items:baseline}
+  .comm-item:last-child{border-bottom:1px solid var(--rule)}
+  .comm-item h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.55rem}
+  .comm-item .when{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--marsh);white-space:nowrap}
+  .comm-item p{grid-column:1 / -1;font-size:0.97rem;color:var(--bone-dim);max-width:40rem}
+  @media (max-width:560px){
+    .comm-item{grid-template-columns:1fr}
+    .comm-item .when{margin-top:0.2rem}
+  }
+
+  /* ---------- arrangements: a list, not a grid ---------- */
+  .arr{margin-top:3rem;max-width:46rem}
+  .arr-item{padding:2rem 0;border-top:1px solid var(--rule)}
+  .arr-item:last-child{border-bottom:1px solid var(--rule)}
+  .arr-item h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.55rem;margin-bottom:0.6rem}
+  .arr-item p{font-size:0.97rem;color:var(--bone-dim)}
+
+  /* ---------- plate ---------- */
+  .plate{position:relative;height:60vh;min-height:22rem;overflow:hidden;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .plate img{width:100%;height:100%;object-fit:cover;opacity:0.55}
+  .plate figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:2rem;
+    background:linear-gradient(to top,rgba(8,15,8,0.9),transparent);
+    font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--bone-dim);
+  }
+
+  /* ---------- stay ---------- */
+  .stay{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2.5rem;margin-top:3rem}
+  .stay h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;margin-bottom:0.5rem}
+  .stay p{font-size:0.93rem;color:var(--bone-dim)}
+  .stay .where{font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:var(--marsh);margin-bottom:0.9rem}
+
+  /* ---------- close ---------- */
+  .close{text-align:left}
+  .btn{
+    display:inline-block;margin-top:2.5rem;
+    border:1px solid var(--gold);color:var(--gold);
+    padding:1.05rem 2.6rem;text-decoration:none;
+    font-size:11px;letter-spacing:0.26em;text-transform:uppercase;
+    transition:background .35s ease,color .35s ease;
+  }
+  .btn:hover,.btn:focus-visible{background:var(--gold);color:var(--ink)}
+  .advisors{margin-top:5rem;padding-top:2.5rem;border-top:1px solid var(--rule);max-width:36rem}
+  .advisors p{font-size:0.93rem;color:var(--bone-dim)}
+
+  footer{padding:3rem 0 4rem;border-top:1px solid var(--rule);font-size:12px;color:var(--marsh);letter-spacing:0.04em}
+  footer a{color:var(--marsh);text-decoration:none}
+  footer a:hover,footer a:focus-visible{color:var(--gold)}
+
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+  /* ---------- motion ---------- */
+  .rise{opacity:0;transform:translateY(18px);transition:opacity 1s ease,transform 1s ease}
+  .rise.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .rise{opacity:1;transform:none;transition:none}
+  }
+  @media (max-width:680px){
+    .day{grid-template-columns:1fr;gap:0.75rem}
+    section{padding:4.5rem 0}
+    .wrap{padding:0 1.4rem}
+  }
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <a class="home" href="/"><em>Golf</em> East Anglia</a>
+    <span class="lbl">By enquiry &middot; Norfolk &amp; Suffolk</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-img">
+    <img src="/images/rc-golfers-golden-mist.jpg" alt="Golfers in morning mist on the clifftop at Royal Cromer, north Norfolk">
+  </div>
+  <div class="wrap">
+    <p class="lbl">By Arrangement &middot; the long weekend</p>
+    <h1>Three nights.<br>Three courses.<br><em>One</em> tide to plan around.</h1>
+    <p class="standfirst">The north coast at the same standard as a full week, in the time most people can actually give it. No Suffolk, no drive south, and one afternoon deliberately left empty.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <p class="lede">Seven days is more than most people have. <em>Three is what they can actually give</em>, and there is no reason those three should be a lesser version of the same thing.</p>
+    <div class="col">
+      <p class="dim" style="margin-top:2.5rem">This is the north coast only. No Suffolk, no drive south, nothing that costs a morning in a car. Three courses in three days, the same arrangements as a full week, and one afternoon deliberately left with nothing in it.</p>
+      <p class="dim">The tide decides the order, as it always does here. Everything else is built outward from it.</p>
+      <p class="dim">Nothing below is priced. Nothing below is bookable from a page.</p>
+    </div>
+
+    <p class="lbl" style="margin-top:4rem">At a glance</p>
+    <div class="tide-key" style="border-top:none;padding-top:1.5rem">
+      <div><div class="k">Three</div><div class="v">Nights</div></div>
+      <div><div class="k">Three</div><div class="v">Courses</div></div>
+      <div><div class="k">One</div><div class="v">Coast</div></div>
+      <div><div class="k">Eight</div><div class="v">Players, comfortably</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="lbl">The long weekend</p>
+    <h2 class="head">Two movements.</h2>
+
+    <div class="movement">
+      <div class="mv-rule">
+        <span class="mv-num">I</span>
+        <h3 class="mv-title">Arrival</h3>
+        <span class="mv-note">The first afternoon</span>
+      </div>
+      <div class="stop">
+        <h3>North, and straight to it</h3>
+        <p>Forty-five minutes from London to the clifftop at Cromer, which puts you a short walk from the first tee with the afternoon still ahead of you. On a three-night trip that hour matters more than it does on a seven-night one &mdash; it is the difference between three playing days and two.</p>
+        <p>If the coast has other ideas, the car is already waiting and the day runs as written, a little later.</p>
+      </div>
+      <div class="stop">
+        <h3>Nine holes, or none</h3>
+        <p>Royal Cromer in the late light if the group wants it, or a walk on the cliff and dinner if it does not. Neither is a compromise. The first evening here is worth arriving into rather than sleeping through.</p>
+      </div>
+    </div>
+
+    <div class="movement">
+      <div class="mv-rule">
+        <span class="mv-num">II</span>
+        <h3 class="mv-title">Three mornings</h3>
+        <span class="mv-note">Built around one tide</span>
+      </div>
+
+      <div class="day">
+        <span class="when">One</span>
+        <div>
+          <h3>Royal West Norfolk, on the tide</h3>
+          <p>Brancaster, and the only fixed point in the whole weekend. The road across the marsh is under water twice a day and there is no second entrance, so this morning is not ours to schedule &mdash; it is set by the tide table, months out, and the other two days move around it. Which is why we ask for your dates before we say anything else.</p>
+        </div>
+      </div>
+      <div class="day">
+        <span class="when">Two</span>
+        <div>
+          <h3>Royal Cromer, held for the morning</h3>
+          <p>A clifftop course with the lighthouse standing in the middle of it and the sea on your shoulder for most of the round. We ask the club to close the sheet for the morning and put a starter on the first. That is arranged at their discretion and ours, and we do not sell it as certain until it is held.</p>
+        </div>
+      </div>
+      <div class="day">
+        <span class="when">Three</span>
+        <div>
+          <h3>Sheringham, or Hunstanton</h3>
+          <p>Sheringham is ten minutes west &mdash; a clifftop links where the railway runs below the fourth and the sea is in view from nearly every hole. Hunstanton is thirty minutes the other way, and the course a good many people who have played both quietly prefer: dunes, hard ground, and a wind that decides the round.</p>
+          <p>Which one depends on where the tide has put Brancaster. We will tell you when you tell us the dates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<figure class="plate">
+  <img src="/images/hunstanton-bunkers-evening.jpg" alt="Bunkers in evening light at Hunstanton on the north Norfolk coast">
+  <figcaption>Hunstanton &middot; the third morning</figcaption>
+</figure>
+
+<section>
+  <div class="wrap">
+    <p class="lbl">The afternoon with nothing in it</p>
+    <h2 class="head">One thing, done properly.</h2>
+    <div class="col">
+      <p class="dim">A long weekend cannot carry a programme, and it should not try. One afternoon is left open, and one thing is arranged into it if the group wants it. Not three.</p>
+    </div>
+    <div class="arr">
+      <div class="arr-item">
+        <h3>The seals at Blakeney</h3>
+        <p>The largest grey seal colony in England, out on the point, reached by boat from Morston Quay. Privately, rather than on the shared trip &mdash; it is the difference between a pleasant hour and one people talk about. Between November and January they are pupping, which is also the quietest quarter on this coast.</p>
+      </div>
+      <div class="arr-item">
+        <h3>Crab, from the boat that landed it</h3>
+        <p>The crab boats at Cromer still work off the beach. A morning with one of them, then the crab for lunch, is the sort of thing nobody expects and everybody remembers.</p>
+      </div>
+      <div class="arr-item">
+        <h3>Holkham, and the marshes</h3>
+        <p>The hall, the walled garden, and the beach at the end of Lady Anne&rsquo;s Drive. The obvious answer for anyone in the group who has not come for the golf, and the one they will thank you for.</p>
+      </div>
+      <div class="arr-item">
+        <h3>Or nothing at all</h3>
+        <p>Three days of links golf in a Norfolk wind is enough for most people, and an afternoon in a chair facing the sea is a legitimate use of it. We would not argue.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="lbl">What is arranged around it</p>
+    <h2 class="head">The same as every commission.</h2>
+    <div class="col">
+      <p class="dim">Nothing on this page is an upgrade to be asked for. It is what a commission under By Arrangement includes, and the itinerary above is simply where it happens to go.</p>
+    </div>
+    <div class="arr">
+      <div class="arr-item">
+        <h3>A car and driver, throughout</h3>
+        <p>Not on call. There for the whole stay &mdash; to the courses, to dinner, and to Holkham with anyone who would rather not play. Clubs move separately, so nobody handles a bag between the first tee and the last green.</p>
+      </div>
+      <div class="arr-item">
+        <h3>Dinner worth changing for</h3>
+        <p>Morston Hall has held a Michelin star for twenty-five years and is fifteen minutes from where you are staying. Meadowsweet at Holt and The Neptune at Old Hunstanton are the other two on this coast. Tables are held before you arrive, because in season they are not there to be found on the night.</p>
+      </div>
+      <div class="arr-item">
+        <h3>Caddies and a professional</h3>
+        <p>Caddies arranged in advance where the club has them. A PGA professional with you throughout, for a group who would rather play better by the end than merely play.</p>
+      </div>
+      <div class="arr-item">
+        <h3>For those not playing</h3>
+        <p>Shooting, sailing on the marshes, the seals at Blakeney, a day at Holkham. Arranged to the same standard as the golf, and never as an afterthought &mdash; most groups here include somebody who has come for the coast rather than the courses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap col">
+    <p class="lbl">How it begins</p>
+    <h2 class="head">Tell us your dates and we will tell you the tide.</h2>
+    <p class="dim">Three nights is the shortest commission we take, and the tide makes it the least flexible &mdash; there are dates in any month when Brancaster simply will not give a workable morning, and we would rather say so at the start than build around it.</p>
+    <p class="dim">Send us the dates and the number, and we will come back with what is actually possible on them, including what is not.</p>
+    <a class="btn" href="/enquire">Begin a conversation</a>
+
+    <div class="advisors">
+      <p class="lbl" style="margin-bottom:1rem">Or see the rest</p>
+      <p>This is one of five commissions. The others are the East Coast Week at seven nights, the Long Season at nine, the Ryder Cup week, and the Sacred Nine. They are set out on <a href="/by-arrangement" style="color:var(--gold)">By Arrangement</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="/">Golf East Anglia</a> &nbsp;&middot;&nbsp; From those who play &nbsp;&middot;&nbsp; andy@golfeastanglia.com
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var els = document.querySelectorAll('section .wrap, .plate');
+    if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){ return; }
+    els.forEach(function(el){ el.classList.add('rise'); });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    },{threshold:0.12});
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>
