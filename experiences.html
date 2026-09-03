@@ -12,8 +12,8 @@
 <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golf Experiences in Norfolk &amp; Suffolk | Golf East Anglia</title>
-<meta name="description" content="PGA professional coaching and a round at Royal Worlington, the Sacred Nine. Add-on experiences for a Norfolk or Suffolk golf break.">
+<title>Things to Do in Norfolk, Suffolk &amp; Cambridgeshire | Golf East Anglia</title>
+<meta name="description" content="The ten places we send people in Norfolk, Suffolk and Cambridgeshire — the world's best single malt, a wine that beat seventeen thousand others, Orford Ness, Ely, Duxford. From those who know.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -120,6 +120,48 @@ a{text-decoration:none;}
 .ba-inner a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-b);padding-bottom:1px;}
 .ba-inner a:hover{border-bottom-color:var(--gold);}
 @media(max-width:768px){.ba-inner{padding:9px 20px;gap:8px;}.ba-inner p{font-size:12px;}}
+
+/* ---- Experiences page, rebuilt 2 Sep 2026 -------------------------------
+   ADDING AN ELEVENTH ENTRY: copy any <article class="xp noimg"> block,
+   paste it into the right county section, edit the four fields.
+   ADDING A PHOTOGRAPH to an entry: remove "noimg" from the class and
+   uncomment the <div class="xp-media"> line inside that block.
+   Entries alternate image side automatically; nothing else to change.  */
+.xp-intro{padding:56px 48px;border-bottom:1px solid var(--bdr);max-width:820px;}
+.xp-intro p{font-family:var(--serif);font-size:21px;line-height:1.75;color:var(--tmid);font-weight:300;}
+.xp-intro p+p{margin-top:18px;}
+.county{padding:56px 48px 8px;}
+.county-head{display:flex;align-items:center;gap:18px;margin-bottom:8px;}
+.county-head h2{font-family:var(--serif);font-size:34px;font-weight:300;color:var(--gold);letter-spacing:1px;}
+.county-head .cline{flex:1;height:1px;background:var(--gold-b);}
+.xp{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:44px;align-items:start;
+    padding:44px 0;border-bottom:1px solid var(--bdr);}
+.xp:last-of-type{border-bottom:none;}
+.xp.noimg{grid-template-columns:1fr;max-width:760px;}
+.xp:nth-of-type(even) .xp-media{order:2;}
+.xp-media img{width:100%;height:300px;object-fit:cover;display:block;}
+.xp h3{font-family:var(--serif);font-size:29px;font-weight:300;line-height:1.2;color:var(--text);margin-bottom:8px;}
+.xp .xp-where{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
+.xp p{font-size:15.5px;line-height:1.9;color:var(--tmid);font-weight:300;}
+.xp p+p{margin-top:14px;}
+.xp .xp-ask{display:inline-block;margin-top:22px;border:1px solid var(--gold-b);color:var(--gold);
+    font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:9px 18px;transition:background .2s;}
+.xp .xp-ask:hover{background:var(--gold-l);}
+.xp-more{padding:56px 48px;border-top:1px solid var(--bdr);background:var(--bg2);}
+.xp-more-inner{max-width:760px;}
+.xp-more h2{font-family:var(--serif);font-size:30px;font-weight:300;color:var(--text);margin-bottom:18px;}
+.xp-more p{font-size:15.5px;line-height:1.9;color:var(--tmid);font-weight:300;}
+.xp-more p+p{margin-top:14px;}
+.xp-more .exp-link{margin-top:26px;}
+@media(max-width:900px){
+  .xp,.xp.noimg{grid-template-columns:1fr;gap:24px;padding:34px 0;}
+  .xp:nth-of-type(even) .xp-media{order:0;}
+  .county,.xp-intro,.xp-more{padding-left:24px;padding-right:24px;}
+  .hero{padding:44px 24px 40px;}
+  .county-head h2{font-size:27px;}
+  .xp h3{font-size:24px;}
+}
+
 </style>
   <link rel="canonical" href="https://www.golfeastanglia.com/experiences">
 </head>
@@ -128,7 +170,7 @@ a{text-decoration:none;}
   <a href="/" class="logo">
     <span class="lg">Golf</span><span class="lr">&nbsp;East Anglia</span>
     <div class="ldiv"></div>
-    <span class="lsub">Norfolk &amp; Suffolk</span>
+    <span class="lsub">Norfolk &middot; Suffolk &middot; Cambridgeshire</span>
   </a>
   <div class="nl">
     <div class="nl-drop">
@@ -175,64 +217,149 @@ a{text-decoration:none;}
   <a href="/about" onclick="document.getElementById('mobNav').classList.remove('open')">About</a>
   <a href="/enquire" class="mob-nav-enquire" onclick="document.getElementById('mobNav').classList.remove('open')">Enquire</a>
 </div>
-<div class="hero">
-<img src="images/rc-enquire-flagstick.jpg" alt="Royal Cromer — flagstick and North Sea" class="rc-hero-img">
+<section class="hero">
+  <div class="eyebrow"><div class="eline"></div><span class="etxt">From those who know</span></div>
+  <h1>Beyond the <em>tee time</em>.</h1>
+  <p class="hero-sub">Norfolk, Suffolk and Cambridgeshire &mdash; the ten places we send people, and why.</p>
+</section>
 
-  <div class="eyebrow"><div class="eline"></div><div class="etxt">Experiences</div></div>
-  <h1>Beyond the<br>tee time.</h1>
-  <p class="hero-sub">Two signature experiences that sit alongside our <a href="/itineraries" style="color:var(--gold);">golf itineraries</a> — one that prepares you to play better, and one that takes you somewhere most travelling golfers never find. Both can be added to any itinerary or booked as standalone experiences.</p>
-</div>
+<section class="xp-intro">
+  <p>East Anglia is not a place people arrive at knowing what to expect. It has no mountains and no famous view. What it has is a run of things that are quietly the best of their kind anywhere &mdash; and almost nobody outside the three counties knows they are here.</p>
+  <p>This is not a list of everything. It is the ten we send people to, and why.</p>
+</section>
 
-<div class="exp-cards">
-  <div class="exp-card">
-    <div class="exp-card-top">
-      <div class="exp-tag">Experience one · Optional add-on</div>
-      <h2>PGA Professional<br>session with Pascal</h2>
-      <p>Links golf — especially on the <a href="/norfolk" style="color:var(--gold);">north Norfolk coast</a> — is a different game. The wind, the firm turf, the bump-and-run — none of it comes naturally to golfers who have spent their playing lives on parkland courses. A session with <a href="/pascal" style="color:var(--gold);">Pascal Ogden</a> — former EuroPro Tour player, PGA professional, and the coach who took our founder's handicap from 28 to 8 in twelve months — is built specifically around the courses you are about to play. Not a generic lesson. Preparation for a specific round, on a specific course, in conditions you will actually face.</p>
-    </div>
-    <div class="exp-card-bottom">
-      <div class="exp-facts">
-        <div class="ef-item"><div class="ef-lbl">Duration</div><div class="ef-val">Half day · approx. 2.5–3 hours</div></div>
-        <div class="ef-item"><div class="ef-lbl">Format</div><div class="ef-val">Practice ground · on-course · debrief</div></div>
-        <div class="ef-item"><div class="ef-lbl">Group size</div><div class="ef-val">1–8 guests per session</div></div>
-        <div class="ef-item"><div class="ef-lbl">Suitable for</div><div class="ef-val">All abilities · beginners welcome</div></div>
-        <div class="ef-item"><div class="ef-lbl">Standalone</div><div class="ef-val">Available without full itinerary</div></div>
-        <div class="ef-item"><div class="ef-lbl">Pricing</div><div class="ef-val">Confirmed on enquiry</div></div>
+  <section class="county">
+    <div class="county-head"><h2>Norfolk</h2><div class="cline"></div></div>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="The best single malt in the world is made in Norfolk"></div> -->
+      <div>
+        <h3>The best single malt in the world is made in Norfolk</h3>
+        <p class="xp-where">The English Distillery &middot; Roudham</p>
+      <p>The English Distillery at Roudham was the first registered whisky distillery in England in over a century, built in 2006 by the Nelstrop family, who have farmed here for a hundred and twenty years. The barley is Norfolk. The water comes from the Breckland aquifer directly beneath the still house.</p>
+      <p>In March 2024 their sherry cask single malt was named the world&rsquo;s best single malt at the World Whisky Awards. Not the best English whisky. The best. They also hold the oldest whisky in England, a sixteen-year-old port cask.</p>
+      <p>It sits minutes from Thetford, which means it falls naturally on the day a golf trip is already heading south. Most people arrive assuming England cannot make whisky.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
       </div>
-      <a href="/pascal" class="exp-link">Meet Pascal</a>
-      <a href="/enquire" class="exp-link-ghost">Add to my trip</a>
-    </div>
-  </div>
-  <div class="exp-card">
-    <div class="exp-card-top">
-      <div class="exp-tag">Experience two · The pilgrimage</div>
-      <h2>Royal Worlington<br>&amp; the Sacred Nine</h2>
-      <p>The finest nine-hole course in the world. Named the Sacred Nine by Bernard Darwin in 1928, Royal Worlington &amp; Newmarket has been consistently ranked in the Top 100 of Britain and Ireland for decades. Forty acres of west Suffolk heathland. More history per hole than almost anywhere else in the game. For the golfer who knows, this is a pilgrimage.</p>
-    </div>
-    <div class="exp-card-bottom">
-      <div class="exp-facts">
-        <div class="ef-item"><div class="ef-lbl">Course</div><div class="ef-val">9 holes · played twice · par 35</div></div>
-        <div class="ef-item"><div class="ef-lbl">Format</div><div class="ef-val">Foursomes preferred · twoballs only</div></div>
-        <div class="ef-item"><div class="ef-lbl">Ranking</div><div class="ef-val">Top 100 GB&amp;I · consistently listed</div></div>
-        <div class="ef-item"><div class="ef-lbl">Royal patronage</div><div class="ef-val">Queen Victoria · 1895</div></div>
-        <div class="ef-item"><div class="ef-lbl">Location</div><div class="ef-val">West Suffolk · near Bury St Edmunds</div></div>
-        <div class="ef-item"><div class="ef-lbl">Visitor green fee</div><div class="ef-val">Approx. £120–£140 · 18 holes</div></div>
+    </article>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="The wine that beat seventeen thousand others"></div> -->
+      <div>
+        <h3>The wine that beat seventeen thousand others</h3>
+        <p class="xp-where">Winbirri Vineyard &middot; Surlingham</p>
+      <p>Winbirri is a small vineyard at Surlingham, on the edge of the Broads. In 2017 its Bacchus 2015 took Platinum, Best in Show at the Decanter World Wine Awards &mdash; one of thirty-four platinum awards from more than seventeen thousand wines entered worldwide.</p>
+      <p>Not best English wine. Best in show.</p>
+      <p>Tours are given by Lee Dyer, who owns the place and makes the wine. That is the difference between a tasting and an afternoon.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
       </div>
-      <a href="/worlington" class="exp-link">Full story</a>
-      <a href="/enquire" class="exp-link-ghost">Include in my trip</a>
-    </div>
-  </div>
-</div>
+    </article>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="On the water"></div> -->
+      <div>
+        <h3>On the water</h3>
+        <p class="xp-where">The Broads and the north coast</p>
+      <p>The Broads are a hundred and twenty-five miles of navigable water with not a single lock on them, which is why the boats are flat and slow and nobody is ever in a hurry. A day boat out of Wroxham or Horning needs no licence and no experience &mdash; you take it out for a few hours, tie up at a pub, and bring it back. It is the easiest thing in Norfolk to arrange and one of the best.</p>
+      <p>For something less do-it-yourself, a traditional wherry or a skippered launch with lunch aboard turns it into the day rather than an afternoon of it.</p>
+      <p>North of there, Blakeney Point holds the largest grey seal colony in England, reached from Morston Quay. The pups arrive between November and January, which is the emptiest quarter of the year on this coast &mdash; one of the few places where the best time to come is also the cheapest.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
+      </div>
+    </article>
+  </section>
 
-<div class="cta-wrap">
-  <div class="cta">
-    <div>
-      <h3>Add an experience to your journey.</h3>
-      <p>Both experiences can be added to any <a href="/itineraries" style="color:var(--gold);">itinerary</a> or booked as a standalone. Mention it when you enquire and we will include it in your proposal.</p>
-    </div>
-    <a href="/enquire" class="cta-btn">Enquire now</a>
+  <section class="county">
+    <div class="county-head"><h2>Suffolk</h2><div class="cline"></div></div>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="Adnams, Southwold"></div> -->
+      <div>
+        <h3>Adnams, Southwold</h3>
+        <p class="xp-where">Southwold &middot; the Suffolk coast</p>
+      <p>Brewing has been documented on the East Green site since the fourteenth century. Adnams added the Copper House Distillery in 2010 and became the first brewery in England to take spirits the whole way from malted grain to finished bottle &mdash; vodka and gin first, then whisky.</p>
+      <p>Tours run through both, and end where you would want them to.</p>
+      <p>Southwold itself is worth the drive regardless: the lighthouse stands in the middle of the town, the beach huts are the ones on every postcard of the Suffolk coast, and the golf course is a short walk from all of it. It is one of the few places where the round and the afternoon are in the same street.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
+      </div>
+    </article>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="The place that officially did not exist"></div> -->
+      <div>
+        <h3>The place that officially did not exist</h3>
+        <p class="xp-where">Orford Ness &middot; Orford</p>
+      <p>Orford Ness is a shingle spit off the Suffolk coast, reached only by National Trust ferry. For most of the twentieth century it was a secret military test site. Radar was developed here. Later the atomic weapons programme used it for environmental testing, and the pagoda-roofed test cells they built for it are still standing on the shingle.</p>
+      <p>Nobody will tell you exactly what happened inside them.</p>
+      <p>It is bleak in a way that nowhere else in England is bleak, and it takes most of a day. For guests who have been everywhere, it tends to be the thing they talk about afterwards.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
+      </div>
+    </article>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="Sutton Hoo"></div> -->
+      <div>
+        <h3>Sutton Hoo</h3>
+        <p class="xp-where">Woodbridge</p>
+      <p>In 1939 a landowner asked an archaeologist to look at the mounds in her garden. What came out of the ground was an entire ship, ninety feet of it, buried with a king &mdash; and the helmet that is now the most recognisable object in early English history.</p>
+      <p>The ship itself had rotted away entirely. What was excavated was its shadow in the sand, every rivet still in place.</p>
+      <p>It is twenty minutes from Woodbridge and it changed what England knew about its own beginnings.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="county">
+    <div class="county-head"><h2>Cambridgeshire</h2><div class="cline"></div></div>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="Dinner in a college hall"></div> -->
+      <div>
+        <h3>Dinner in a college hall</h3>
+        <p class="xp-where">Cambridge</p>
+      <p>A Cambridge college hall is not a function room. It is a room that has been doing the same thing since the fifteenth century &mdash; long tables, portraits along the walls, candles rather than lighting, and wine brought up from the college&rsquo;s own cellar.</p>
+      <p>Several of the colleges will take private dinners, from groups of eight up to well over a hundred, waited on properly.</p>
+      <p>It is the one thing on this page that cannot be arranged from anywhere else. An operator on the other side of the Atlantic cannot get their clients into a Cambridge hall at any price, because it is not a thing that is sold. It is a thing that is arranged.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
+      </div>
+    </article>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="Ely, and the Octagon"></div> -->
+      <div>
+        <h3>Ely, and the Octagon</h3>
+        <p class="xp-where">Ely Cathedral</p>
+      <p>In 1322 the Norman tower at the centre of Ely Cathedral collapsed. Instead of rebuilding it square, the sacrist Alan de Walsingham and the king&rsquo;s carpenter William Hurley opened the crossing into an eight-sided lantern of stone and oak &mdash; beams over twenty metres long, brought from forests hundreds of miles away and raised by means nobody has satisfactorily explained since.</p>
+      <p>There is nothing else like it in any English cathedral, and the tower tour takes small groups up inside the timbers.</p>
+      <p>The cathedral also holds the only stained glass museum in the country, and its choir is among the best in England &mdash; a group whose visit lands on evensong has had a considerably better evening than they planned.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
+      </div>
+    </article>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="Wicken Fen &amp;mdash; the last of the old fen"></div> -->
+      <div>
+        <h3>Wicken Fen &mdash; the last of the old fen</h3>
+        <p class="xp-where">Wicken &middot; near Ely</p>
+      <p>Before the seventeenth century, everything from Cambridge to the Wash was fen: shallow water, sedge and reed, crossed by boat. It was drained for farmland, and it worked. Around one per cent of the true fen survives.</p>
+      <p>Wicken is that one per cent. It became the National Trust&rsquo;s first nature reserve in 1899, it holds over nine thousand recorded species, and sedge has been cut there commercially since 1419 &mdash; the same crop, off the same ground, for six hundred years.</p>
+      <p>Boardwalks cross the undrained Sedge Fen, which is the only place left where the whole region looks the way it used to.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
+      </div>
+    </article>
+    <article class="xp noimg">
+      <!-- <div class="xp-media"><img src="/images/FILENAME.jpg" alt="Duxford"></div> -->
+      <div>
+        <h3>Duxford</h3>
+        <p class="xp-where">IWM Duxford &middot; near Cambridge</p>
+      <p>Duxford was an RAF fighter station in the Battle of Britain and an American airbase from 1943, home to the 78th Fighter Group. It is still an active airfield, and it is the best-preserved wartime fighter base left in Britain &mdash; over thirty of its buildings are listed, and the hangars in use today are the ones that were in use then.</p>
+      <p>It now holds nearly two hundred aircraft, which makes it the largest aviation collection in the country.</p>
+      <p>The building most people remember is the American Air Museum, designed by Norman Foster and opened by the Queen in 1997. Its concrete shell spans ninety metres, shaped around the wingspan of the B-52 sitting under it, and a glass wall the length of one side looks straight out onto the live runway &mdash; so the aircraft inside and the aircraft landing outside are in the same view. It won the Stirling Prize in 1998.</p>
+      <p>It is also a memorial to the thirty thousand American airmen who died flying from Britain, which is why it is the one place on this page that American visitors tend to want a whole day for rather than a morning.</p>
+        <a href="/enquire" class="xp-ask">Ask us about this</a>
+      </div>
+    </article>
+  </section>
+
+<section class="xp-more">
+  <div class="xp-more-inner">
+    <h2>This page will get longer</h2>
+    <p>Ten is where it starts, not where it stops. We are still finding things &mdash; a Neolithic flint mine you go down into by ladder, a James Turrell Skyspace in a Norfolk walled garden, chalk stream fishing on the Nar, the wader flights at Snettisham on the biggest tides of the year.</p>
+    <p>Most of them are run by people who have been doing the same thing here for a very long time, and putting them in front of visitors is a large part of why we are here.</p>
+    <p>If you are planning something and want to know what fits the dates you have, ask us.</p>
+    <a href="/enquire" class="exp-link">Start a conversation</a>
   </div>
-</div>
+</section>
 
 <footer class="footer">
   <a href="/" class="fl"><span class="flg">Golf</span><span class="flr">&nbsp;East Anglia</span></a>
