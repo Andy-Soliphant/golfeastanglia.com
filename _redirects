@@ -57,3 +57,17 @@ http://www.golfeastanglia.com/*  https://www.golfeastanglia.com/:splat   301!
 /blog-when-to-play-norfolk2027                /blog-when-to-play-norfolk              301!
 /blog-american-guide-east-coast-FINAL         /blog-american-guide-east-coast         301!
 /blog-best-time-norfolk                       /blog-when-to-play-norfolk              301!
+# ---- Images moved from the site root into /images/ (10 Sep 2026) ----
+/bawburgh-fairway.jpg                      /images/bawburgh-fairway.jpg                      301!
+/bawburgh-hero.jpg                         /images/bawburgh-hero.jpg                         301!
+/cote-belledune.jpg                        /images/cote-belledune.jpg                        301!
+/cote-dopale-hero.jpg                      /images/cote-dopale-hero.jpg                      301!
+/cote-fairway.jpg                          /images/cote-fairway.jpg                          301!
+/cote-laforet.jpg                          /images/cote-laforet.jpg                          301!
+/cote-lamer.jpg                            /images/cote-lamer.jpg                            301!
+/cote-lespins.jpg                          /images/cote-lespins.jpg                          301!
+/course-belle-dune.jpg                     /images/course-belle-dune.jpg                     301!
+/course-la-mer.jpg                         /images/course-la-mer.jpg                         301!
+/course-les-pins.jpg                       /images/course-les-pins.jpg                       301!
+/pascal-ogden-pga.jpg                      /images/pascal-ogden-pga.jpg                      301!
+/peter-rudling-travel-2.jpg                /images/peter-rudling-travel-2.jpg                301!
