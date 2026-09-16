@@ -65,7 +65,7 @@
   <!-- Blog index -->
   <url>
     <loc>https://www.golfeastanglia.com/blog</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <priority>0.8</priority>
   </url>
 
@@ -78,6 +78,11 @@
   <url>
     <loc>https://www.golfeastanglia.com/blog-grand-tour</loc>
     <lastmod>2026-09-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.golfeastanglia.com/blog-rookery-park</loc>
+    <lastmod>2026-09-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -177,7 +182,7 @@
   </url>
   <url>
     <loc>https://www.golfeastanglia.com/suffolk</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
