@@ -71,3 +71,7 @@ http://www.golfeastanglia.com/*  https://www.golfeastanglia.com/:splat   301!
 /course-les-pins.jpg                       /images/course-les-pins.jpg                       301!
 /pascal-ogden-pga.jpg                      /images/pascal-ogden-pga.jpg                      301!
 /peter-rudling-travel-2.jpg                /images/peter-rudling-travel-2.jpg                301!
+
+# ---- Retired draft (16 Sep 2026) ----
+/from-the-tips.html                            /by-arrangement                           301!
+/from-the-tips                                 /by-arrangement                           301!
